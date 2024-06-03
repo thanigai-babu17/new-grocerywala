@@ -1,0 +1,110 @@
+<div class="container">
+  <div class="section-title d-flex align-items-center justify-content-between">
+    <h2 class="title">{{ section.settings.title }} <span class="new-labl bg-danger">OFF</span></h2>
+    <a href="{{ section.settings.btn_url }}" class="btn">
+      {{ section.settings.btn }}
+      <svg xmlns="http://www.w3.org/2000/svg" width="4" height="6" viewBox="0 0 4 6" fill="none">
+        <path fill-rule="evenodd" clip-rule="evenodd"
+            d="M0.65976 0.662719C0.446746 0.879677 0.446746 1.23143 0.65976 1.44839L2.18316 3L0.65976 4.55161C0.446747 4.76856 0.446747 5.12032 0.65976 5.33728C0.872773 5.55424 1.21814 5.55424 1.43115 5.33728L3.34024 3.39284C3.55325 3.17588 3.55325 2.82412 3.34024 2.60716L1.43115 0.662719C1.21814 0.445761 0.872773 0.445761 0.65976 0.662719Z"
+            fill="white"></path>
+      </svg>
+    </a>
+  </div>
+  <div class="product-row today-discounts-slider">
+    {%- assign collection = collections[section.settings.collection]  -%}
+    {% for product in collection.products %}
+      <div class="product-card grid__item card">
+        {% render 'card-product', card_product: product, pro_img_widthheight: section.settings.pro_img_widthheight, show_secondary_image: section.settings.show_secondary_image,
+        show_vendor: section.settings.show_vendor,show_review: section.settings.show_review,show_qty: section.settings.show_qty, show_variants: section.settings.show_variants %}
+      </div>
+    {% else %}
+      {%- for i in (1..5) -%}
+      <div class="product-card grid__item card">
+          <h3>Please Select The Collection</h3>
+      </div>
+      {%- endfor -%}
+    {% endfor %}
+  </div>
+</div>
+<div class="right-side-image">
+    <img src="{{ section.settings.img | img_url: 'master' }}" alt="">
+</div>
+{% schema %}
+{
+  "name": "t:settings_schema.common-section.shop_pro",
+  "tag": "section",
+  "class": "padding-bottom today-discounts",
+  "settings": [
+    {
+      "type": "text",
+      "id": "title",
+      "label": "t:settings_schema.common.settings.title"
+    },
+    {
+      "type": "url",
+      "id": "btn_url",
+      "label": "t:settings_schema.common.settings.btn_url"
+    },
+    {
+      "type": "text",
+      "id": "btn",
+      "label": "t:settings_schema.common.settings.btn"
+    },
+    {
+      "type": "image_picker",
+      "id": "img",
+      "label": "t:settings_schema.common.settings.img"
+    },
+    {
+      "type": "header",
+      "content": "t:settings_schema.common.settings.pro_set"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_secondary_image",
+      "default": false,
+      "label": "t:settings_schema.common.settings.pro_hvr_img"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_vendor",
+      "default": false,
+      "label": "t:settings_schema.common.settings.sh_ven"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_review",
+      "default": true,
+      "label": "t:settings_schema.common.settings.sh_rev"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_variants",
+      "default": true,
+      "label": "t:settings_schema.common.settings.sh_var"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_qty",
+      "default": true,
+      "label": "t:settings_schema.common.settings.sh_qty"
+    },
+    {
+      "type": "text",
+      "id": "pro_img_widthheight",
+      "default": "600x600",
+      "label": "t:settings_schema.common.settings.width_height"
+    },
+    {
+      "type": "collection",
+      "id": "collection",
+      "label": "t:settings_schema.common.settings.sec_coll"
+    }
+  ],
+"presets": [
+    {
+      "name": "t:settings_schema.common-section.shop_pro"
+    }
+]
+}
+{% endschema %}

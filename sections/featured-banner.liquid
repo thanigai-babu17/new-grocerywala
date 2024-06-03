@@ -1,0 +1,79 @@
+<div class="featured-banner__wrap">
+  <div class="featured-banner__container">
+    <div class="featured-banner__content">
+      {% if section.settings.tab_label != blank %}
+        <div class="featured-banner__tag">
+          {{ section.settings.tab_label }}
+        </div>
+      {% endif %}
+      <div class="featured-banner__text">
+        <div class="featured-banner__text-title">
+          {{ section.settings.title }}
+        </div>
+        <div class="featured-banner__text-description">
+          {{ section.settings.description }}
+        </div>
+      </div>
+      {% if section.settings.url != blank and section.settings.url_label != blank %}
+        <a href="{{ section.settings.url }}" class="btn btn--white btn--arrow btn--lg">
+          {{ section.settings.url_label }}
+          {% render 'icon' icon: 'right-arrow' %}
+        </a>
+      {% endif %}
+    </div>
+    <div class="featured-banner__featured-img">
+      <img
+        src="{{ section.settings.featured_img | img_url: 'master' }}"
+        loading="lazy"
+        alt="{{ section.settings.featured_img.alt }}"
+      >
+    </div>
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "Featured Banner",
+  "class": "padding-bottom featured-banner__parent",
+  "settings": [
+    {
+      "type": "text",
+      "id": "tab_label",
+      "label": "Banner Tag Label",
+      "default": "SAVINGS"
+    },
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Banner Title",
+      "default": "Unbeatable Discounts on Your Favorite Grocerie"
+    },
+    {
+      "type": "textarea",
+      "id": "description",
+      "label": "Banner Description",
+      "default": "Get ready to stock up and save big! Dive into our treasure trove of top-notch groceries with irresistible discounts"
+    },
+    {
+      "type": "url",
+      "id": "url",
+      "label": "Banner URL"
+    },
+    {
+      "type": "text",
+      "id": "url_label",
+      "label": "Banner URL Label"
+    },
+    {
+      "type": "image_picker",
+      "id": "featured_img",
+      "label": "Banner Featured Image"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Featured Banner"
+    }
+  ]
+}
+{% endschema %}

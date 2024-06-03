@@ -1,0 +1,53 @@
+<div class="groceywala-highlights" style="margin-bottom: -{{ section.settings.y_axis_offset }}px;">
+  <div class="container">
+    {% for block in section.blocks %}
+      {% if block.type == 'highlight' %}
+        <div class="groceywala-highlights__item">
+          <div class="highlight-icon">
+            {{ block.settings.icon }}
+          </div>
+          <div class="highlight-title">
+            {{ block.settings.title }}
+          </div>
+        </div>
+      {% endif %}
+    {% endfor %}
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "Grocerywala Highlights",
+  "settings": [
+    {
+      "type": "number",
+      "id": "y_axis_offset",
+      "label": "Y axis Offset (added as a negative value)"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "highlight",
+      "limit": 4,
+      "name": "Highlight",
+      "settings": [
+        {
+          "type": "textarea",
+          "id": "icon",
+          "label": "SVG Icon Code"
+        },
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Highlight Title"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Grocerywala Highlights"
+    }
+  ]
+}
+{% endschema %}

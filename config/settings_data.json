@@ -1,0 +1,252 @@
+{
+  "current": {
+    "display_preloader": false,
+    "pre_loader_img": "shopify:\/\/shop_images\/752.gif",
+    "preloader_bg": "#ffffff",
+    "favicon": "shopify:\/\/shop_images\/fav-icon-Grocerywala.svg",
+    "body_font": "Google+Baloo+2",
+    "primary_color": "#6ea622",
+    "secondary_color": "#70ab22",
+    "primary_font": "#000000",
+    "secondary_font": "#fff",
+    "border_color": "#d5d5d5",
+    "mailchimp_form_action": "https:\/\/us18.list-manage.com\/contact-form?u=28c97e9fc6b2e6214af7bd19c&form_id=1f1f3185abc040a9c4e1626b43a72353",
+    "enable_compare": false,
+    "provider_1": "shopify:\/\/shop_images\/Frame_7628.svg",
+    "provider_2": "shopify:\/\/shop_images\/Frame_7627.svg",
+    "provider_3": "shopify:\/\/shop_images\/Frame_7626.svg",
+    "popup_newsletter_show": false,
+    "newsletter_title": "Sign up our newsletter",
+    "popup_newsletter_description": "Subscribe our newsletters now and stay up-to-date with new collections",
+    "cookie_style": "bottom_to_right",
+    "link_url": "shopify:\/\/pages\/terms-conditions",
+    "c_btn_txt": "Accept",
+    "social_twitter_link": "",
+    "social_facebook_link": "https:\/\/facebook.com\/shopify",
+    "social_instagram_link": "http:\/\/instagram.com\/shopify",
+    "social_youtube_link": "",
+    "predictive_search_enabled": true,
+    "currency_code_enabled": false,
+    "checkout_logo_image": "shopify:\/\/shop_images\/Logo-Grocerywala.png",
+    "base_font": "Google+Baloo+2",
+    "third_font": "Google+Baloo+2",
+    "s_leftimg": "shopify:\/\/shop_images\/left-leaf.png",
+    "s_rightimg": "shopify:\/\/shop_images\/right-leaf.png",
+    "t_leftimg": "shopify:\/\/shop_images\/leaf-design.png",
+    "t_rightimg": "shopify:\/\/shop_images\/circle-design.png",
+    "c_img": "shopify:\/\/shop_images\/circle-design.png",
+    "c_img1": "shopify:\/\/shop_images\/circle-design.png",
+    "c_img2": "shopify:\/\/shop_images\/leaf2_43e63697-002f-4baf-914d-30f33d0972a4.png",
+    "c_img3": "shopify:\/\/shop_images\/leaf-design.png",
+    "b_img": "shopify:\/\/shop_images\/circle-design.png",
+    "b_img1": "shopify:\/\/shop_images\/leaf-design.png",
+    "b_img2": "shopify:\/\/shop_images\/circle-design.png",
+    "b_img3": "shopify:\/\/shop_images\/leaf-design.png",
+    "b_img4": "shopify:\/\/shop_images\/leaf2_43e63697-002f-4baf-914d-30f33d0972a4.png",
+    "b_img5": "shopify:\/\/shop_images\/leaf2_43e63697-002f-4baf-914d-30f33d0972a4.png",
+    "p_img": "shopify:\/\/shop_images\/circle-design.png",
+    "p_img1": "shopify:\/\/shop_images\/circle-design.png",
+    "p_img2": "shopify:\/\/shop_images\/circle-design.png",
+    "p_img3": "shopify:\/\/shop_images\/circle-design.png",
+    "p_img4": "shopify:\/\/shop_images\/leaf2_43e63697-002f-4baf-914d-30f33d0972a4.png",
+    "p_img5": "shopify:\/\/shop_images\/circle-design.png",
+    "p_img6": "shopify:\/\/shop_images\/leaf-design.png",
+    "p_img7": "shopify:\/\/shop_images\/circle-design.png",
+    "third_color": "#788c6d",
+    "four_color": "#01170d",
+    "grey_color": "#b4b4b4",
+    "red_color": "#fe4d4d",
+    "back_img": "shopify:\/\/shop_images\/upload.png",
+    "Four_color": "#01170d",
+    "sections": {
+      "header": {
+        "type": "header",
+        "blocks": {
+          "link_simple_PUKkCe": {
+            "type": "link-simple",
+            "settings": {
+              "title": "Shop All",
+              "link": "shopify:\/\/collections\/all",
+              "diffclassname": ""
+            }
+          },
+          "d1b60774-590f-40e0-8860-e29584aed4ee": {
+            "type": "link-4linklists",
+            "settings": {
+              "title": "All categories",
+              "link": "",
+              "diffclassname": "",
+              "link_title1": "Patanjali Collection",
+              "links_1": "patanjali",
+              "link_title2": "Coffee & Tea",
+              "links_2": "coffee-tea",
+              "link_title3": "Beverages",
+              "links_3": "beverages",
+              "image": "shopify:\/\/shop_images\/thandai-mobile.webp",
+              "imageblink": "shopify:\/\/products\/sliced-whole-oranges"
+            }
+          },
+          "5dc0b32d-8260-4483-92d1-e4af69f6758d": {
+            "type": "link-linklist",
+            "settings": {
+              "title": "Patanjali",
+              "link": "",
+              "diffclassname": "",
+              "links": "patanjali"
+            }
+          },
+          "84b8b5ab-2dc0-484e-bb81-58bfa24be1f7": {
+            "type": "link-linklist",
+            "settings": {
+              "title": "Fresh Fruits",
+              "link": "",
+              "diffclassname": "",
+              "links": ""
+            }
+          },
+          "1a3df11b-0f2f-4329-ac60-aaed5e7dff42": {
+            "type": "link-linklist",
+            "settings": {
+              "title": "Cookies and Sweetener",
+              "link": "",
+              "diffclassname": "",
+              "links": ""
+            }
+          },
+          "a823e2c9-c825-416b-9e31-8fca2de83f9d": {
+            "type": "link-linklist",
+            "settings": {
+              "title": "Home Accessories",
+              "link": "",
+              "diffclassname": "",
+              "links": ""
+            }
+          },
+          "a7298f4f-f505-493e-8dd9-38dab56ca47e": {
+            "type": "link-linklist",
+            "settings": {
+              "title": "Bestseller",
+              "link": "",
+              "diffclassname": "",
+              "links": "main-menu"
+            }
+          },
+          "6035cbc3-fe76-4590-b279-b9060571d590": {
+            "type": "mob-link-simple",
+            "settings": {
+              "title": "About Us",
+              "link": "shopify:\/\/pages\/about-us",
+              "diffclassname": ""
+            }
+          },
+          "4f34d0ab-509b-4f40-b46f-e40907654db4": {
+            "type": "mob-link-simple",
+            "settings": {
+              "title": "Faq's",
+              "link": "shopify:\/\/pages\/featured-asked-questions",
+              "diffclassname": ""
+            }
+          },
+          "7b90b03f-eff6-4b7d-8bf9-a776a98e6952": {
+            "type": "mob-link-simple",
+            "settings": {
+              "title": "Contact Us",
+              "link": "shopify:\/\/pages\/contact-with-us",
+              "diffclassname": ""
+            }
+          }
+        },
+        "block_order": [
+          "link_simple_PUKkCe",
+          "d1b60774-590f-40e0-8860-e29584aed4ee",
+          "5dc0b32d-8260-4483-92d1-e4af69f6758d",
+          "84b8b5ab-2dc0-484e-bb81-58bfa24be1f7",
+          "1a3df11b-0f2f-4329-ac60-aaed5e7dff42",
+          "a823e2c9-c825-416b-9e31-8fca2de83f9d",
+          "a7298f4f-f505-493e-8dd9-38dab56ca47e",
+          "6035cbc3-fe76-4590-b279-b9060571d590",
+          "4f34d0ab-509b-4f40-b46f-e40907654db4",
+          "7b90b03f-eff6-4b7d-8bf9-a776a98e6952"
+        ],
+        "settings": {
+          "day": "Monday - Friday",
+          "time": "8:00 AM - 9:00 PM",
+          "cnt_title": "Hotline :",
+          "contact": "(+48)536 503 097",
+          "logo": "shopify:\/\/shop_images\/image_1.png",
+          "headline": "<span>-30% off<\/span> for first order with 200 USD in the cart.",
+          "btn_url": "#",
+          "btn": "Show More",
+          "heading1": "Faq",
+          "url1": "shopify:\/\/pages\/featured-asked-questions",
+          "heading2": "Support",
+          "url2": "shopify:\/\/pages\/privacy-policy",
+          "heading3": "Contact",
+          "url3": "shopify:\/\/pages\/contact-with-us",
+          "heading4": "About Us",
+          "url4": "shopify:\/\/pages\/about-us"
+        }
+      },
+      "footer": {
+        "type": "footer",
+        "blocks": {
+          "bcb12183-2656-424d-b45c-08ebd80418e1": {
+            "type": "text",
+            "settings": {
+              "heading": "Navigation",
+              "menu": "footer"
+            }
+          },
+          "6e5cbc3b-1442-41f9-874b-745ed2d3f99f": {
+            "type": "text",
+            "settings": {
+              "heading": "About Us",
+              "menu": "main-menu"
+            }
+          }
+        },
+        "block_order": [
+          "bcb12183-2656-424d-b45c-08ebd80418e1",
+          "6e5cbc3b-1442-41f9-874b-745ed2d3f99f"
+        ],
+        "settings": {
+          "flogo": "shopify:\/\/shop_images\/grocerywala-white.png",
+          "ctitle": "Contact",
+          "caddress": "VISTULA FOODS PRAKASH NAIR I WSPÓLNICY SPÓŁKA JAWNA, Al. Krakowska 41, 05-090 Janki, Poland",
+          "cmail": "sklep@grocerywala.pl",
+          "cphone": "+48 536 503 097",
+          "c_ctalabel": "Contact us",
+          "c_ctaurl": "shopify:\/\/pages\/contact"
+        }
+      },
+      "main-password-header": {
+        "type": "main-password-header",
+        "settings": {
+          "logo": "shopify:\/\/shop_images\/logo.png",
+          "logo_max_width": 50
+        }
+      },
+      "main-password-footer": {
+        "type": "main-password-footer",
+        "settings": {
+        }
+      },
+      "recommendations-product": {
+        "type": "recommendations-product",
+        "settings": {
+          "show_notification": false,
+          "product_title": "Someone purchased",
+          "delay_time": "3000"
+        }
+      },
+      "quickview": {
+        "type": "quickview",
+        "settings": {
+        }
+      }
+    },
+    "content_for_index": [
+
+    ]
+  }
+}

@@ -1,0 +1,148 @@
+<div class="container">
+    <div class="section-title">
+        <h2 class="title">{{ section.settings.title }}</h2>
+        <div class="descripion">
+            <p>{{ section.settings.desc }}</p>
+        </div>
+    </div>
+    {%- assign blog = blogs[section.settings.blog] -%}
+    {% unless blog.articles_count == 0 or blog.empty? %}
+    <div class="row blog-slider-home">
+        {% for article in blog.articles limit: section.settings.post_limit %}
+            <div id="blog-{{article.id}}" class="col-12 blog-widget">    
+                <div class="blog-widget-inner">
+                    <div class="blog-media">
+                        <span class="new-labl bg-second">{{ blog.handle }}</span>
+                        <a href="{{ article.url }}">
+                            {% if article.image %}
+                                <img class="lazyload"src="{{ article.image | img_url: 'master' }}" alt="{{ article.image.alt | escape }}" loading="lazy">
+                            {% else %}
+                                <img src="{{ 'no-image.gif' | img_url: '380x240' }}" loading="lazy"/>
+                            {% endif %} 
+                        </a>
+                    </div>
+                    <div class="blog-caption">
+                        <div class="blog-caption-top">
+                          <h4><a href="{{ article.url }}">{{ article.title }}</a></h4>
+                          <p>{% if article.excerpt.size > 0 %}{{ article.excerpt }}{% else %}{{ article.content | strip_html }}{% endif %}</p>
+                        </div>
+                        <div class="blog-lbl-row d-flex align-items-center justify-content-between">
+                            <a class="btn blog-btn" href="{{ article.url }}">
+                                Read more
+                                <svg xmlns="http://www.w3.org/2000/svg" width="3" height="6" viewBox="0 0 3 6"
+                                    fill="none">
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M0.15976 0.662719C-0.0532536 0.879677 -0.0532536 1.23143 0.15976 1.44839L1.68316 3L0.15976 4.55161C-0.0532533 4.76856 -0.0532532 5.12032 0.15976 5.33728C0.372773 5.55424 0.718136 5.55424 0.931149 5.33728L2.84024 3.39284C3.05325 3.17588 3.05325 2.82412 2.84024 2.60716L0.931149 0.662719C0.718136 0.445761 0.372773 0.445761 0.15976 0.662719Z"
+                                        fill="white" />
+                                </svg>
+                            </a>
+                            <div class="author-info">
+                                <strong class="auth-name">{{ article.author | split: ' ' | first }},</strong>
+                                {% if section.settings.blog_show_date %}<span class="date">{{ article.published_at | time_tag: format: 'date' }}</span>{% endif %}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        {% endfor %}
+    </div>
+    {% else %}
+    <div class="row blog-slider-home">
+       {% for i in (1..section.settings.post_limit) %}
+        <div id="blog-{{article.id}}" class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12 blog-widget">    
+                <div class="blog-widget-inner">
+                    <div class="blog-media">
+                        <span class="new-labl bg-second">{{ blog.handle }}</span>
+                        <a href="{{ article.url }}">
+                            <img src="{{ 'no-image.gif' | img_url: '380x240' }}" loading="lazy"/>
+                        </a>
+                    </div>
+                    <div class="blog-caption">
+                        <h4><a href="{{ article.url }}">{{ article.title }}</a></h4>
+                        <p>{% if article.excerpt.size > 0 %}{{ article.excerpt }}{% else %}{{ article.content | strip_html }}{% endif %}</p>
+                        <div class="blog-lbl-row d-flex align-items-center justify-content-between">
+                            <a class="btn blog-btn" href="{{ article.url }}">
+                                Read more
+                                <svg xmlns="http://www.w3.org/2000/svg" width="3" height="6" viewBox="0 0 3 6"
+                                    fill="none">
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M0.15976 0.662719C-0.0532536 0.879677 -0.0532536 1.23143 0.15976 1.44839L1.68316 3L0.15976 4.55161C-0.0532533 4.76856 -0.0532532 5.12032 0.15976 5.33728C0.372773 5.55424 0.718136 5.55424 0.931149 5.33728L2.84024 3.39284C3.05325 3.17588 3.05325 2.82412 2.84024 2.60716L0.931149 0.662719C0.718136 0.445761 0.372773 0.445761 0.15976 0.662719Z"
+                                        fill="white" />
+                                </svg>
+                            </a>
+                            <div class="author-info">
+                                <strong class="auth-name">{{ article.author | split: ' ' | first }},</strong>
+                                {% if section.settings.blog_show_date %}<span class="date">{{ article.published_at | time_tag: format: 'date' }}</span>{% endif %}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div> 
+        {% endfor %}
+    </div>
+  {% endunless %} 
+</div>
+{% schema %}
+{
+  "name": "t:settings_schema.featured-blog.name",
+  "tag": "section",
+  "class": "home-blog-section padding-bottom",
+  "settings": [
+    {
+      "type": "text",
+      "id": "title",
+      "label": "t:settings_schema.common.settings.title"
+    },
+    {
+      "type": "text",
+      "id": "desc",
+      "label": "t:settings_schema.common.settings.desc"
+    },
+    {
+      "id": "blog",
+      "type": "blog",
+      "label": "t:settings_schema.featured-blog.settings.blog"
+    },
+    {
+      "type": "select",
+      "id": "post_limit",
+      "label": "t:settings_schema.featured-blog.settings.blog_limit",
+      "default": "4",
+      "options": [
+        {
+          "value": "4",
+          "label": "4"
+        },
+        {
+          "value": "5",
+          "label": "5"
+        },
+        {
+          "value": "8",
+          "label": "8"
+        },
+        {
+          "value": "10",
+          "label": "10"
+        }
+      ]
+    },
+    {
+      "type": "checkbox",
+      "id": "blog_show_date",
+      "label": "t:settings_schema.featured-blog.settings.show_date",
+      "default": true
+    }
+  ],
+  "presets": [
+    {
+      "name": "t:settings_schema.featured-blog.name",
+      "category": "Blog",
+      "settings": {
+        "blog": "News",
+        "post_limit": "3"
+      }
+    }
+  ]
+}
+{% endschema %}

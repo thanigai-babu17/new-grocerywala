@@ -1,0 +1,109 @@
+<div class="container">
+    <div class="row align-items-center row-gap">
+        <div class="col-lg-5 col-md-5 col-12">
+            <div class="shop-reviews-left-inner">
+                <div class="new-labl bg-second">{{ section.settings.subtitle }}</div>
+                <div class="section-title">
+                    <h2 class="title">{{ section.settings.title }}</h2>
+                </div>
+                <p>{{ section.settings.desc }}</p>
+            </div>
+        </div>
+        <div class="col-lg-7 col-md-7 col-12">
+            <div class="shop-reviews-right-inner">
+                <div class="shop-reviews-image">
+                    <img src="{{ section.settings.img | img_url: 'master' }}" alt="green-mandarines">
+                </div>
+                <div class="review-info-wrap">
+                    <div class="review-box-wrapper">
+                        {%- for block in section.blocks -%}
+                            <div class="review-box-wrapper">
+                                <div class="review-box">
+                                    <div class="user-pro-list">
+                                        <ul class="d-flex align-items-center">
+                                            <li>
+                                                <img src="{{ block.settings.img | img_url: 'master' }}" alt="user">
+                                            </li>
+                                            <li>
+                                                <img src="{{ block.settings.img | img_url: 'master' }}" alt="user">
+                                            </li>
+                                            <li>
+                                                <img src="{{ block.settings.img | img_url: 'master' }}" alt="user">
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="review-detail">
+                                        <div class="review-main-word">
+                                            <strong>{{ block.settings.title }}</strong>
+                                        </div>
+                                        <div class="review-point">
+                                            <span>{{ block.settings.review }}</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        {%- endfor -%}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% schema %}
+{
+  "name": "t:settings_schema.common-section.shop_review",
+  "tag": "section",
+  "class": "shop-reviews padding-top padding-bottom",
+  "max_blocks": 3,
+  "settings": [
+    {
+      "type": "text",
+      "id": "subtitle",
+      "label": "t:settings_schema.common.settings.subtitle"
+    },
+    {
+      "type": "text",
+      "id": "title",
+      "label": "t:settings_schema.common.settings.title"
+    },
+    {
+      "type": "text",
+      "id": "desc",
+      "label": "t:settings_schema.common.settings.desc"
+    },
+    {
+      "type": "image_picker",
+      "id": "img",
+      "label": "t:settings_schema.common.settings.img"
+    }
+  ],
+    "blocks": [
+    {
+      "type": "text",
+      "name": "user",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "img",
+          "label": "t:settings_schema.testimonial.settings.img"
+        },
+        {
+          "type": "text",
+          "id": "title",
+          "label": "t:settings_schema.common.settings.title"
+        },
+        {
+          "type": "text",
+          "id": "review",
+          "label": "t:settings_schema.testimonial.settings.review"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "t:settings_schema.common-section.shop_review"
+    }
+  ]
+}
+{% endschema %}

@@ -1,0 +1,103 @@
+<style>
+  .sale-banner-slider {
+    overflow: hidden;
+  }
+
+  .sale-banner__pagination{
+    display: flex;
+    justify-content: center;
+    padding-top: 18px;
+  }
+</style>
+
+<div class="sale-banner-slider__wrap">
+  <div class="container">
+    <div class="sale-banner-slider">
+      <div class="swiper-wrapper">
+        {% for block in section.blocks %}
+          {% if block.type == 'slide' %}
+            <div class="sale-banner-slide swiper-slide">
+              <a href="{{ block.slide_url }}">
+                <picture>
+                  <source media="(max-width: 610px)" srcset="{{ block.settings.mobile_img | img_url: 'master' }}">
+                  <img
+                    src="{{ block.settings.desktop_img | img_url: 'master' }}"
+                    loading="eager"
+                    alt="{{ block.settings.desktop_img.alt }}"
+                  >
+                </picture>
+              </a>
+            </div>
+          {% endif %}
+        {% endfor %}
+      </div>
+      {% if section.settings.nav_dots %}
+        <div class="sale-banner__pagination"></div>
+      {% endif %}
+    </div>
+  </div>
+</div>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    const swiper = new Swiper('.sale-banner-slider', {
+      autoplay: {
+        delay: 2500,
+        disableOnInteraction: true,
+      },
+      speed: 800,
+      loop: true,
+      spaceBetween: 18,
+      slidesPerView: 1,
+      slidesPerGroup: 1,
+      slideShadows: true,
+      pagination: {
+        el: '.sale-banner__pagination',
+        clickable: true,
+      },
+    });
+  });
+</script>
+
+{% schema %}
+{
+  "name": "Sale Banner",
+  "class": "padding-bottom",
+  "settings": [
+    {
+      "type": "checkbox",
+      "id": "nav_dots",
+      "label": "Show / Hide Nav dots",
+      "default": true
+    }
+  ],
+  "blocks": [
+    {
+      "type": "slide",
+      "name": "Sale Slide",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "desktop_img",
+          "label": "Banner (Desktop)"
+        },
+        {
+          "type": "image_picker",
+          "id": "mobile_img",
+          "label": "Banner (Mobile)"
+        },
+        {
+          "type": "url",
+          "id": "slide_url",
+          "label": "Slide URL"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Sale Banner"
+    }
+  ]
+}
+{% endschema %}

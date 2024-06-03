@@ -1,0 +1,127 @@
+{{ 'categories-slider.css' | asset_url | stylesheet_tag }}
+
+<div class="category-slider__wrap">
+  <div class="category-slider__container container">
+    <div class="category-slider__header">
+      <h3 class="category-slider__title">
+        {{ section.settings.title }}
+      </h3>
+      {% if section.settings.enable_nav %}
+        <div class="category-slider__navs">
+          <button class="category-slider__nav category-slider--prev">
+            {% render 'icon' icon: 'chevron-left' width: 14 height: 14  %}
+          </button>
+          <button class="category-slider__nav category-slider--next">
+            {% render 'icon' icon: 'chevron-right' width: 14 height: 14 %}
+          </button>
+        </div>
+      {% endif %}
+    </div>
+    <div class="category-slider__swiper">
+      <div class="swiper-wrapper">
+        {% for block in section.blocks %}
+          {% if block.type == 'categories' %}
+            <a
+              class="category-slider__slide swiper-slide"
+              href="{{ block.settings.cta_url }}"
+              style="background-color: {{ block.settings.background }};"
+            >
+              <div
+                class="category-slider__slide-img"
+                style="background-image: url({{ block.settings.featured_img | img_url:'master' }});"
+              ></div>
+              <h4 class="category-slider__slide-text">
+                {{ block.settings.title }}
+              </h4>
+            </a>
+          {% endif %}
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    const swiper = new Swiper('.category-slider__swiper', {
+      speed: 600,
+      spaceBetween: 18,
+      slidesPerView: 2,
+      slidesPerGroup: 1,
+      slideShadows: true,
+      navigation: {
+        nextEl: '.category-slider--next',
+        prevEl: '.category-slider--prev',
+      },
+      breakpoints: {
+        1200: {
+          slidesPerView: 6,
+          spaceBetween: 30,
+        },
+        998: {
+          slidesPerView: 5,
+          spaceBetween: 30,
+        },
+        768: {
+          slidesPerView: 4,
+          spaceBetween: 30,
+        },
+      },
+    });
+  });
+</script>
+
+{% schema %}
+{
+  "name": "Categories Slider",
+  "class": "padding-bottom",
+  "settings": [
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Section Title",
+      "default": "Top Categories"
+    },
+    {
+      "type": "checkbox",
+      "id": "enable_nav",
+      "label": "Enable Navigation arrows",
+      "default": true
+    }
+  ],
+  "blocks": [
+    {
+      "type": "categories",
+      "name": "Categories",
+      "settings": [
+        {
+          "type": "color",
+          "id": "background",
+          "label": "Slide Background",
+          "default": "#E4EDD8"
+        },
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Title"
+        },
+        {
+          "type": "url",
+          "id": "cta_url",
+          "label": "CTA URL"
+        },
+        {
+          "type": "image_picker",
+          "id": "featured_img",
+          "label": "Category Thumbnail"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Categories Slider"
+    }
+  ]
+}
+{% endschema %}

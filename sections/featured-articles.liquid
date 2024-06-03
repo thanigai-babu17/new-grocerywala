@@ -1,0 +1,109 @@
+{{ 'featured-articles.css' | asset_url | stylesheet_tag }}
+
+<div class="featured-blog__wrap section-theme--{{ section.settings.theme }}">
+  <div class="featured-blog__fluid-container container">
+    {% for block in section.blocks %}
+      {% if block.type == 'article_block' %}
+        <div class="featured-blog__card">
+          <div class="featured-blog__card-img">
+            <img src="{{ block.settings.featured_image |  img_url: 'master'  }}" alt="{{ block.settings.featured_image.alt }}" loading="lazy">
+          </div>
+          <div class="featured-blog__card-content">
+            <h3 class="featured-blog__card-title">
+              {{ block.settings.title }}
+            </h3>
+            <div class="featured-blog__card-description">
+              {{ block.settings.description }}
+            </div>
+            <div>
+              <a href="{{ block.settings.cta_url }}" class="featured-blog__card-link btn btn--primary btn--lg btn--arrow">
+                {{ block.settings.cta_label }}
+                {% render 'icon' icon: 'right-arrow' %}
+              </a>
+            </div>
+          </div>
+        </div>
+      {% endif %}
+    {% endfor %}
+  </div>
+  {% if section.settings.pattern_img1 != blank %}
+    <div class="pattern-img-left-top">
+      <img src="{{ section.settings.pattern_img1 |  img_url: 'master'  }}" alt="{{ section.settings.pattern_img1.alt }}" loading="lazy">
+    </div>
+  {% endif %}
+  {% if section.settings.pattern_img2 != blank %}
+    <div class="pattern-img-right-bottom">
+      <img src="{{ section.settings.pattern_img2 |  img_url: 'master'  }}" alt="{{ section.settings.pattern_img2.alt }}" loading="lazy">
+    </div>
+  {% endif %}
+</div>
+
+{% schema %}
+  {
+    "name": "Featured Articles",
+    "class": "padding-bottom",
+    "settings": [
+      {
+        "type": "select",
+        "id": "theme",
+        "label": "Color Theme",
+        "options": [
+          {
+            "label": "Dark",
+            "value": "dark"
+          }, {
+            "label": "Light",
+            "value": "light"
+          }
+        ]
+      }, {
+        "type": "image_picker",
+        "id": "pattern_img1",
+        "label": "Pattern Img 1"
+      }, {
+        "type": "image_picker",
+        "id": "pattern_img2",
+        "label": "Pattern Img 2"
+      }
+    ],
+    "blocks": [
+      {
+        "type": "article_block",
+        "name": "Article Block",
+        "limit": 2,
+        "settings": [
+          {
+            "type": "text",
+            "id": "title",
+            "label": "Article Title"
+          },
+          {
+            "type": "textarea",
+            "id": "description",
+            "label": "Article Description"
+          },
+          {
+            "type": "image_picker",
+            "id": "featured_image",
+            "label": "Featured Image"
+          },
+          {
+            "type": "text",
+            "id": "cta_label",
+            "label": "CTA Label",
+            "default": "Read More"
+          }, {
+            "type": "url",
+            "id": "cta_url",
+            "label": "CTA URL"
+          }
+        ]
+      }
+    ],
+    "presets": [
+      {
+        "name": "Featured Articles"
+      }
+    ]
+  }
+{% endschema %}

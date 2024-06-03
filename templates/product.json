@@ -1,0 +1,346 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-product",
+      "blocks": {
+        "936e4d22-1228-41cf-adfa-a36a3ef01227": {
+          "type": "backbtn",
+          "settings": {
+          }
+        },
+        "judge_me_reviews_preview_badge_MAhc7z": {
+          "type": "shopify:\/\/apps\/judge-me-reviews\/blocks\/preview_badge\/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+          "settings": {
+          }
+        },
+        "b10cd43d-f259-475b-9757-31afbc700c40": {
+          "type": "vendor",
+          "settings": {
+          }
+        },
+        "2e5ab840-409d-4a4b-a243-d22337d0a5d2": {
+          "type": "title",
+          "settings": {
+          }
+        },
+        "0078c5d7-e2d2-4022-b67d-8f228ae79493": {
+          "type": "pro_type",
+          "settings": {
+          }
+        },
+        "ac6d5564-0ab3-4bc8-a98a-baea7e4d93fe": {
+          "type": "variant_picker",
+          "settings": {
+            "picker_type": "dropdown"
+          }
+        },
+        "db437cdc-76df-4a2e-86bd-59abf4157285": {
+          "type": "quantity_selector",
+          "settings": {
+          }
+        },
+        "51843371-c6d5-4bb1-b7a5-e1d4493fb741": {
+          "type": "price",
+          "settings": {
+          }
+        },
+        "0a0dd0ba-5ba7-47f2-bfaa-86c8a1e38398": {
+          "type": "pro_btn",
+          "settings": {
+          }
+        },
+        "7b740e5c-3489-4fbe-9053-31559dd94292": {
+          "type": "pro_wish",
+          "settings": {
+          }
+        },
+        "a8563a57-7518-4d53-86c4-50b47cd8402d": {
+          "type": "pro_count",
+          "settings": {
+          }
+        },
+        "83a97dd2-5a43-41ff-bbd6-18054d25b6ff": {
+          "type": "description",
+          "settings": {
+          }
+        },
+        "afe689bc-1aed-4e9b-a194-6c9b4e9ecdba": {
+          "type": "pro_detail",
+          "settings": {
+          }
+        }
+      },
+      "block_order": [
+        "936e4d22-1228-41cf-adfa-a36a3ef01227",
+        "judge_me_reviews_preview_badge_MAhc7z",
+        "b10cd43d-f259-475b-9757-31afbc700c40",
+        "2e5ab840-409d-4a4b-a243-d22337d0a5d2",
+        "0078c5d7-e2d2-4022-b67d-8f228ae79493",
+        "ac6d5564-0ab3-4bc8-a98a-baea7e4d93fe",
+        "db437cdc-76df-4a2e-86bd-59abf4157285",
+        "51843371-c6d5-4bb1-b7a5-e1d4493fb741",
+        "0a0dd0ba-5ba7-47f2-bfaa-86c8a1e38398",
+        "7b740e5c-3489-4fbe-9053-31559dd94292",
+        "a8563a57-7518-4d53-86c4-50b47cd8402d",
+        "83a97dd2-5a43-41ff-bbd6-18054d25b6ff",
+        "afe689bc-1aed-4e9b-a194-6c9b4e9ecdba"
+      ],
+      "settings": {
+        "pro_img_widthheight": "520x347",
+        "pro_thumb_img_widthheight": "73x49",
+        "sizechart_enable": true,
+        "size_lable": "Sizing Guide",
+        "sizechart_info": "<thead>\n                            <tr>\n                                <th scope=\"col\">Device<\/th>\n                                <th scope=\"col\">White<\/th>\n                                <th scope=\"col\">Black<\/th>\n                                <th scope=\"col\">Red<\/th>\n                                <th scope=\"col\">Green<\/th> \n                            <\/tr>\n                        <\/thead>\n                        <tbody>\n                            <tr>\n                                <td data-label=\"Device\">Chair<\/td>\n                                <td data-label=\"White\">14-14.5<\/td>\n                                <td data-label=\"Black\">15-15.5<\/td>\n                                <td data-label=\"Red\">16-16.5<\/td>\n                                <td data-label=\"Green\">17-17.5<\/td>\n                            <\/tr>\n                            <tr>\n                                <td data-label=\"Device\" class=\"bg-gray\">Moniter<\/td>\n                                <td data-label=\"White\" class=\"bg-gray\">14-14.5<\/td>\n                                <td data-label=\"Black\" class=\"bg-gray\">15-15.5<\/td>\n                                <td data-label=\"Red\" class=\"bg-gray\">16-16.5<\/td>\n                                <td data-label=\"Green\" class=\"bg-gray\">17-17.5<\/td>\n                            <\/tr>\n                            <tr>\n                                <td data-label=\"Device\">Keycaps<\/td>\n                                <td data-label=\"White\">14-14.5<\/td>\n                                <td data-label=\"Black\">15-15.5<\/td>\n                                <td data-label=\"Red\">16-16.5<\/td>\n                                <td data-label=\"Green\">17-17.5<\/td>\n                            <\/tr>\n                            <tr>\n                                <td data-label=\"Device\" class=\"bg-gray\">CPU<\/td>\n                                <td data-label=\"White\" class=\"bg-gray\">14-14.5<\/td>\n                                <td data-label=\"Black\" class=\"bg-gray\">15-15.5<\/td>\n                                <td data-label=\"Red\" class=\"bg-gray\">16-16.5<\/td>\n                                <td data-label=\"Green\" class=\"bg-gray\">17-17.5<\/td>\n                            <\/tr>\n                            <tr>\n                                <td data-label=\"Device\">Mouse<\/td>\n                                <td data-label=\"White\">14-14.5<\/td>\n                                <td data-label=\"Black\">15-15.5<\/td>\n                                <td data-label=\"Red\">16-16.5<\/td>\n                                <td data-label=\"Green\">17-17.5<\/td>\n                            <\/tr>\n                        <\/tbody>",
+        "notify_text": ""
+      }
+    },
+    "1717257222d70e1c47": {
+      "type": "apps",
+      "blocks": {
+        "judge_me_reviews_review_widget_YeNpNe": {
+          "type": "shopify:\/\/apps\/judge-me-reviews\/blocks\/review_widget\/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+          "settings": {
+          }
+        }
+      },
+      "block_order": [
+        "judge_me_reviews_review_widget_YeNpNe"
+      ],
+      "settings": {
+      }
+    },
+    "ba7a86bc-a2ce-454a-8d59-6f15f8d7036c": {
+      "type": "product-description",
+      "settings": {
+        "subtitle": "About product",
+        "title": "Description",
+        "desc": "his all-in-one kitchen product has it all: fruits and vegetables of all types, all at once. The best part? They're all healthy and nutritious, so you can enjoy them with peace of mind. Whether you're looking for fresh, summer fruit or a quick, healthy veggie salad, Fruits & Vegetables has you covered. So get cooking with Fruits & Vegetables today!",
+        "r_subtitle": "About product",
+        "r_title": "About product",
+        "r_desc": "Our selection of fresh and colorful fruits and vegetables are perfect for nourishing your body and taste buds. Whether you're looking for an easy meal to make your day or a delicious and healthy snack, our Fruits & Vegetables has you covered!"
+      }
+    },
+    "3101c802-2c5f-4994-a890-9941f8cf4ec4": {
+      "type": "shop-reivew",
+      "blocks": {
+        "3216f091-95ca-485a-b104-8b619a902e31": {
+          "type": "text",
+          "settings": {
+            "title": "Best shop on the world!",
+            "review": "4.5  \/   5.0"
+          }
+        },
+        "f7a5c581-3678-47ee-9487-7e63c6e6818e": {
+          "type": "text",
+          "settings": {
+            "title": "Perfect product on the world!",
+            "review": "4.5 \/   5.0"
+          }
+        },
+        "c5bb41fb-7d41-4d41-a185-a65541c7ddab": {
+          "type": "text",
+          "settings": {
+            "title": "Quick Customer Support!!",
+            "review": "4.5 \/   5.0"
+          }
+        }
+      },
+      "block_order": [
+        "3216f091-95ca-485a-b104-8b619a902e31",
+        "f7a5c581-3678-47ee-9487-7e63c6e6818e",
+        "c5bb41fb-7d41-4d41-a185-a65541c7ddab"
+      ],
+      "settings": {
+        "subtitle": "Daily Discounts",
+        "title": "Tailored Service for Shopper",
+        "desc": "We love organic, fresh-picked vegetables for their taste and health benefits. Fruits & Vegetables has brought you the perfect recipes for all your vegetable needs."
+      }
+    },
+    "36cf9913-d28a-4c5c-b168-b202b51fece3": {
+      "type": "bestseller-product",
+      "blocks": {
+        "f0e642bd-fc32-4c51-8bb4-a0e996320311": {
+          "type": "collection",
+          "settings": {
+            "cat_name": "All Categories",
+            "collection": "all-collection"
+          }
+        },
+        "b4d29833-6128-4fa7-aa43-7ae7b60fdd51": {
+          "type": "collection",
+          "settings": {
+            "cat_name": "Vegetables",
+            "collection": "vegetables"
+          }
+        },
+        "09e543f8-9fc2-45a8-9759-92148fd3cbc4": {
+          "type": "collection",
+          "settings": {
+            "cat_name": "Fruits",
+            "collection": "fruits"
+          }
+        },
+        "e7e95c93-4bac-4d94-9c3a-560b402c8f4f": {
+          "type": "collection",
+          "settings": {
+            "cat_name": "Accessories",
+            "collection": "accessories"
+          }
+        },
+        "8c91a792-78c4-41fd-abb0-8bdf0701de69": {
+          "type": "collection",
+          "settings": {
+            "cat_name": "Cheeses",
+            "collection": "bakers"
+          }
+        }
+      },
+      "block_order": [
+        "f0e642bd-fc32-4c51-8bb4-a0e996320311",
+        "b4d29833-6128-4fa7-aa43-7ae7b60fdd51",
+        "09e543f8-9fc2-45a8-9759-92148fd3cbc4",
+        "e7e95c93-4bac-4d94-9c3a-560b402c8f4f",
+        "8c91a792-78c4-41fd-abb0-8bdf0701de69"
+      ],
+      "settings": {
+        "title": "Our Bestsellers",
+        "show_secondary_image": false,
+        "show_vendor": true,
+        "show_review": true,
+        "show_variants": true,
+        "show_qty": true,
+        "pro_img_widthheight": "306x203"
+      }
+    },
+    "be118ccd-f319-4118-a783-b7c4e5af7830": {
+      "type": "testimonials",
+      "blocks": {
+        "09919d69-5dba-41cc-83db-a3fb28ee3b5e": {
+          "type": "text",
+          "settings": {
+            "review": "4.5   \/5.0",
+            "title": "Excellent   service!",
+            "desc": "I was so impressed with the customer service I received from [company name]. The staff was friendly and helpful, and they went above and beyond to make sure I was satisfied with my purchase.",
+            "author": "john doe",
+            "Designation": "Client",
+            "subtitle": "Basil Leaves"
+          }
+        },
+        "86535f6b-ba65-46c4-9971-0db5a1c3ca01": {
+          "type": "text",
+          "settings": {
+            "review": "4.5    \/5.0",
+            "title": "Great Products",
+            "desc": "I was hesitant to order online, but I'm so glad I did! The product arrived quickly and in perfect condition. I would definitely use [company name] again.",
+            "author": "Isabel Hanson",
+            "Designation": "SEO",
+            "subtitle": "Basil Leaves"
+          }
+        },
+        "5c27c783-a665-4ad7-8e53-bec73ab85320": {
+          "type": "text",
+          "settings": {
+            "review": "4.5   \/  5.0",
+            "title": "Great Customer Support",
+            "desc": "I'm so happy with my purchase from [company name]. The product is exactly what I was looking for, and it's even better than I expected. I would definitely recommend this company to anyone.",
+            "author": "Ewan Sharpe",
+            "Designation": "Developer",
+            "subtitle": "Basil Leaves"
+          }
+        },
+        "26208ef8-a122-421f-810b-5c73a030933b": {
+          "type": "text",
+          "settings": {
+            "review": "4.5     \/  5.0",
+            "title": "Helpful Products",
+            "desc": "Great theme with LOTS of options and GREAT support. Their support is awesome.  Great communication and service!.",
+            "author": "Sarah Williams",
+            "Designation": "Patient",
+            "subtitle": "Basil Leaves"
+          }
+        }
+      },
+      "block_order": [
+        "09919d69-5dba-41cc-83db-a3fb28ee3b5e",
+        "86535f6b-ba65-46c4-9971-0db5a1c3ca01",
+        "5c27c783-a665-4ad7-8e53-bec73ab85320",
+        "26208ef8-a122-421f-810b-5c73a030933b"
+      ],
+      "settings": {
+        "title": "Testimonials",
+        "desc": "Grocery stores are an important part of the food supply chain. They provide a convenient way for consumers to purchase a variety of food products, and they play a role in ensuring that food is safe and accessible to everyone."
+      }
+    },
+    "d437016c-526f-4f89-9504-f9b763d52f8a": {
+      "type": "featured-blog",
+      "settings": {
+        "title": "Blog & Articles",
+        "desc": "The cost of groceries can vary depending on the type of store, the location of the store, and the specific products that are purchased. In general, grocery prices are higher in urban areas than in rural areas.",
+        "blog": "food",
+        "post_limit": "5",
+        "blog_show_date": true
+      }
+    },
+    "subscription_banner_gGqWGN": {
+      "type": "subscription-banner",
+      "settings": {
+        "title": "Stay home & get your daily needs from our shop",
+        "description": "Start your daily shopping with Grocerywala",
+        "featured_img": "shopify:\/\/shop_images\/banner-featured-img.webp"
+      }
+    },
+    "grocerywala_highlights_bMjmLr": {
+      "type": "grocerywala-highlights",
+      "blocks": {
+        "highlight_Aa7VbL": {
+          "type": "highlight",
+          "settings": {
+            "icon": "<svg xmlns=\"http:\/\/www.w3.org\/2000\/svg\" width=\"33\" height=\"32\" viewbox=\"0 0 33 32\" fill=\"none\">\n<path d=\"M29.4577 16.0003C29.4577 8.63653 23.4881 2.66699 16.1243 2.66699C8.76055 2.66699 2.79102 8.63653 2.79102 16.0003C2.79102 23.3641 8.76055 29.3337 16.1243 29.3337C23.4881 29.3337 29.4577 23.3641 29.4577 16.0003Z\" stroke=\"#5B8A1D\" stroke-width=\"2\"><\/path>\n<path d=\"M26.7913 7.59873C25.5451 7.68856 23.9488 8.17107 22.8419 9.60377C20.8427 12.1916 18.8433 12.4075 17.5105 11.5449C15.5112 10.251 17.1913 8.15523 14.8448 7.01628C13.3155 6.27397 13.1023 4.25401 13.9535 2.66675\" stroke=\"#5B8A1D\" stroke-width=\"2\" stroke-linejoin=\"round\"><\/path>\n<path d=\"M2.79102 14.667C3.80768 15.5498 5.23163 16.3579 6.90934 16.3579C10.3756 16.3579 11.0688 17.0202 11.0688 19.6694C11.0688 22.3186 11.0688 22.3186 11.7621 24.3054C12.213 25.5978 12.3706 26.8902 11.4718 28.0003\" stroke=\"#5B8A1D\" stroke-width=\"2\" stroke-linejoin=\"round\"><\/path>\n<path d=\"M29.4577 17.9365C28.2749 17.2549 26.791 16.9745 25.2889 18.0541C22.4146 20.1199 20.4329 18.4081 19.5402 20.1187C18.2263 22.6368 22.9186 23.4283 18.791 29.3335\" stroke=\"#5B8A1D\" stroke-width=\"2\" stroke-linejoin=\"round\"><\/path>\n<\/svg>",
+            "title": "20+ YEARS IN GLOBAL TRADE"
+          }
+        },
+        "highlight_dpAjza": {
+          "type": "highlight",
+          "settings": {
+            "icon": "<svg xmlns=\"http:\/\/www.w3.org\/2000\/svg\" width=\"33\" height=\"32\" viewbox=\"0 0 33 32\" fill=\"none\">\n<path d=\"M29.7087 16.0001C29.7087 8.63628 23.7391 2.66675 16.3753 2.66675C9.01153 2.66675 3.04199 8.63628 3.04199 16.0001C3.04199 23.3638 9.01153 29.3334 16.3753 29.3334C23.7391 29.3334 29.7087 23.3638 29.7087 16.0001Z\" stroke=\"#5B8A1D\" stroke-width=\"2\"><\/path>\n<path d=\"M11.042 17.0001C11.042 17.0001 13.1753 18.2167 14.242 20.0001C14.242 20.0001 17.442 13.0001 21.7087 10.6667\" stroke=\"#5B8A1D\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><\/path>\n<\/svg>",
+            "title": "PROVEN TRUST AND RELIABILITY"
+          }
+        },
+        "highlight_GGYxym": {
+          "type": "highlight",
+          "settings": {
+            "icon": "<svg xmlns=\"http:\/\/www.w3.org\/2000\/svg\" width=\"33\" height=\"32\" viewbox=\"0 0 33 32\" fill=\"none\">\n<path d=\"M19.9587 11.9998C19.9587 13.8408 18.4663 15.3332 16.6253 15.3332C14.7844 15.3332 13.292 13.8408 13.292 11.9998C13.292 10.1589 14.7844 8.6665 16.6253 8.6665C18.4663 8.6665 19.9587 10.1589 19.9587 11.9998Z\" stroke=\"#5B8A1D\" stroke-width=\"2\"><\/path>\n<path d=\"M18.3019 23.3246C17.8521 23.7577 17.2511 23.9998 16.6256 23.9998C16 23.9998 15.3989 23.7577 14.9492 23.3246C10.8311 19.3342 5.31225 14.8765 8.00361 8.40481C9.45879 4.9056 12.9519 2.6665 16.6256 2.6665C20.2992 2.6665 23.7923 4.90561 25.2475 8.40481C27.9355 14.8684 22.4301 19.348 18.3019 23.3246Z\" stroke=\"#5B8A1D\" stroke-width=\"2\"><\/path>\n<path d=\"M24.625 26.6667C24.625 28.1395 21.0433 29.3334 16.625 29.3334C12.2067 29.3334 8.625 28.1395 8.625 26.6667\" stroke=\"#5B8A1D\" stroke-width=\"2\" stroke-linecap=\"round\"><\/path>\n<\/svg>",
+            "title": "STRIVING IN 10+ EU COUNTRIES"
+          }
+        },
+        "highlight_WGC7jM": {
+          "type": "highlight",
+          "settings": {
+            "icon": "<svg xmlns=\"http:\/\/www.w3.org\/2000\/svg\" width=\"33\" height=\"32\" viewbox=\"0 0 33 32\" fill=\"none\">\n<path d=\"M26.8747 23.3333C26.8747 25.1743 25.3823 26.6667 23.5413 26.6667C21.7004 26.6667 20.208 25.1743 20.208 23.3333C20.208 21.4924 21.7004 20 23.5413 20C25.3823 20 26.8747 21.4924 26.8747 23.3333Z\" stroke=\"#5B8A1D\" stroke-width=\"2\"><\/path>\n<path d=\"M13.5417 23.3333C13.5417 25.1743 12.0493 26.6667 10.2083 26.6667C8.36739 26.6667 6.875 25.1743 6.875 23.3333C6.875 21.4924 8.36739 20 10.2083 20C12.0493 20 13.5417 21.4924 13.5417 23.3333Z\" stroke=\"#5B8A1D\" stroke-width=\"2\"><\/path>\n<path d=\"M20.2077 23.3335H13.541M3.54102 5.3335H16.8743C18.7599 5.3335 19.7027 5.3335 20.2886 5.91928C20.8743 6.50507 20.8743 7.44788 20.8743 9.3335V20.6668M21.541 8.66683H23.9429C25.0491 8.66683 25.6022 8.66683 26.0607 8.92643C26.5191 9.18603 26.8038 9.6603 27.3729 10.6088L29.6377 14.3835C29.9209 14.8555 30.0625 15.0916 30.1351 15.3536C30.2077 15.6156 30.2077 15.8908 30.2077 16.4415V20.0002C30.2077 21.2463 30.2077 21.8694 29.9397 22.3335C29.7642 22.6375 29.5117 22.89 29.2077 23.0655C28.7435 23.3335 28.1205 23.3335 26.8743 23.3335M3.54102 17.3335V20.0002C3.54102 21.2463 3.54102 21.8694 3.80896 22.3335C3.9845 22.6375 4.23698 22.89 4.54102 23.0655C5.00512 23.3335 5.62819 23.3335 6.87435 23.3335\" stroke=\"#5B8A1D\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><\/path>\n<path d=\"M3.54102 9.3335H11.541M3.54102 13.3335H8.87435\" stroke=\"#5B8A1D\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><\/path>\n<\/svg>",
+            "title": "EXPRESS DELIVERY & FORMALITIES"
+          }
+        }
+      },
+      "block_order": [
+        "highlight_Aa7VbL",
+        "highlight_dpAjza",
+        "highlight_GGYxym",
+        "highlight_WGC7jM"
+      ],
+      "settings": {
+        "y_axis_offset": 25
+      }
+    }
+  },
+  "order": [
+    "main",
+    "1717257222d70e1c47",
+    "ba7a86bc-a2ce-454a-8d59-6f15f8d7036c",
+    "3101c802-2c5f-4994-a890-9941f8cf4ec4",
+    "36cf9913-d28a-4c5c-b168-b202b51fece3",
+    "be118ccd-f319-4118-a783-b7c4e5af7830",
+    "d437016c-526f-4f89-9504-f9b763d52f8a",
+    "subscription_banner_gGqWGN",
+    "grocerywala_highlights_bMjmLr"
+  ]
+}

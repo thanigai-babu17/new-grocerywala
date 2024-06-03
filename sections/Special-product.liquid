@@ -1,0 +1,231 @@
+<div class="container">
+  <div class="section-title d-flex align-items-center justify-content-between">
+    <h2 class="title">{{ section.settings.title }}</h2>
+  </div>
+  <div class="row row-gap">
+    <div class="col-xl-6 col-lg-5 col-md-4 col-12">
+      <div class="category-card">
+        <div class="category-img">
+          <img src="{{ section.settings.img | img_url: 'master' }}" alt="vegetables-2">
+        </div>
+        <div class="category-card-body">
+          <div class="title-wrapper">
+            <h4 class="title">{{ section.settings.bnr_title }}</h4>
+          </div>
+          <p>{{ section.settings.bnr_desc }}</p>
+          <div class="btn-wrapper">
+            <a href="{{ section.settings.bnr_btn_url }}" class="btn">
+              {{ section.settings.bnr_btn }} 
+              <svg xmlns="http://www.w3.org/2000/svg" width="4" height="6" viewBox="0 0 4 6" fill="none">
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                  d="M0.65976 0.662719C0.446746 0.879677 0.446746 1.23143 0.65976 1.44839L2.18316 3L0.65976 4.55161C0.446747 4.76856 0.446747 5.12032 0.65976 5.33728C0.872773 5.55424 1.21814 5.55424 1.43115 5.33728L3.34024 3.39284C3.55325 3.17588 3.55325 2.82412 3.34024 2.60716L1.43115 0.662719C1.21814 0.445761 0.872773 0.445761 0.65976 0.662719Z"
+                  fill="white"></path>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-xl-6 col-lg-7 col-md-8 col-12">
+      <div class="product-row loved-category-slider">
+        {%- assign collection = collections[section.settings.collection]  -%}
+        {% for product in collection.products %}
+          <div class="product-card grid__item card">
+            {% render 'card-product', card_product: product, pro_img_widthheight: section.settings.pro_img_widthheight, show_secondary_image: section.settings.show_secondary_image,
+            show_vendor: section.settings.show_vendor,show_review: section.settings.show_review,show_qty: section.settings.show_qty, show_variants: section.settings.show_variants %}
+          </div>
+        {% else %}
+          {%- for i in (1..5) -%}
+          <div class="product-card grid__item card">
+              <h3>Please Select The Collection</h3>
+          </div>
+          {%- endfor -%}
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+  <div class="loved-product padding-top">
+    <div class="section-title d-flex align-items-start justify-content-between">
+      <div class="left-side">
+        <h2 class="title">{{ section.settings.b_title }}</h2>
+        <div class="section-desc">
+            <p>{{ section.settings.b_desc }}</p>
+        </div>
+      </div>
+      <a href="{{ section.settings.b_btn_url }}" class="btn">
+        {{ section.settings.b_btn }}
+        <svg xmlns="http://www.w3.org/2000/svg" width="4" height="6" viewBox="0 0 4 6" fill="none">
+          <path fill-rule="evenodd" clip-rule="evenodd"
+          d="M0.65976 0.662719C0.446746 0.879677 0.446746 1.23143 0.65976 1.44839L2.18316 3L0.65976 4.55161C0.446747 4.76856 0.446747 5.12032 0.65976 5.33728C0.872773 5.55424 1.21814 5.55424 1.43115 5.33728L3.34024 3.39284C3.55325 3.17588 3.55325 2.82412 3.34024 2.60716L1.43115 0.662719C1.21814 0.445761 0.872773 0.445761 0.65976 0.662719Z"
+          fill="white"></path>
+        </svg>
+      </a>
+    </div>
+    <div class="row row-gap">
+      {%- for block in section.blocks -%}
+      {%- assign product = block.settings.product -%} 
+      {% if block.settings.product != blank %}
+        <div class="col-lg-4 col-md-4 col-12">
+          <div class="grid__item category-card card">
+            <div class="category-img">
+              <img src="{{ block.settings.img | img_url: 'master' }}" alt="dragon fruit">
+            </div>
+            {% render 'bnr-card-product', card_product: product, show_vendor: section.settings.sh_vendor,show_review: section.settings.sh_review %}
+          </div>
+        </div>
+      {% endif %}
+      {%- endfor -%}
+    </div>
+  </div>
+</div>
+{% schema %}
+{
+  "name": "t:settings_schema.common-section.spe_pro",
+  "tag": "section",
+  "class": "padding-bottom padding-top loved-category",
+  "settings": [
+    {
+      "type": "header",
+      "content": "Top Content"
+    },
+    {
+      "type": "text",
+      "id": "title",
+      "label": "t:settings_schema.common.settings.title"
+    },
+    {
+      "type": "header",
+      "content": "Banner"
+    },
+    {
+      "type": "text",
+      "id": "bnr_title",
+      "label": "t:settings_schema.common.settings.title"
+    },
+    {
+      "type": "text",
+      "id": "bnr_desc",
+      "label": "t:settings_schema.common.settings.desc"
+    },
+    {
+      "type": "url",
+      "id": "bnr_btn_url",
+      "label": "t:settings_schema.common.settings.btn_url"
+    },
+    {
+      "type": "text",
+      "id": "bnr_btn",
+      "label": "t:settings_schema.common.settings.btn"
+    },
+    {
+      "type": "image_picker",
+      "id": "img",
+      "label": "t:settings_schema.common.settings.img"
+    },
+    {
+      "type": "header",
+      "content": "t:settings_schema.common.settings.pro_set"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_secondary_image",
+      "default": false,
+      "label": "t:settings_schema.common.settings.pro_hvr_img"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_vendor",
+      "default": false,
+      "label": "t:settings_schema.common.settings.sh_ven"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_review",
+      "default": true,
+      "label": "t:settings_schema.common.settings.sh_rev"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_variants",
+      "default": true,
+      "label": "t:settings_schema.common.settings.sh_var"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_qty",
+      "default": true,
+      "label": "t:settings_schema.common.settings.sh_qty"
+    },
+    {
+      "type": "text",
+      "id": "pro_img_widthheight",
+      "default": "600x600",
+      "label": "t:settings_schema.common.settings.width_height"
+    },
+    {
+      "type": "collection",
+      "id": "collection",
+      "label": "t:settings_schema.common.settings.sec_coll"
+    },
+    {
+      "type": "header",
+      "content": "Bottom Content"
+    },
+    {
+      "type": "checkbox",
+      "id": "sh_vendor",
+      "default": false,
+      "label": "t:settings_schema.common.settings.sh_ven"
+    },
+    {
+      "type": "checkbox",
+      "id": "sh_review",
+      "default": true,
+      "label": "t:settings_schema.common.settings.sh_rev"
+    },
+    {
+      "type": "text",
+      "id": "b_title",
+      "label": "t:settings_schema.common.settings.title"
+    },
+    {
+      "type": "text",
+      "id": "b_desc",
+      "label": "t:settings_schema.common.settings.desc"
+    },
+    {
+      "type": "url",
+      "id": "b_btn_url",
+      "label": "t:settings_schema.common.settings.btn_url"
+    },
+    {
+      "type": "text",
+      "id": "b_btn",
+      "label": "t:settings_schema.common.settings.btn"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "collection",
+      "name": "Product Image",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "img",
+          "label": "t:settings_schema.common.settings.img"
+        },
+        {
+          "type": "product",
+          "id": "product",
+          "label": "t:settings_schema.common.settings.sec_pro"
+        }
+      ]
+    }
+  ],
+"presets": [
+    {
+      "name": "t:settings_schema.common-section.spe_pro"
+    }
+]
+}
+{% endschema %}

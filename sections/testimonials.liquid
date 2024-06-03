@@ -1,0 +1,114 @@
+<div class="container">
+    <div class="row align-items-center row-gap">
+        <div class="col-md-6 col-lg-4 col-12">
+            <div class="testimonials-left-inner">
+                <div class="section-title">
+                    <h2 class="title">{{ section.settings.title }}</h2>
+                </div>
+                <p>{{ section.settings.desc }}</p>
+            </div>
+        </div>
+        <div class="col-md-6 col-lg-8 col-12">
+            <div class="review-slider">
+                {%- for block in section.blocks -%}
+                    <div class="testimonials-card">
+                        <div class="reviews-stars-wrap d-flex align-items-center">
+                            <div class="reviews-stars-outer">
+                                <img src="{{ block.settings.img | img_url: 'master' }}" class="review-stars">
+                            </div>
+                            <div class="point-wrap">
+                                <span class="review-point">{{ block.settings.review }}</span>
+                            </div>
+                        </div>
+                        <div class="reviews-words">
+                            <h4 class="main-word">{{ block.settings.title }}</h4>
+                            <p>{{ block.settings.desc }}</p>
+                        </div>
+                        <div class="reviewer-profile">
+                            <div class="reviewer-img">
+                                <img src="{{ block.settings.pro_img | img_url: 'master' }}" alt="reviewer-img">
+                            </div>
+                            <div class="reviewer-desc">
+                                <span><b>{{ block.settings.author }},</b> {{ block.settings.Designation }}</span>
+                                <p>about <a href="#" tabindex="0">{{ block.settings.subtitle }}</a></p>
+                            </div>
+                        </div>
+                    </div>
+                {%- endfor -%}
+            </div>
+        </div>
+    </div>
+</div>
+{% schema %}
+{
+  "name": "t:settings_schema.testimonial.name",
+  "tag": "section",
+  "class": "testimonials padding-bottom padding-top",
+  "max_blocks": 7,
+  "settings": [
+    {
+      "type": "text",
+      "id": "title",
+      "label": "t:settings_schema.common.settings.title"
+    },
+    {
+      "type": "text",
+      "id": "desc",
+      "label": "t:settings_schema.common.settings.desc"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "text",
+      "name": "Testimonial",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "img",
+          "label": "t:settings_schema.testimonial.settings.str_img"
+        },
+        {
+          "type": "text",
+          "id": "review",
+          "label": "t:settings_schema.testimonial.settings.review"
+        },
+        {
+          "type": "text",
+          "id": "title",
+          "label": "t:settings_schema.common.settings.title"
+        },
+        {
+          "type": "textarea",
+          "id": "desc",
+          "label": "t:settings_schema.testimonial.settings.desc"
+        },
+        {
+          "type": "image_picker",
+          "id": "pro_img",
+          "label": "t:settings_schema.testimonial.settings.img"
+        },
+        {
+          "type": "text",
+          "id": "author",
+          "label": "t:settings_schema.testimonial.settings.aut_name"
+        },
+        {
+          "type": "text",
+          "id": "Designation",
+          "label": "t:settings_schema.testimonial.settings.aut_design"
+        },
+        {
+          "type": "text",
+          "id": "subtitle",
+          "label": "t:settings_schema.common.settings.subtitle"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "t:settings_schema.testimonial.name"
+    }
+  ]
+}
+{% endschema %}

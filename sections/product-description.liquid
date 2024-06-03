@@ -1,0 +1,74 @@
+<div class="container">
+  <div class="row row-gap">
+    <div class="col-md-6 col-12">
+      <div class="pro-descrip-contente-left">
+        <div class="section-title">
+          <div class="badge">{{ section.settings.subtitle }}</div>
+          <h2>{{ section.settings.title }}</h2>
+        </div>
+        <p>{{ section.settings.desc }}</p>
+      </div>
+    </div>
+    <div class="col-md-6 col-12">
+      <div class="pro-descrip-contente-right">
+        <div class="section-title">
+          <div class="badge">{{ section.settings.r_subtitle }}</div>
+          <h2>{{ section.settings.r_title }}</h2>
+        </div>
+        <p>{{ section.settings.r_desc }}</p>
+      </div>
+    </div>
+  </div>
+</div>
+{% schema %}
+{
+  "name": "t:settings_schema.common-section.pro_desc",
+  "tag": "section",
+  "class": "product-description-section padding-top",
+  "settings": [
+    {
+      "type": "header",
+      "content": "Left Content"
+    },
+    {
+      "type": "text",
+      "id": "subtitle",
+      "label": "t:settings_schema.common.settings.subtitle"
+    },
+    {
+      "type": "text",
+      "id": "title",
+      "label": "t:settings_schema.common.settings.title"
+    },
+    {
+      "type": "text",
+      "id": "desc",
+      "label": "t:settings_schema.common.settings.desc"
+    },
+    {
+      "type": "header",
+      "content": "Right Content"
+    },
+        {
+      "type": "text",
+      "id": "r_subtitle",
+      "label": "t:settings_schema.common.settings.subtitle"
+    },
+    {
+      "type": "text",
+      "id": "r_title",
+      "label": "t:settings_schema.common.settings.title"
+    },
+    {
+      "type": "text",
+      "id": "r_desc",
+      "label": "t:settings_schema.common.settings.desc"
+    }
+  ],
+"presets": [
+    {
+      "name": "t:settings_schema.common-section.pro_desc"
+    }
+]
+}
+{% endschema %}

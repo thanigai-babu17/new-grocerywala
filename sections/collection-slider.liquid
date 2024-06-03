@@ -1,0 +1,122 @@
+<style>
+  .collection-slider__container {
+    overflow: hidden;
+  }
+
+  .collection-slider__header {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 26px;
+  }
+
+  .collection-slider__swiper .collection-slide {
+    max-width: 316px;
+  }
+
+  .collection-slider__swiper .collection-slide .product-card-inner.card-inner{
+    height: 100%;
+  }
+
+
+  @media screen and (max-width: 767px) {
+    .collection-slider__swiper .collection-slide {
+      max-width: 265px;
+    }
+  }
+</style>
+
+<div class="collection-slider__wrap">
+  <div class="collection-slider__container container padding-bottom">
+    <div class="collection-slider__header">
+      <h3 class="collection-slider__title">
+        {{ section.settings.title }}
+      </h3>
+      {% if section.settings.show_cta %}
+        <a href="{{ section.settings.featured_collection.url }}" class="btn btn--secondary btn--lg btn--arrow">
+          {{ section.settings.cta_label }}
+          {% render 'icon', icon: 'right-arrow' %}
+        </a>
+      {% endif %}
+    </div>
+    <div class="collection-slider__swiper">
+      <div class="swiper-wrapper">
+        {% for product in section.settings.featured_collection.products limit: section.settings.product_limit %}
+          <div class="collection-slide swiper-slide">
+            {% render 'card-product',
+              card_product: product,
+              pro_img_widthheight: '600x400',
+              show_secondary_image: false,
+              show_vendor: true,
+              show_review: true,
+              show_qty: false,
+              show_variants: true
+            %}
+          </div>
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    const swiper = new Swiper('.collection-slider__swiper', {
+      speed: 400,
+      spaceBetween: 18,
+      slidesPerView: 'auto',
+      slidesPerGroup: 1,
+      slideShadows: true,
+      breakpoints: {
+        1200: {
+          slidesPerView: 4,
+          spaceBetween: 40,
+        },
+        767: {
+          slidesPerView: 3,
+        },
+      },
+    });
+  });
+</script>
+
+{% schema %}
+{
+  "name": "Collection Slider",
+  "settings": [
+    {
+      "type": "text",
+      "label": "Title",
+      "id": "title"
+    },
+    {
+      "type": "text",
+      "default": "Show more",
+      "id": "cta_label",
+      "label": "CTA Label"
+    },
+    {
+      "type": "checkbox",
+      "label": "Show CTA",
+      "id": "show_cta"
+    },
+    {
+      "type": "collection",
+      "label": "Featured Collection",
+      "id": "featured_collection"
+    },
+    {
+      "type": "number",
+      "label": "Product Limit",
+      "id": "product_limit",
+      "default": 6
+    }
+  ],
+  "presets": [
+    {
+      "name": "Collection Slider"
+    }
+  ]
+}
+{% endschema %}

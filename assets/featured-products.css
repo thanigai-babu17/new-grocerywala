@@ -1,0 +1,122 @@
+.featured-products__wrap {
+	padding: 80px 3px;
+    position: relative;
+}
+
+.featured-products__fluid-container{
+    display: flex;
+    align-items: stretch;
+    gap: 46px;
+    position: relative;
+    z-index: 1;
+}
+
+.featured-products__card{
+    min-height: 469px;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    flex-basis: 45%;
+    border-radius: 12px;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.featured-products__card-content{
+    display: flex;
+    flex-direction: column;
+    max-width: 520px;
+    gap: 18px;
+    padding: 18px;
+    z-index: 1;
+    color: #F2F7F8;
+}
+
+.featured-products__card-img{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    display: flex;
+    transition: transform 3s ease;
+}
+
+.featured-products__card:hover .featured-products__card-img{
+    transform: scale(1.2);
+}
+
+.featured-products__card-img img{
+    width: 100%;
+    object-fit: cover;
+}
+
+.featured-products__wrap.section-theme--dark{
+	background-color: var(--theme-color-dark);
+}
+
+.featured-products__wrap.section-theme--light{
+	background-color: var(--theme-color-light);
+}
+
+.featured-products__card-description{
+    font-size: 16px;
+    line-height: 1.5625;
+}
+
+.pattern-img-left-top{
+    position: absolute;
+    left: 0;
+    top: 25px;
+    max-width: 157px;
+    z-index: 0;
+}
+
+.pattern-img-right-bottom{
+    position: absolute;
+    right: 0;
+    bottom: 18px;
+    max-width: 120px;
+    z-index: 0;
+}
+
+@media screen and (max-width:998px) {
+    .featured-products__wrap{
+        padding: 80px 18px;
+    }
+
+    .featured-products__fluid-container{
+        gap: 36px;
+    }
+}
+
+@media screen and (max-width:998px) {
+    .featured-products__fluid-container{
+        flex-direction: column;
+    }
+}
+
+.featured-products__content{
+    flex-basis: 55%;
+    overflow: hidden;
+}
+
+.featured-products__content-title{
+    padding-bottom: 28px;
+    font: var(--h3);
+}
+
+.featured-products__product-card__slide{
+	max-width: 366px;
+    height: auto;
+}
+
+@media screen and (max-width:767px) {
+    .featured-products__product-card__slide{
+        max-width: 266px;
+    }
+}
+
+.featured-products__product-card__slide .product-card-inner{
+    height: 100%;
+}

@@ -1,0 +1,49 @@
+<div class="brand-slider__wrap">
+    <div class="brand-slider__fluid-container">
+        <h3 class="brand-slider__title">
+            {{ section.settings.title }}
+        </h3>
+        <div class="brand-slider">
+            {% for block in section.blocks %}
+                {% if block.type == 'brand_slide' %}
+                    <div class="brand-slide" >
+                        <div class="brand-slide__img" style="background-image:url({{ block.settings.featured_img | img_url: 'master' }});"></div>
+                    </div>
+                {% endif %}
+            {% endfor %}
+        </div>
+    </div>
+</div>
+
+{% schema %}
+{
+  "name": "Brand Slider",
+  "class": "padding-bottom",
+  "settings": [
+    {
+      "type": "text",
+      "id": "title",
+      "default": "Top Brands",
+      "label": "Section title"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "brand_slide",
+      "name": "Brand Slide",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "featured_img",
+          "label": "Banner Featured Image"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+        "name": "Brand Slider"
+    }
+  ]
+}
+{% endschema %}

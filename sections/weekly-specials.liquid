@@ -1,0 +1,119 @@
+{{ 'weekly-specials.css' | asset_url | stylesheet_tag }}
+
+<div class="weekly-specials__wrap">
+  <div class="weekly-specials__container container">
+    <h3 class="weekly-specials__title">
+      {{ section.settings.title }}
+    </h3>
+    <div class="weekly-specials__slider">
+      <div class="swiper-wrapper">
+        {% for block in section.blocks %}
+          {% if block.type == 'specials' %}
+            <div class="weekly-specials__slide swiper-slide" style="background: {{ block.settings.background }};">
+              {% if block.settings.brand_logo != blank %}
+                <div
+                  class="weekly-specials__slide-logo"
+                  style="background-image: url({{ block.settings.brand_logo |  img_url: 'master' }});"
+                ></div>
+              {% endif %}
+              <h3 class="weekly-specials__slide-text">
+                {{ block.settings.content }}
+              </h3>
+              <div class="weekly-specials__slide-link">
+                <a href="{{ block.settings.cta_url }}" class="btn btn--white btn--lg btn--arrow">
+                  {{ block.settings.cta_label }}
+                  {% render 'icon', icon: 'right-arrow' %}
+                </a>
+              </div>
+              <div class="weekly-specials__slide-featued-img">
+                <img
+                  src="{{ block.settings.featured_img |  img_url: 'master' }}"
+                  loading="lazy"
+                  alt="{{ block.settings.featured_img.alt }}"
+                >
+              </div>
+            </div>
+          {% endif %}
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    const swiper = new Swiper('.weekly-specials__slider', {
+      speed: 600,
+      spaceBetween: 30,
+      slidesPerView: 'auto',
+      slidesPerGroup: 1,
+      slideShadows: true,
+      breakpoints: {
+        768: {
+          slidesPerView: 3,
+        },
+      },
+    });
+  });
+</script>
+
+{% schema %}
+{
+  "name": "Weekly Specials",
+  "class": "padding-bottom",
+  "settings": [
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Section Title",
+      "default": "Weekly Specials"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "specials",
+      "name": "Specials",
+      "limit": 3,
+      "settings": [
+        {
+          "type": "color_background",
+          "id": "background",
+          "label": "Slide Background",
+          "default": "linear-gradient(180deg, rgba(236, 191, 32, 0.9) 0%, rgba(197, 122, 9, 0.9) 100%)"
+        },
+        {
+          "type": "image_picker",
+          "id": "brand_logo",
+          "label": "Brand Logo"
+        },
+        {
+          "type": "textarea",
+          "id": "content",
+          "label": "Text Content"
+        },
+        {
+          "type": "text",
+          "id": "cta_label",
+          "label": "CTA Label",
+          "default": "Shop Now"
+        },
+        {
+          "type": "url",
+          "id": "cta_url",
+          "label": "CTA URL"
+        },
+        {
+          "type": "image_picker",
+          "id": "featured_img",
+          "label": "Featured Image"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Weekly Specials"
+    }
+  ]
+}
+{% endschema %}

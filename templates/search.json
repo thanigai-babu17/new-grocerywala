@@ -1,0 +1,25 @@
+{
+  "sections": {
+    "main-page": {
+      "type": "main-page",
+      "settings": {
+        "description": "I apologize, but it seems like your request is incomplete. Could you please provide more information or clarify what you are looking for? Are you asking for a description of a search page in general, or is there a specific context or topic you would like me to focus on?"
+      }
+    },
+    "main": {
+      "type": "main-search",
+      "settings": {
+        "show_secondary_image": false,
+        "show_vendor": true,
+        "show_review": true,
+        "show_variants": true,
+        "show_qty": true,
+        "pro_img_widthheight": "306x203"
+      }
+    }
+  },
+  "order": [
+    "main-page",
+    "main"
+  ]
+}

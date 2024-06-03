@@ -1,0 +1,47 @@
+{%- paginate blog.articles by 4 -%}
+  <div class="container">
+    <div class="section-title">
+      <div class="blog-title">
+        <span>ALL  PRODUCTS</span>
+        <h2>{{ blog.title | escape }}</h2>
+      </div>
+    </div>
+    <div class="row blog-grid">
+      {%- for article in blog.articles -%}
+        <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12 blog-widget">
+          {%- render 'article-card', article: article, show_image: section.settings.show_image, show_date: section.settings.show_date, show_author: section.settings.show_author, show_excerpt: true  -%}
+        </div>
+      {%- endfor -%}
+    </div>
+    {%- if paginate.pages > 1 -%}
+      {%- render 'pagination', paginate: paginate -%}
+    {%- endif -%}
+  </div>
+{%- endpaginate -%}
+{% schema %}
+{
+  "name": "t:settings_schema.blog.name",
+  "tag": "section",
+  "class": "blog-grid-section padding-top padding-bottom",
+  "settings": [
+    {
+      "type": "checkbox",
+      "id": "show_image",
+      "default": true,
+      "label": "t:settings_schema.blog.s_blog_img"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_date",
+      "default": true,
+      "label": "t:settings_schema.blog.s_date"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_author",
+      "default": false,
+      "label": "t:settings_schema.blog.s_author"
+    }
+  ]
+}
+{% endschema %}

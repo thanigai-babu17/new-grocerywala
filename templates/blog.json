@@ -1,0 +1,22 @@
+{
+  "sections": {
+    "main-page": {
+      "type": "main-page",
+      "settings": {
+        "description": "Food is any substance consumed by living organisms to provide energy, nutrients, and nourishment for growth, maintenance, and overall well-being. It is essential for the survival and proper functioning of the human body."
+      }
+    },
+    "main": {
+      "type": "main-blog",
+      "settings": {
+        "show_image": true,
+        "show_date": true,
+        "show_author": false
+      }
+    }
+  },
+  "order": [
+    "main-page",
+    "main"
+  ]
+}

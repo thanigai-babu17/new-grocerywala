@@ -1,0 +1,38 @@
+{% if show_recent_articles %}
+  <div class="articlerightbar">
+    <div class="section-title">
+        <h3>{{ 'blogs.sidebar.recent_articles' | t }}</h3>
+    </div> 
+    <div class="row blog-grid">
+      {% for article in blogs[blog.handle].articles limit: 2 %}
+        <div class="blog-widget col-md-12 col-sm-6 col-12">
+          <div class="blog-widget-inner">
+            <div class="blog-media">
+              {% assign image_alt = article.title | escape %}
+              <span class="new-labl bg-second">{{ blog.handle }}</span>
+              <a href="{{ article.url }}" class="img-wraper">
+                {{ article | img_url: '450x' | img_tag: image_alt }}
+              </a>
+            </div>
+             <div class="blog-caption">
+                <h4><a href="{{ article.url }}">{{ article.title | escape }}</a></h4>
+                <p>{% if article.excerpt.size > 0 %}{{ article.excerpt }}{% else %}{{ article.content | strip_html }}{% endif %}</p>
+                <div class="blog-lbl-row d-flex align-items-center justify-content-between">
+                  <a class="btn blog-btn" href="{{ article.url }}">
+                      Read more
+                      <svg xmlns="http://www.w3.org/2000/svg" width="3" height="6" viewBox="0 0 3 6" fill="none">
+                          <path fill-rule="evenodd" clip-rule="evenodd" d="M0.15976 0.662719C-0.0532536 0.879677 -0.0532536 1.23143 0.15976 1.44839L1.68316 3L0.15976 4.55161C-0.0532533 4.76856 -0.0532532 5.12032 0.15976 5.33728C0.372773 5.55424 0.718136 5.55424 0.931149 5.33728L2.84024 3.39284C3.05325 3.17588 3.05325 2.82412 2.84024 2.60716L0.931149 0.662719C0.718136 0.445761 0.372773 0.445761 0.15976 0.662719Z" fill="white"/>
+                          </svg>
+                  </a>
+                  <div class="author-info">
+                      <strong class="auth-name">{{ article.author | split: ' ' | first }},</strong>
+                      <span class="date">{{ article.published_at | time_tag: format: 'date' }}</span>
+                  </div>
+                </div>
+             </div>
+          </div>
+       </div>
+      {% endfor %}
+    </div>
+  </div>
+{% endif %}

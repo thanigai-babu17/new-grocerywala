@@ -1,0 +1,164 @@
+<style>
+  .slider-testimonial__title {
+    text-align: center;
+  }
+
+  .testimonial-slider__parent.padding-bottom{
+    padding-bottom: 36px;
+  }
+
+  .testimonial-slide {
+    background-color: var(--white);
+    box-shadow: 12px 16px 44px 0 #0000000A;
+    border-radius: 12px;
+    display: flex;
+    text-align: center;
+    padding: 32px;
+    position: relative;
+    transform: scale(0.9);
+    transition: all 0.3s ease;
+    opacity: 0.8;
+  }
+
+  .testimonial-slide.slick-cloned {
+    transition: all 0.3s ease;
+  }
+
+  .testimonial-slide.slick-current.slick-active.slick-center {
+    transform: scale(1);
+    opacity: 1;
+  }
+
+  .slider-testimonial__slider .slick-track{
+    padding-block: 56px;
+  }
+
+  .slider-testimonial__slider .slick-slide {
+    margin-left: 12px;
+  }
+
+  .slider-testimonial__slider .slick-list {
+    margin-left: -12px;
+  }
+
+  .testimonial-slide__img {
+    max-width: 80px;
+    margin-inline: auto;
+    padding-bottom: 12px;
+  }
+
+  .testimonial-slide__img img {
+    aspect-ratio: 1 / 1;
+  }
+
+  .testimonial-slide__feedback {
+    max-width: 430px;
+    margin-inline: auto;
+    font-size: 16px;
+    line-height: 1.625;
+  }
+
+  .testimonial-slide__name {
+    padding-bottom: 18px;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 1.444;
+  }
+
+  @media screen and (max-width:600px) {
+    .testimonial-slide{
+        padding: 18px;
+    }
+
+    .testimonial-slide__img{
+        max-width: 50px;
+        padding-bottom: 4px;
+    }
+
+    .testimonial-slide__name{
+        padding-bottom: 4px;
+        font-size: 16px;
+    }
+
+    .testimonial-slide__feedback {
+        font-size: 14px;
+    }
+
+    .slider-testimonial__slider .slick-track{
+        padding-block: 36px;
+    }
+
+    .testimonial-slide{
+        box-shadow: none;
+    }
+  }
+</style>
+
+<div class="slider-testimonial__wrap">
+  <div class="slider-testimonial__fluid-container">
+    <h3 class="slider-testimonial__title">
+      {{ section.settings.title }}
+    </h3>
+    <div class="slider-testimonial__slider">
+      {% for block in section.blocks %}
+        {% if block.type == 'testimonial' %}
+          <div class="testimonial-slide">
+            <div class="testimonial-slide__img">
+              <img
+                src="{{ block.settings.customer_avatar |  img_url: 'master' }}"
+                loading="lazy"
+                alt="{{ block.settings.customer_avatar.alt }}">
+            </div>
+            <div class="testimonial-slide__name">
+              {{ block.settings.customer_name }}
+            </div>
+            <div class="testimonial-slide__feedback">
+              {{ block.settings.customer_text }}
+            </div>
+          </div>
+        {% endif %}
+      {% endfor %}
+    </div>
+  </div>
+</div>
+
+{% schema %}
+  {
+    "name": "Slider Testimonial",
+    "class": "testimonial-slider__parent padding-bottom",
+    "settings": [
+      {
+        "type": "text",
+        "id": "title",
+        "label": "Section title",
+        "default": "People sayings"
+      }
+    ],
+    "blocks": [
+      {
+        "type": "testimonial",
+        "name": "Testimonial",
+        "settings": [
+          {
+            "type": "text",
+            "id": "customer_name",
+            "label": "Customer Name"
+          }, {
+            "type": "image_picker",
+            "id": "customer_avatar",
+            "label": "Customer Avatar"
+          }, {
+            "type": "textarea",
+            "id": "customer_text",
+            "label": "Customer Feekback"
+          }
+        ]
+      }
+    ],
+    "presets": [
+      {
+        "name": "Slider Testimonial"
+      }
+    ]
+  }
+{% endschema %}

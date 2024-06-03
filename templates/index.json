@@ -1,0 +1,437 @@
+{
+  "sections": {
+    "sale_banner_slider_gYAWg8": {
+      "type": "sale-banner-slider",
+      "blocks": {
+        "slide_PkeVhX": {
+          "type": "slide",
+          "settings": {
+            "desktop_img": "shopify:\/\/shop_images\/sale-banner-desk.webp",
+            "mobile_img": "shopify:\/\/shop_images\/thandai-mobile.webp",
+            "slide_url": "shopify:\/\/products\/maaza-coconut-water-6-1l-tetra-prisma"
+          }
+        },
+        "slide_NbwafU": {
+          "type": "slide",
+          "settings": {
+            "desktop_img": "shopify:\/\/shop_images\/bikano-desktop.webp",
+            "mobile_img": "shopify:\/\/shop_images\/bikano-mobile.webp",
+            "slide_url": "shopify:\/\/pages\/contact"
+          }
+        },
+        "slide_dnKpCc": {
+          "type": "slide",
+          "settings": {
+            "desktop_img": "shopify:\/\/shop_images\/patanjali-desktop.webp",
+            "mobile_img": "shopify:\/\/shop_images\/patanjali-mobile.webp",
+            "slide_url": "shopify:\/\/collections"
+          }
+        }
+      },
+      "block_order": [
+        "slide_PkeVhX",
+        "slide_NbwafU",
+        "slide_dnKpCc"
+      ],
+      "settings": {
+        "nav_dots": true
+      }
+    },
+    "categories_slider_eQ7CkB": {
+      "type": "categories-slider",
+      "blocks": {
+        "categories_mYhPML": {
+          "type": "categories",
+          "settings": {
+            "background": "#e4edd8",
+            "title": "Coffee & Tea",
+            "cta_url": "",
+            "featured_img": "shopify:\/\/shop_images\/Mask_group_1.png"
+          }
+        },
+        "categories_Tyafac": {
+          "type": "categories",
+          "settings": {
+            "background": "#e4edd8",
+            "title": "Oil, Olive & Vinegar",
+            "cta_url": "",
+            "featured_img": "shopify:\/\/shop_images\/image_5.png"
+          }
+        },
+        "categories_ArcWVt": {
+          "type": "categories",
+          "settings": {
+            "background": "#e4edd8",
+            "title": "Groats & Flour",
+            "cta_url": "",
+            "featured_img": "shopify:\/\/shop_images\/image_6.png"
+          }
+        },
+        "categories_iPzeEx": {
+          "type": "categories",
+          "settings": {
+            "background": "#e4edd8",
+            "title": "Dietary Supplements",
+            "cta_url": "",
+            "featured_img": "shopify:\/\/shop_images\/Mask_group_2.png"
+          }
+        },
+        "categories_4FMr6X": {
+          "type": "categories",
+          "settings": {
+            "background": "#e4edd8",
+            "title": "Juices & Nectars",
+            "cta_url": "",
+            "featured_img": "shopify:\/\/shop_images\/image_9.png"
+          }
+        },
+        "categories_WMUHiM": {
+          "type": "categories",
+          "settings": {
+            "background": "#e4edd8",
+            "title": "Spices & Herbs",
+            "cta_url": "",
+            "featured_img": "shopify:\/\/shop_images\/image_10.png"
+          }
+        },
+        "categories_6eLdh9": {
+          "type": "categories",
+          "settings": {
+            "background": "#e4edd8",
+            "title": "Snacks & Savouries",
+            "cta_url": "",
+            "featured_img": "shopify:\/\/shop_images\/Mask_group_3.png"
+          }
+        },
+        "categories_fABjEL": {
+          "type": "categories",
+          "settings": {
+            "background": "#e4edd8",
+            "title": "Thai\/Oriental",
+            "cta_url": "",
+            "featured_img": "shopify:\/\/shop_images\/image_12.png"
+          }
+        }
+      },
+      "block_order": [
+        "categories_mYhPML",
+        "categories_Tyafac",
+        "categories_ArcWVt",
+        "categories_iPzeEx",
+        "categories_4FMr6X",
+        "categories_WMUHiM",
+        "categories_6eLdh9",
+        "categories_fABjEL"
+      ],
+      "settings": {
+        "title": "Top Categories",
+        "enable_nav": true
+      }
+    },
+    "weekly_specials_QPGwDP": {
+      "type": "weekly-specials",
+      "blocks": {
+        "specials_znF6e8": {
+          "type": "specials",
+          "settings": {
+            "background": "linear-gradient(180deg, rgba(236, 191, 32, 0.9), rgba(197, 122, 9, 0.9) 100%)",
+            "brand_logo": "shopify:\/\/shop_images\/image_54.webp",
+            "content": "Explore our range of Heatwarming, Authentic, and Delicious products",
+            "cta_label": "Shop Now",
+            "cta_url": "",
+            "featured_img": "shopify:\/\/shop_images\/image_52.webp"
+          }
+        },
+        "specials_drmT3G": {
+          "type": "specials",
+          "settings": {
+            "background": "linear-gradient(180deg, rgba(91, 138, 29, 0.8), rgba(139, 196, 63, 0.8) 100%)",
+            "brand_logo": "shopify:\/\/shop_images\/image_54.webp",
+            "content": "Quench Your Thirst with Summer's Sips Chill Out with Our Cool Drinks",
+            "cta_label": "Shop Now",
+            "cta_url": "",
+            "featured_img": "shopify:\/\/shop_images\/image_52.webp"
+          }
+        },
+        "specials_kGjMbA": {
+          "type": "specials",
+          "settings": {
+            "background": "linear-gradient(310deg, rgba(112, 159, 61, 1), rgba(112, 159, 61, 1) 100%)",
+            "brand_logo": "shopify:\/\/shop_images\/image_63.webp",
+            "content": "Take up your Hair care routine with Patanjali products",
+            "cta_label": "Shop Now",
+            "cta_url": "",
+            "featured_img": "shopify:\/\/shop_images\/image_52.webp"
+          }
+        }
+      },
+      "block_order": [
+        "specials_znF6e8",
+        "specials_drmT3G",
+        "specials_kGjMbA"
+      ],
+      "settings": {
+        "title": "Weekly Specials"
+      }
+    },
+    "featured_banner_t9cgmm": {
+      "type": "featured-banner",
+      "settings": {
+        "tab_label": "SAVINGS",
+        "title": "Unbeatable Discounts on Your Favorite Grocerie",
+        "description": "Get ready to stock up and save big! Dive into our treasure trove of top-notch groceries with irresistible discounts",
+        "url": "shopify:\/\/pages\/contact",
+        "url_label": "Shop Now",
+        "featured_img": "shopify:\/\/shop_images\/featured-image-banner.webp"
+      }
+    },
+    "collection_slider_c7fFVc": {
+      "type": "collection-slider",
+      "settings": {
+        "title": "Our Best Sellers",
+        "cta_label": "Show more",
+        "show_cta": true,
+        "featured_collection": "best-sellers",
+        "product_limit": 6
+      }
+    },
+    "featured_products_93EmAR": {
+      "type": "featured-products",
+      "settings": {
+        "theme": "light",
+        "title": "Quench Your Thirst with Summer's Sips",
+        "description": "Stay cool this summer with our refreshing drinks! Explore a variety of flavors to quench your thirst and beat the heat. Dive in now",
+        "featured_image": "shopify:\/\/shop_images\/image-16-665ad0e223417.webp",
+        "cta_label": "Read More",
+        "cta_url": "",
+        "pattern_img1": "shopify:\/\/shop_images\/group-3311-2-665b148f494ee.webp",
+        "pattern_img2": "shopify:\/\/shop_images\/group-3311-3-665b14870122f.webp",
+        "product_section_title": "Featured Products",
+        "product_list": [
+          "maaza-banana-juice-1l",
+          "maaza-coconut-water-6-1l-tetra-prisma"
+        ]
+      }
+    },
+    "collection_slider_MWcTR4": {
+      "type": "collection-slider",
+      "settings": {
+        "title": "Patanjali Products",
+        "cta_label": "Show more",
+        "show_cta": true,
+        "featured_collection": "pathanjali-collection",
+        "product_limit": 6
+      }
+    },
+    "featured_articles_YrLqwG": {
+      "type": "featured-articles",
+      "blocks": {
+        "article_block_bXxx6n": {
+          "type": "article_block",
+          "settings": {
+            "title": "Quench Your Thirst with Summer's Sips",
+            "description": "Stay cool this summer with our refreshing drinks! Explore a variety of flavors to quench your thirst and beat the heat. Dive in now",
+            "featured_image": "shopify:\/\/shop_images\/image-16-665ad0e223417.webp",
+            "cta_label": "Read More",
+            "cta_url": "shopify:\/\/blogs\/news"
+          }
+        },
+        "article_block_yLzxFE": {
+          "type": "article_block",
+          "settings": {
+            "title": "Thai Taste Sensations: Spice Up Your Pantry with Authentic Flavors",
+            "description": "Explore our range now and bring the taste of Thailand to your kitchen",
+            "featured_image": "shopify:\/\/shop_images\/image-26-665ad0dea68c5.webp",
+            "cta_label": "Read More",
+            "cta_url": "shopify:\/\/blogs\/news"
+          }
+        }
+      },
+      "block_order": [
+        "article_block_bXxx6n",
+        "article_block_yLzxFE"
+      ],
+      "settings": {
+        "theme": "dark",
+        "pattern_img1": "shopify:\/\/shop_images\/group-3311-665aed1cb1334.webp",
+        "pattern_img2": "shopify:\/\/shop_images\/group-3311-1-665aed1a7edf2.webp"
+      }
+    },
+    "brand_slider_G4iNGp": {
+      "type": "brand-slider",
+      "blocks": {
+        "brand_slide_thWhQU": {
+          "type": "brand_slide",
+          "settings": {
+            "featured_img": "shopify:\/\/shop_images\/image-35-665491757af66.webp"
+          }
+        },
+        "brand_slide_DTT8xH": {
+          "type": "brand_slide",
+          "settings": {
+            "featured_img": "shopify:\/\/shop_images\/image-28-66549174bb6f9.webp"
+          }
+        },
+        "brand_slide_rjpkL4": {
+          "type": "brand_slide",
+          "settings": {
+            "featured_img": "shopify:\/\/shop_images\/image-29-66549174ac9f8.webp"
+          }
+        },
+        "brand_slide_wEBewR": {
+          "type": "brand_slide",
+          "settings": {
+            "featured_img": "shopify:\/\/shop_images\/image-30-66549173e903a.webp"
+          }
+        },
+        "brand_slide_Czd7UX": {
+          "type": "brand_slide",
+          "settings": {
+            "featured_img": "shopify:\/\/shop_images\/image-31-66549173d9363.webp"
+          }
+        },
+        "brand_slide_BL8cf4": {
+          "type": "brand_slide",
+          "settings": {
+            "featured_img": "shopify:\/\/shop_images\/image-33-665491734088e.webp"
+          }
+        },
+        "brand_slide_Dk3fdf": {
+          "type": "brand_slide",
+          "settings": {
+            "featured_img": "shopify:\/\/shop_images\/image-34-665491733371e.webp"
+          }
+        },
+        "brand_slide_HEeLeP": {
+          "type": "brand_slide",
+          "settings": {
+            "featured_img": "shopify:\/\/shop_images\/image-32-6654917273ca9.webp"
+          }
+        }
+      },
+      "block_order": [
+        "brand_slide_thWhQU",
+        "brand_slide_DTT8xH",
+        "brand_slide_rjpkL4",
+        "brand_slide_wEBewR",
+        "brand_slide_Czd7UX",
+        "brand_slide_BL8cf4",
+        "brand_slide_Dk3fdf",
+        "brand_slide_HEeLeP"
+      ],
+      "settings": {
+        "title": "Top Brands"
+      }
+    },
+    "slider_testimonials_qB68pE": {
+      "type": "slider-testimonials",
+      "blocks": {
+        "testimonial_HMUktT": {
+          "type": "testimonial",
+          "settings": {
+            "customer_name": "Eleanor Pena",
+            "customer_avatar": "shopify:\/\/shop_images\/Ellipse_24.png",
+            "customer_text": "Absolutely thrilled with the variety and quality of groceries! From fresh produce to pantry staples, this website has made shopping a breeze. Highly recommend for all your grocery needs!"
+          }
+        },
+        "testimonial_bJVbKn": {
+          "type": "testimonial",
+          "settings": {
+            "customer_name": "Jhon Doe",
+            "customer_avatar": "shopify:\/\/shop_images\/Ellipse_24.png",
+            "customer_text": "Absolutely thrilled with the variety and quality of groceries! From fresh produce to pantry staples, this website has made shopping a breeze. Highly recommend for all your grocery needs!\""
+          }
+        },
+        "testimonial_8kzGCP": {
+          "type": "testimonial",
+          "settings": {
+            "customer_name": "Elvis Presley",
+            "customer_avatar": "shopify:\/\/shop_images\/Ellipse_24.png",
+            "customer_text": "Absolutely thrilled with the variety and quality of groceries! From fresh produce to pantry staples, this website has made shopping a breeze. Highly recommend for all your grocery needs!\""
+          }
+        },
+        "testimonial_MRfKcm": {
+          "type": "testimonial",
+          "settings": {
+            "customer_name": "Jake Smith",
+            "customer_avatar": "shopify:\/\/shop_images\/Ellipse_24.png",
+            "customer_text": "Absolutely thrilled with the variety and quality of groceries! From fresh produce to pantry staples, this website has made shopping a breeze. Highly recommend for all your grocery needs!\""
+          }
+        }
+      },
+      "block_order": [
+        "testimonial_HMUktT",
+        "testimonial_bJVbKn",
+        "testimonial_8kzGCP",
+        "testimonial_MRfKcm"
+      ],
+      "settings": {
+        "title": "People sayings"
+      }
+    },
+    "subscription_banner_gGqWGN": {
+      "type": "subscription-banner",
+      "settings": {
+        "title": "Stay home & get your daily needs from our shop",
+        "description": "Start your daily shopping with Grocerywala",
+        "featured_img": "shopify:\/\/shop_images\/banner-featured-img.webp"
+      }
+    },
+    "grocerywala_highlights_bMjmLr": {
+      "type": "grocerywala-highlights",
+      "blocks": {
+        "highlight_Aa7VbL": {
+          "type": "highlight",
+          "settings": {
+            "icon": "<svg xmlns=\"http:\/\/www.w3.org\/2000\/svg\" width=\"33\" height=\"32\" viewbox=\"0 0 33 32\" fill=\"none\">\n<path d=\"M29.4577 16.0003C29.4577 8.63653 23.4881 2.66699 16.1243 2.66699C8.76055 2.66699 2.79102 8.63653 2.79102 16.0003C2.79102 23.3641 8.76055 29.3337 16.1243 29.3337C23.4881 29.3337 29.4577 23.3641 29.4577 16.0003Z\" stroke=\"#5B8A1D\" stroke-width=\"2\"><\/path>\n<path d=\"M26.7913 7.59873C25.5451 7.68856 23.9488 8.17107 22.8419 9.60377C20.8427 12.1916 18.8433 12.4075 17.5105 11.5449C15.5112 10.251 17.1913 8.15523 14.8448 7.01628C13.3155 6.27397 13.1023 4.25401 13.9535 2.66675\" stroke=\"#5B8A1D\" stroke-width=\"2\" stroke-linejoin=\"round\"><\/path>\n<path d=\"M2.79102 14.667C3.80768 15.5498 5.23163 16.3579 6.90934 16.3579C10.3756 16.3579 11.0688 17.0202 11.0688 19.6694C11.0688 22.3186 11.0688 22.3186 11.7621 24.3054C12.213 25.5978 12.3706 26.8902 11.4718 28.0003\" stroke=\"#5B8A1D\" stroke-width=\"2\" stroke-linejoin=\"round\"><\/path>\n<path d=\"M29.4577 17.9365C28.2749 17.2549 26.791 16.9745 25.2889 18.0541C22.4146 20.1199 20.4329 18.4081 19.5402 20.1187C18.2263 22.6368 22.9186 23.4283 18.791 29.3335\" stroke=\"#5B8A1D\" stroke-width=\"2\" stroke-linejoin=\"round\"><\/path>\n<\/svg>",
+            "title": "20+ YEARS IN GLOBAL TRADE"
+          }
+        },
+        "highlight_dpAjza": {
+          "type": "highlight",
+          "settings": {
+            "icon": "<svg xmlns=\"http:\/\/www.w3.org\/2000\/svg\" width=\"33\" height=\"32\" viewbox=\"0 0 33 32\" fill=\"none\">\n<path d=\"M29.7087 16.0001C29.7087 8.63628 23.7391 2.66675 16.3753 2.66675C9.01153 2.66675 3.04199 8.63628 3.04199 16.0001C3.04199 23.3638 9.01153 29.3334 16.3753 29.3334C23.7391 29.3334 29.7087 23.3638 29.7087 16.0001Z\" stroke=\"#5B8A1D\" stroke-width=\"2\"><\/path>\n<path d=\"M11.042 17.0001C11.042 17.0001 13.1753 18.2167 14.242 20.0001C14.242 20.0001 17.442 13.0001 21.7087 10.6667\" stroke=\"#5B8A1D\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><\/path>\n<\/svg>",
+            "title": "PROVEN TRUST AND RELIABILITY"
+          }
+        },
+        "highlight_GGYxym": {
+          "type": "highlight",
+          "settings": {
+            "icon": "<svg xmlns=\"http:\/\/www.w3.org\/2000\/svg\" width=\"33\" height=\"32\" viewbox=\"0 0 33 32\" fill=\"none\">\n<path d=\"M19.9587 11.9998C19.9587 13.8408 18.4663 15.3332 16.6253 15.3332C14.7844 15.3332 13.292 13.8408 13.292 11.9998C13.292 10.1589 14.7844 8.6665 16.6253 8.6665C18.4663 8.6665 19.9587 10.1589 19.9587 11.9998Z\" stroke=\"#5B8A1D\" stroke-width=\"2\"><\/path>\n<path d=\"M18.3019 23.3246C17.8521 23.7577 17.2511 23.9998 16.6256 23.9998C16 23.9998 15.3989 23.7577 14.9492 23.3246C10.8311 19.3342 5.31225 14.8765 8.00361 8.40481C9.45879 4.9056 12.9519 2.6665 16.6256 2.6665C20.2992 2.6665 23.7923 4.90561 25.2475 8.40481C27.9355 14.8684 22.4301 19.348 18.3019 23.3246Z\" stroke=\"#5B8A1D\" stroke-width=\"2\"><\/path>\n<path d=\"M24.625 26.6667C24.625 28.1395 21.0433 29.3334 16.625 29.3334C12.2067 29.3334 8.625 28.1395 8.625 26.6667\" stroke=\"#5B8A1D\" stroke-width=\"2\" stroke-linecap=\"round\"><\/path>\n<\/svg>",
+            "title": "STRIVING IN 10+ EU COUNTRIES"
+          }
+        },
+        "highlight_WGC7jM": {
+          "type": "highlight",
+          "settings": {
+            "icon": "<svg xmlns=\"http:\/\/www.w3.org\/2000\/svg\" width=\"33\" height=\"32\" viewbox=\"0 0 33 32\" fill=\"none\">\n<path d=\"M26.8747 23.3333C26.8747 25.1743 25.3823 26.6667 23.5413 26.6667C21.7004 26.6667 20.208 25.1743 20.208 23.3333C20.208 21.4924 21.7004 20 23.5413 20C25.3823 20 26.8747 21.4924 26.8747 23.3333Z\" stroke=\"#5B8A1D\" stroke-width=\"2\"><\/path>\n<path d=\"M13.5417 23.3333C13.5417 25.1743 12.0493 26.6667 10.2083 26.6667C8.36739 26.6667 6.875 25.1743 6.875 23.3333C6.875 21.4924 8.36739 20 10.2083 20C12.0493 20 13.5417 21.4924 13.5417 23.3333Z\" stroke=\"#5B8A1D\" stroke-width=\"2\"><\/path>\n<path d=\"M20.2077 23.3335H13.541M3.54102 5.3335H16.8743C18.7599 5.3335 19.7027 5.3335 20.2886 5.91928C20.8743 6.50507 20.8743 7.44788 20.8743 9.3335V20.6668M21.541 8.66683H23.9429C25.0491 8.66683 25.6022 8.66683 26.0607 8.92643C26.5191 9.18603 26.8038 9.6603 27.3729 10.6088L29.6377 14.3835C29.9209 14.8555 30.0625 15.0916 30.1351 15.3536C30.2077 15.6156 30.2077 15.8908 30.2077 16.4415V20.0002C30.2077 21.2463 30.2077 21.8694 29.9397 22.3335C29.7642 22.6375 29.5117 22.89 29.2077 23.0655C28.7435 23.3335 28.1205 23.3335 26.8743 23.3335M3.54102 17.3335V20.0002C3.54102 21.2463 3.54102 21.8694 3.80896 22.3335C3.9845 22.6375 4.23698 22.89 4.54102 23.0655C5.00512 23.3335 5.62819 23.3335 6.87435 23.3335\" stroke=\"#5B8A1D\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><\/path>\n<path d=\"M3.54102 9.3335H11.541M3.54102 13.3335H8.87435\" stroke=\"#5B8A1D\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><\/path>\n<\/svg>",
+            "title": "EXPRESS DELIVERY & FORMALITIES"
+          }
+        }
+      },
+      "block_order": [
+        "highlight_Aa7VbL",
+        "highlight_dpAjza",
+        "highlight_GGYxym",
+        "highlight_WGC7jM"
+      ],
+      "settings": {
+        "y_axis_offset": 25
+      }
+    }
+  },
+  "order": [
+    "sale_banner_slider_gYAWg8",
+    "categories_slider_eQ7CkB",
+    "weekly_specials_QPGwDP",
+    "featured_banner_t9cgmm",
+    "collection_slider_c7fFVc",
+    "featured_products_93EmAR",
+    "collection_slider_MWcTR4",
+    "featured_articles_YrLqwG",
+    "brand_slider_G4iNGp",
+    "slider_testimonials_qB68pE",
+    "subscription_banner_gGqWGN",
+    "grocerywala_highlights_bMjmLr"
+  ]
+}

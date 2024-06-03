@@ -1,0 +1,176 @@
+{{ 'featured-products.css' | asset_url | stylesheet_tag }}
+
+<div class="featured-products__wrap section-theme--{{ section.settings.theme }}">
+  <div class="featured-products__fluid-container container">
+    <div class="featured-products__card">
+      <div class="featured-products__card-img">
+        <img
+          src="{{ section.settings.featured_image |  img_url: 'master'  }}"
+          alt="{{ section.settings.featured_image.alt }}"
+          loading="lazy"
+        >
+      </div>
+      <div class="featured-products__card-content">
+        <h3 class="featured-products__card-title">
+          {{ section.settings.title }}
+        </h3>
+        <div class="featured-products__card-description">
+          {{ section.settings.description }}
+        </div>
+        <div>
+          <a
+            href="{{ section.settings.cta_url }}"
+            class="featured-products__card-link btn btn--primary btn--lg btn--arrow"
+          >
+            {{ section.settings.cta_label }}
+            {% render 'icon', icon: 'right-arrow' %}
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="featured-products__content">
+      <div class="featured-products__content-title">
+        {{ section.settings.product_section_title }}
+      </div>
+      <div class="featured-products__product-cards">
+        <div class="featured-products__product-slider">
+          <div class="swiper-wrapper">
+            {% for product in section.settings.product_list %}
+              <div class="featured-products__product-card__slide swiper-slide">
+                {% render 'card-product',
+                  card_product: product,
+                  pro_img_widthheight: '600x400',
+                  show_secondary_image: false,
+                  show_vendor: true,
+                  show_review: true,
+                  show_qty: false,
+                  show_variants: true
+                %}
+              </div>
+            {% endfor %}
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  {% if section.settings.pattern_img1 != blank %}
+    <div class="pattern-img-left-top">
+      <img
+        src="{{ section.settings.pattern_img1 |  img_url: 'master'  }}"
+        alt="{{ section.settings.pattern_img1.alt }}"
+        loading="lazy"
+      >
+    </div>
+  {% endif %}
+  {% if section.settings.pattern_img2 != blank %}
+    <div class="pattern-img-right-bottom">
+      <img
+        src="{{ section.settings.pattern_img2 |  img_url: 'master'  }}"
+        alt="{{ section.settings.pattern_img2.alt }}"
+        loading="lazy"
+      >
+    </div>
+  {% endif %}
+</div>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    const swiper = new Swiper('.featured-products__product-slider', {
+      speed: 400,
+      spaceBetween: 20,
+      slidesPerView: 'auto',
+      slidesPerGroup: 1,
+      slideShadows:true,
+      breakpoints: {
+        768: {
+          slidesPerView: 2,
+        },
+      },
+    });
+  });
+</script>
+
+{% schema %}
+{
+  "name": "Featured Products",
+  "class": "padding-bottom",
+  "settings": [
+    {
+      "type": "select",
+      "id": "theme",
+      "label": "Color Theme",
+      "options": [
+        {
+          "label": "Dark",
+          "value": "dark"
+        },
+        {
+          "label": "Light",
+          "value": "light"
+        }
+      ]
+    },
+    {
+      "type": "header",
+      "content": "Article Block"
+    },
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Article Title"
+    },
+    {
+      "type": "textarea",
+      "id": "description",
+      "label": "Article Description"
+    },
+    {
+      "type": "image_picker",
+      "id": "featured_image",
+      "label": "Featured Image"
+    },
+    {
+      "type": "text",
+      "id": "cta_label",
+      "label": "CTA Label",
+      "default": "Read More"
+    },
+    {
+      "type": "url",
+      "id": "cta_url",
+      "label": "CTA URL"
+    },
+    {
+      "type": "image_picker",
+      "id": "pattern_img1",
+      "label": "Pattern Img 1"
+    },
+    {
+      "type": "image_picker",
+      "id": "pattern_img2",
+      "label": "Pattern Img 2"
+    },
+    {
+      "type": "header",
+      "content": "Featured Products"
+    },
+    {
+      "type": "text",
+      "id": "product_section_title",
+      "label": "Product Section Title",
+      "default": "Featured Products"
+    },
+    {
+      "type": "product_list",
+      "id": "product_list",
+      "label": "Products",
+      "limit": 2
+    }
+  ],
+  "presets": [
+    {
+      "name": "Featured Products"
+    }
+  ]
+}
+{% endschema %}
