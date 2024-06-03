@@ -13,7 +13,7 @@
         "show_vendor": true,
         "show_review": true,
         "show_variants": true,
-        "show_qty": true,
+        "show_qty": false,
         "pro_img_widthheight": "306x203",
         "enable_filtering": true,
         "enable_sorting": true,
