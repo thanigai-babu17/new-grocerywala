@@ -1427,7 +1427,24 @@ textarea {
 	-moz-appearance: none;
 	appearance: none;
 	margin: 0;
+	border-radius: 12px;	
 }
+
+.form-control::placeholder,
+input:not([type="submit"])::placeholder,
+input:not([type="checkbox"])::placeholder,
+input:not([type="radio"])::placeholder,
+select::placeholder,
+textarea::placeholder {
+  color: var(--grey-600);
+}
+
+input[type="checkbox"],
+input[type="radio"]{
+	border-radius: 4px;
+}
+
+
 textarea {
 	resize: none;
 }
@@ -4204,7 +4221,7 @@ del {
 }
 .acnav-list {
 	display: none;
-	padding: 0 0 10px 0;
+	padding: 12px 0;
 }
 .product-cat-widget .acnav-list {
 	padding: 0 0 10px 10px;
@@ -4215,9 +4232,10 @@ del {
 	font-weight: 600;
 }
 .product-widget > .pro-itm > .acnav-label {
-	font-weight: 600;
-	padding: 12px 0;
-	text-transform: uppercase;
+    font-weight: 500;
+    padding: 0px;
+    text-transform: capitalize;
+    font-size: 15px;
 }
 .product-widget .acnav-list li a {
 	text-transform: capitalize;
@@ -4232,7 +4250,7 @@ del {
 .product-widget .acnav-label:before {
 	content: "";
 	position: absolute;
-	right: 14px;
+	right: 0;
 	top: 50%;
 	transform: translate(0%, -50%);
 	height: 2px;
@@ -4247,7 +4265,7 @@ del {
 .product-widget .acnav-label:after {
 	content: "";
 	position: absolute;
-	right: 18px;
+	right: 4px;
 	top: 50%;
 	transform: translate(0%, -50%);
 	height: 10px;
@@ -4266,11 +4284,11 @@ del {
 	padding: 0 0 20px;
 }
 .product-widget {
-	border-bottom: 1px solid var(--theme-color);
-	padding: 10px 0;
+	border-bottom: 1px solid var(--grey-500);
+	padding: 12px 0;
 }
 .product-filter-right-column {
-	padding-left: 22px !important;
+	padding-left: 28px !important;
 }
 .delete-all {
 	display: inline-flex;
@@ -4418,7 +4436,7 @@ html .ui-button.ui-state-disabled:active {
 	color: var(--black);
 }
 .product-price-widget .acnav-list {
-	padding: 0 20px 10px 0;
+	padding: 12px 0px;
 }
 .colors-checkbox label {
 	width: 100%;
@@ -4558,7 +4576,7 @@ html .ui-button.ui-state-disabled:active {
 	content: url("rating-star-fill.png");
 }
 .product-filter-right-column {
-	padding-top: 22px !important;
+	padding-top: 0px;
 }
 .product-filter-right-column .row {
 	margin: 0 -10px;
@@ -6470,9 +6488,9 @@ li.profile-header:hover .menu-dropdown {
 /*=================SHF filter =============*/
 .active-facets__button-inner,
 .active-facets__button-remove {
-	font-size: 13px;
+	font-size: 12px;
 	line-height: 1;
-	padding: 12px 20px;
+	padding: 8px 10px;
 	max-width: inherit;
 }
 /*=================SHF address page =============*/
@@ -6634,7 +6652,6 @@ small.tax-note.caption-large.rte {
 	display: flex;
 	flex: 1;
 	justify-content: space-between;
-	padding-right: 10px;
 	font-size: 14px;
 	font-weight: 500;
 }
@@ -7225,9 +7242,7 @@ deferred-media.deferred-media {
 		pointer-events: all;
 	}
 	.product-filter-body {
-		padding: 30px 15px;
 		overflow: auto;
-		height: 100%;
 	}
 	.close-filter {
 		cursor: pointer;
@@ -7842,6 +7857,12 @@ deferred-media.deferred-media {
 	cart-note.cart__note.field {
 		margin: 0 0 20px;
 	}
+
+	.product-filter-body {
+		overflow: auto;
+		height: 100%;
+		padding: 36px 15px;
+	}
 }
 @media screen and (max-width: 610px) {
 	.author-info {
@@ -8354,4 +8375,43 @@ deferred-media.deferred-media {
 
 .swiper-pagination-bullet-active{
 	background-color: var(--theme-color) !important;
+}
+
+.product-filter-header{
+	display: flex;
+	flex-wrap: wrap;
+	gap: 12px;
+	justify-content: space-between;
+	align-items: center;
+	padding-bottom: 24px;
+}
+
+.facet-filters__field .sort-lbl{
+	flex-shrink: 0;
+}
+
+.product-filter-header .nice-select{
+	height: 42px;
+    line-height: 20px;
+    -webkit-border-radius: 11px;
+    -moz-border-radius: 11px;
+    -ms-border-radius: 11px;
+    -o-border-radius: 11px;
+    background: url(arrow-acc-dark.svg) no-repeat;
+    background-size: 12px;
+    background-position: calc(100% - 15px) 50%;
+	background-color: var(--white);
+}
+
+.product-heading-row{
+	padding-block: 26px;
+}
+
+.facets-container.product-filter-body{
+	background-color: var(--white);
+	border-radius: 8px;
+}
+
+.facets__wrapper details{
+	padding-inline: 16px;
 }

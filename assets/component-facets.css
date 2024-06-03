@@ -2,12 +2,15 @@
     transition: 0.3s ease;
 }
 .facets__header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  letter-spacing: 0;
-  padding: 0px 10px 15px 0;
-  margin: 0 0 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    letter-spacing: 0;
+    padding: 0px 0px 10px 0;
+    margin: 0 0 0px;
+    color: var(--grey-700);
+    font-weight: 500;
+    font-size: 14px;
 }
 span.facets__selected.price-header {
     font-size: 13px;
@@ -35,6 +38,7 @@ span.facets__selected.price-header {
     align-items: center;
     display: flex;
     flex-grow: 1;
+    gap: 8px;
 }
 .facet-filters button {
     margin-left: 5px;
@@ -180,18 +184,31 @@ button.facets__button {
     width: 100%;
     grid-column: 1 / -1;
     grid-row: 2;
-    padding: 10px 10px 10px 0;
+    padding: 8px 16px;
+    align-items: center;
+    gap: 8px;
 }
+
+.active-facets:empty{
+    padding: 0;
+}
+
 .active-facets__button {
-    display: block;
-    margin-right: 5px;
-    margin-bottom: 10px;
+    display: flex;
+    border: 1px solid var(--theme-color-dark);
+    color: var(--theme-color-dark);
+    background-color: var(--theme-color-light);
+    border-radius: 8px;
 }
+
+.active-facets__button-remove{
+    color: #E62B1F;
+}
+
 .active-facets__button-wrapper {
   align-items: center;
   display: flex;
   justify-content: center;
-  margin-bottom: 10px;
 }
 .active-facets__button svg {
     margin-left: .6rem;
@@ -384,19 +401,20 @@ input.mobile-facets__checkbox {
     overflow-x: hidden;
 }
 .mobile-facets__footer {
-  background: #fff;
-  border-top: 1px solid var(--border-color);
-  padding: 15px 0px;
-  bottom: 0;
-  position: sticky;
-  display: flex;
-  z-index: 2;
-  margin-top: 15px;
-  justify-content: center;
+    background: #fff;
+    border-top: 1px solid var(--border-color);
+    padding: 15px 0px;
+    bottom: 0;
+    position: sticky;
+    display: flex;
+    z-index: 2;
+    margin-top: 15px;
+    justify-content: center;
+    gap: 12px;
 }
-.mobile-facets__footer > * + * {
+/* .mobile-facets__footer > * + * {
     margin-left: 15px;
-}
+} */
 .mobile-facets__sort {
     display: flex;
     justify-content: space-between;
@@ -542,4 +560,17 @@ input.mobile-facets__checkbox {
   .product-sorting-row{
     justify-content: end;
   }
+}
+
+.filter-title{
+    padding: 14px 16px;
+    border-bottom: 1px solid var(--grey-500);
+    font-size:20px;
+    line-height: 1.5;
+    font-weight: 600;
+}
+
+.list-menu__item.facets__item label,
+.list-menu__item.facets__item .filter-count{
+    color: var(--grey-800);
 }

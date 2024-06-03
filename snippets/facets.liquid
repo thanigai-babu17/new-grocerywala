@@ -23,6 +23,9 @@
 -%}
 
 <div class="facets-container product-filter-body">
+  <div class="filter-title">
+    <div class="desk-only">Filters</div>
+  </div>
   {%- unless collapse_on_larger_devices -%}
     <facet-filters-form class="facets small-hide">
       <form id="FacetFiltersForm" class="facets__form">
@@ -36,7 +39,7 @@
               {%- for value in filter.active_values -%}
                 <facet-remove>
                   <a href="{{ value.url_to_remove }}" class="active-facets__button active-facets__button--light">
-                    <span class="active-facets__button-inner btn-secondary">
+                    <span class="active-facets__button-inner">
                       {{ value.label | escape }}
                       <span class="visually-hidden">{{ 'products.facets.clear_filter' | t }}</span>
                     </span>
@@ -47,7 +50,7 @@
                 {%- if filter.min_value.value != nil or filter.max_value.value != nil -%}
                   <facet-remove>
                     <a href="{{ filter.url_to_remove }}" class="active-facets__button active-facets__button--light">
-                      <span class="active-facets__button-inner btn-secondary">
+                      <span class="active-facets__button-inner">
                         {%- if filter.min_value.value -%}{{ filter.min_value.value | money }}{%- else -%}{{ 0 | money }}{%- endif -%}-{%- if filter.max_value.value -%}{{ filter.max_value.value | money }}{%- else -%}{{ filter.range_max | money }}{%- endif -%}
                         <span class="visually-hidden">{{ 'products.facets.clear_filter' | t }}</span>
                       </span>
@@ -186,7 +189,7 @@
       {%- for value in filter.active_values -%}
         <facet-remove>
           <a href="{{ value.url_to_remove }}" class="active-facets__button active-facets__button--light">
-            <span class="active-facets__button-inner btn-secondary">
+            <span class="active-facets__button-inner">
               {{ value.label | escape }}
               <span class="visually-hidden">{{ 'products.facets.clear_filter' | t }}</span>
             </span>
@@ -198,7 +201,7 @@
         {%- if filter.min_value.value != nil or filter.max_value.value != nil -%}
           <facet-remove>
             <a href="{{ filter.url_to_remove }}" class="active-facets__button active-facets__button--light">
-              <span class="active-facets__button-inner btn-secondary">
+              <span class="active-facets__button-inner">
                 {%- if filter.min_value.value -%}{{ filter.min_value.value | money }}{%- else -%}{{ 0 | money }}{%- endif -%}-{%- if filter.max_value.value -%}{{ filter.max_value.value | money }}{%- else -%}{{ filter.range_max | money }}{%- endif -%}
                 <span class="visually-hidden">{{ 'products.facets.clear_filter' | t }}</span>
               </span>
@@ -287,7 +290,7 @@
                       </ul>
 
                       <div class="no-js-hidden mobile-facets__footer">
-                        <facet-remove class="mobile-facets__clear-wrapper btn-secondary">
+                        <facet-remove class="mobile-facets__clear-wrapper">
                           <a href="{{ results_url }}" class="mobile-facets__clear">{{ 'products.facets.clear' | t }}</a>
                         </facet-remove>
                         <button type="button" class="no-js-hidden btn" onclick="this.closest('.mobile-facets__wrapper').querySelector('summary').click()">{{ 'products.facets.apply' | t }}</button>
@@ -347,7 +350,7 @@
                         </div>
                       </price-range>
                       <div class="no-js-hidden mobile-facets__footer">
-                        <facet-remove class="mobile-facets__clear-wrapper btn-secondary">
+                        <facet-remove class="mobile-facets__clear-wrapper">
                           <a href="{{ results_url }}" class="mobile-facets__clear">{{ 'products.facets.clear' | t }}</a>
                         </facet-remove>
                         <button type="button" class="no-js-hidden btn" onclick="this.closest('.mobile-facets__wrapper').querySelector('summary').click()">{{ 'products.facets.apply' | t }}</button>
@@ -359,7 +362,7 @@
               {%- endfor -%}
 
               <div class="mobile-facets__footer">
-                <facet-remove class="mobile-facets__clear-wrapper btn-secondary">
+                <facet-remove class="mobile-facets__clear-wrapper">
                   <a href="{{ results_url }}" class="mobile-facets__clear">{{ 'products.facets.clear_all' | t }}</a>
                 </facet-remove>
                 <button type="button" class="no-js-hidden btn apply-btn">{{ 'products.facets.apply' | t }}</button>
