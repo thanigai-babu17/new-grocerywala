@@ -1,11 +1,5 @@
 {
   "sections": {
-    "banner": {
-      "type": "product-grid-banner",
-      "disabled": true,
-      "settings": {
-      }
-    },
     "product-grid": {
       "type": "main-collection-product-grid",
       "settings": {
@@ -73,7 +67,6 @@
     }
   },
   "order": [
-    "banner",
     "product-grid",
     "subscription_banner_gGqWGN",
     "grocerywala_highlights_bMjmLr"
