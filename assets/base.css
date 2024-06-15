@@ -2148,11 +2148,14 @@ header.head-sticky .announcebar {
 	transform: scaleY(0);
 }
 .header-style-one .main-navigationbar .menu-items-col .main-nav > li.menu-lnk .menu-dropdown.mega-menu {
-	width: 100%;
-	left: 0;
-	right: 0;
-	margin: 0 auto;
-	padding: 20px 0;
+    width: 100%;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    padding: 0px 15px;
+    box-shadow: none;
+    border: none;
+	background-color: unset;
 }
 .header-style-one .main-navigationbar .menu-items-col .main-nav > li:hover .menu-dropdown,
 .header-style-one .menu-right li:hover .menu-dropdown {
@@ -2468,8 +2471,13 @@ body.home .header-style-one .extra-menu-col {
 }
 
 .main-navigationbar .container {
-	margin-top: 4px;
-	max-width: 1362px;
+    margin-top: 4px;
+    max-width: 1362px;
+}
+
+.mega-menu-container.container{
+	padding-block: 26px;
+    box-shadow: 0px 4px 16px 0px #0000000D;
 }
 
 .header__announcement-bar {
