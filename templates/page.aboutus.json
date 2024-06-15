@@ -13,24 +13,21 @@
           "type": "text",
           "settings": {
             "title": "Fast  delivery",
-            "desc": "The specific delivery time will vary depending on the shipping address and the selected delivery option. Customers can track their order online to see the estimated delivery date.",
-            "img": "shopify:\/\/shop_images\/1_46d204e0-7368-4bde-8de4-484460ad8d8a.png"
+            "desc": "The specific delivery time will vary depending on the shipping address and the selected delivery option. Customers can track their order online to see the estimated delivery date."
           }
         },
         "812336c1-da3d-458b-bcf4-c6965552360c": {
           "type": "text",
           "settings": {
             "title": "Many   offers",
-            "desc": "CMS also offers a variety of training and technical assistance to help providers and state agencies meet their responsibilities under Medicare, Medicaid, and SCHIP.",
-            "img": "shopify:\/\/shop_images\/2_1c7cd93c-6c7e-4fc6-b0bd-4fe7422beb8d.png"
+            "desc": "CMS also offers a variety of training and technical assistance to help providers and state agencies meet their responsibilities under Medicare, Medicaid, and SCHIP."
           }
         },
         "92f1a250-7af6-44be-bbee-476eecf287a1": {
           "type": "text",
           "settings": {
             "title": "24\/7   support",
-            "desc": "CMS Service support is available 24 hours a day, 7 days a week. You can reach them by phone, email, or chat. Here are the contact information for CMS Service support.",
-            "img": "shopify:\/\/shop_images\/3_b5d975e5-d622-4dec-846d-b7bc37558733.png"
+            "desc": "CMS Service support is available 24 hours a day, 7 days a week. You can reach them by phone, email, or chat. Here are the contact information for CMS Service support."
           }
         }
       },
@@ -39,6 +36,7 @@
         "812336c1-da3d-458b-bcf4-c6965552360c",
         "92f1a250-7af6-44be-bbee-476eecf287a1"
       ],
+      "disabled": true,
       "settings": {
         "title": "Be clear and concise",
         "desc": "At Grocery Themes, we understand that a well-stocked pantry is the foundation of every delicious meal and a key to a healthy lifestyle. We are passionate about providing our customers with a wide range of high-quality groceries, sourced from trusted suppliers, to help you create culinary masterpieces and nourish your body.",
@@ -47,11 +45,9 @@
         "title_1": "Make it inviting and engaging",
         "desc_1": "At Grocery Themes, we prioritize the satisfaction of our customers. Our friendly and knowledgeable staff is always ready to assist you, providing personalized service and expert advice. Whether you're searching for a specific ingredient, seeking inspiration for a new recipe, or have dietary restrictions, we're here to help you find what you need.",
         "desc1_1": "We understand the value of time in today's fast-paced world. That's why we offer convenient shopping options, including online ordering and home delivery services. You can browse our virtual aisles, select your items, and have them delivered right to your doorstep, saving you time and ensuring your groceries are just a click away.",
-        "img": "shopify:\/\/shop_images\/abt.jpg",
         "title_2": "Keep it short and sweet",
         "desc_2": "We believe that food brings people together, and we strive to create a sense of community within our store. From hosting cooking classes and tastings to supporting local initiatives, we aim to foster connections and inspire a love for good food.",
         "desc2_1": "At Grocery Themes, we are more than just a grocery store. We are a trusted partner on your culinary journey, dedicated to providing you with the finest ingredients and exceptional service. Join us in exploring the world of flavors, discovering new tastes, and embracing the joy of cooking and sharing meals with loved ones.",
-        "img1": "shopify:\/\/shop_images\/abt-2.jpg",
         "s_title": "About  our Services",
         "s_desc": "Our mission is to empower individuals with knowledge and facilitate meaningful connections through our platform.We understand the importance of reliable and up-to-date information in today's fast-paced world."
       }
