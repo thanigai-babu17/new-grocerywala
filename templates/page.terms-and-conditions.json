@@ -1,0 +1,14 @@
+{
+    "sections": {
+      "main": {
+        "type": "main-page",
+        "settings": {
+          "description": "We value the diverse perspectives and experiences of our users, and we encourage collaboration and community engagement. Our platform provides opportunities for users to contribute their knowledge, share their opinions, and engage in discussions with like-minded individuals."
+        }
+      }
+    },
+    "order": [
+      "main"
+    ]
+  }
+  
