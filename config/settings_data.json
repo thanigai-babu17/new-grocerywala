@@ -145,7 +145,7 @@
             "type": "mob-link-simple",
             "settings": {
               "title": "Faq's",
-              "link": "shopify:\/\/pages\/featured-asked-questions",
+              "link": "shopify:\/\/pages\/faq",
               "diffclassname": ""
             }
           },
