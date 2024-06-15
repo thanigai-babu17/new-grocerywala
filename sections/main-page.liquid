@@ -1,6 +1,6 @@
 <section class="common-banner-section">
   <div class="container">
-    <div class="{% if template == 'page.contact' %}col-md-5 col-12 {% else %} col-lg-6 col-12{% endif %}">
+    <div class="{% if template == 'page.contact' %}col-md-5 col-12 {% else %} col-lg-6 col-12{% endif %} {% if template == 'page.terms-and-conditions' or template == 'page.privacy-policy' %}col-lg-12 col-12{% endif %}">
       <div class="common-banner-content">
         <a href="javascript&colon;history.go(-1)" class="back-btn">
           <span class="svg-ic">

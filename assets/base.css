@@ -8442,3 +8442,16 @@ deferred-media.deferred-media {
     border-radius: 12px !important;
 	border-color: transparent;
 }
+
+.policy-content__wrap .policy-content h1,
+.policy-content__wrap .policy-content h2,
+.policy-content__wrap .policy-content h3,
+.policy-content__wrap .policy-content h4,
+.policy-content__wrap .policy-content p{
+	margin-bottom: 18px;
+}
+
+.policy-content__wrap .policy-content p{
+	margin-bottom: 32px;
+	color: var(--grey-600);
+}

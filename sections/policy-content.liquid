@@ -1,0 +1,22 @@
+<div class="container policy-content">
+  {{ section.settings.text_content }}
+</div>
+
+{% schema %}
+  {
+    "name": "Policy Content",
+    "class": "padding-bottom background-section policy-content__wrap",
+    "settings": [
+      {
+        "type": "richtext",
+        "id": "text_content",
+        "label": "Policy Content"
+      }
+    ],
+    "presets": [
+      {
+        "name": "Policy Content"
+      }
+    ]
+  }
+{% endschema %}
