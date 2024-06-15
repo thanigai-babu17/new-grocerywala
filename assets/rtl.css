@@ -831,7 +831,7 @@ p:not(:last-of-type) {
   user-select: none;
   padding: 10px 15px 10px 35px;
   width: 100%;
-  background: url(arrow-acc.svg) no-repeat;
+  background: url(arrow-chevron.svg) no-repeat;
   background-size: 7px;
   background-position: calc(100% - (100% - 15px)) 50%;
 }
@@ -5029,7 +5029,7 @@ table tr:last-of-type {
   position: absolute;
   height: 12px;
   width: 12px;
-  background-image: url("arrow-acc.svg");
+  background-image: url("arrow-chevron.svg");
   background-repeat: no-repeat;
   background-size: 100%;
   background-position: 50% 50%;
