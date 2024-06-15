@@ -144,7 +144,7 @@
           "4f34d0ab-509b-4f40-b46f-e40907654db4": {
             "type": "mob-link-simple",
             "settings": {
-              "title": "Faq",
+              "title": "Faqs",
               "link": "shopify:\/\/pages\/faq",
               "diffclassname": ""
             }
