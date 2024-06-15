@@ -2135,7 +2135,6 @@ header.head-sticky .announcebar {
 	min-width: 220px;
 	z-index: 2;
 	padding: 20px;
-	border-top: 1px solid var(--border-color);
 	-moz-transition: all ease-in-out 0.3s;
 	-ms-transition: all ease-in-out 0.3s;
 	-o-transition: all ease-in-out 0.3s;
@@ -2146,6 +2145,7 @@ header.head-sticky .announcebar {
 	-o-transform: scaleY(0);
 	-webkit-transform: scaleY(0);
 	transform: scaleY(0);
+	border-radius: 8px;
 }
 .header-style-one .main-navigationbar .menu-items-col .main-nav > li.menu-lnk .menu-dropdown.mega-menu {
     width: 100%;
@@ -2477,7 +2477,7 @@ body.home .header-style-one .extra-menu-col {
 
 .mega-menu-container.container{
 	padding-block: 26px;
-    box-shadow: 0px 4px 16px 0px #0000000D;
+	box-shadow: 0px 10px 40px rgba(0, 0, 0, 0.05);
 }
 
 .header__announcement-bar {
