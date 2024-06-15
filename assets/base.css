@@ -4188,6 +4188,7 @@ del {
 
 .common-banner-content p {
 	color: var(--grey-600);
+	font-weight: 500;
 }
 
 .common-banner-content .back-btn {
@@ -8453,5 +8454,6 @@ deferred-media.deferred-media {
 
 .policy-content__wrap .policy-content p{
 	margin-bottom: 32px;
-	color: var(--grey-600);
+    color: var(--grey-600);
+    font-weight: 500;
 }
