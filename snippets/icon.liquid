@@ -27,6 +27,11 @@ icon icon--{{ icon }} {% if inline %}icon--inline{% endif %} {% if direction_awa
     <svg xmlns="http://www.w3.org/2000/svg" width="{{ width | default: 10 }}" height="{{ height | default: 6 }}" viewBox="0 0 8 14" fill="none">
       <path d="M6.99995 1C6.99995 1 1 5.4189 1 7C1 8.5812 7 13 7 13" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
     </svg>
+{% when 'chevron-down' %}
+  <svg xmlns="http://www.w3.org/2000/svg" width="{{ width | default: 10 }}" height="{{ height | default: 6 }}" viewBox="0 0 16 10" fill="none">
+    <path d="M14 2.00005C14 2.00005 9.5811 8 8 8C6.4188 8 2 2 2 2" stroke="currentColor" stroke-width="2.25" stroke-linecap="round" stroke-linejoin="round"/>
+  </svg>
+
 
 {%- when 'telephone' -%}
     <svg xmlns="http://www.w3.org/2000/svg" width="{{ width | default: 16 }}" height="{{ height | default: 16 }}" fill="none" class="{{ icon_class }}">

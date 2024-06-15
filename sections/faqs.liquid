@@ -4,7 +4,7 @@
   </div>
   <div class="faqs-container row"> 
     {% for block in section.blocks %}
-       <div class="col-md-4 col-sm-6 col-12">
+       <div class="col-md-6 col-sm-6 col-12">
           <div class="set has-children">
               <a href="javascript:;" class="acnav-label">
                   {% if block.settings.name1 != blank %}<span>{{ block.settings.name1 }}</span>{% endif %}
@@ -53,7 +53,7 @@
   {
     "name": "faq",
     "tag": "section",
-    "class": "faq-page padding-bottom padding-top",
+    "class": "faq-page padding-bottom background-section",
     "settings": [
       {
         "type" : "text",
