@@ -2043,12 +2043,14 @@ header.head-sticky .announcebar {
 	margin-right: 7px;
 }
 .header-style-one .menu-right li a {
-	display: block;
-	text-align: center;
-	text-transform: capitalize;
-	font-weight: 600;
-	position: relative;
+    display: block;
+    text-align: center;
+    text-transform: capitalize;
+    font-weight: 600;
+    position: relative;
+    color: var(--theme-color);
 }
+
 .header-style-one .count {
 	position: absolute;
 	top: -4px;
@@ -6860,9 +6862,10 @@ a.product-write-review {
 	height: 20px;
 }
 .template-search p.search-msg {
-	padding: 20px 0 30px;
-	font-size: 20px;
-	line-height: 1;
+    padding: 18px 0 18px;
+    font-size: 16px;
+    line-height: 1;
+    color: var(--grey-600);
 }
 .template-search__search .field {
 	position: relative;
@@ -6871,7 +6874,7 @@ a.product-write-review {
 	margin: 0 0 30px;
 }
 .template-search__results .product-card .product-card-inner {
-	border: 1px solid var(--border-color);
+	border: 1px solid var(--grey-500);
 }
 .template-search__results .product-card .link-btn {
 	display: none;
@@ -8432,4 +8435,10 @@ deferred-media.deferred-media {
 
 .facets__wrapper details {
 	padding-inline: 16px;
+}
+
+.template-search__search .search__input{
+	background: #f6f6f6;
+    border-radius: 12px !important;
+	border-color: transparent;
 }
