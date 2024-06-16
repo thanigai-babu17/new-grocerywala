@@ -3,11 +3,6 @@
     "main": {
       "type": "main-product",
       "blocks": {
-        "936e4d22-1228-41cf-adfa-a36a3ef01227": {
-          "type": "backbtn",
-          "settings": {
-          }
-        },
         "judge_me_reviews_preview_badge_MAhc7z": {
           "type": "shopify:\/\/apps\/judge-me-reviews\/blocks\/preview_badge\/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
           "settings": {
@@ -71,7 +66,6 @@
         }
       },
       "block_order": [
-        "936e4d22-1228-41cf-adfa-a36a3ef01227",
         "judge_me_reviews_preview_badge_MAhc7z",
         "b10cd43d-f259-475b-9757-31afbc700c40",
         "2e5ab840-409d-4a4b-a243-d22337d0a5d2",
@@ -88,9 +82,9 @@
       "settings": {
         "pro_img_widthheight": "520x347",
         "pro_thumb_img_widthheight": "73x49",
-        "sizechart_enable": true,
-        "size_lable": "Sizing Guide",
-        "sizechart_info": "<thead>\n                            <tr>\n                                <th scope=\"col\">Device<\/th>\n                                <th scope=\"col\">White<\/th>\n                                <th scope=\"col\">Black<\/th>\n                                <th scope=\"col\">Red<\/th>\n                                <th scope=\"col\">Green<\/th> \n                            <\/tr>\n                        <\/thead>\n                        <tbody>\n                            <tr>\n                                <td data-label=\"Device\">Chair<\/td>\n                                <td data-label=\"White\">14-14.5<\/td>\n                                <td data-label=\"Black\">15-15.5<\/td>\n                                <td data-label=\"Red\">16-16.5<\/td>\n                                <td data-label=\"Green\">17-17.5<\/td>\n                            <\/tr>\n                            <tr>\n                                <td data-label=\"Device\" class=\"bg-gray\">Moniter<\/td>\n                                <td data-label=\"White\" class=\"bg-gray\">14-14.5<\/td>\n                                <td data-label=\"Black\" class=\"bg-gray\">15-15.5<\/td>\n                                <td data-label=\"Red\" class=\"bg-gray\">16-16.5<\/td>\n                                <td data-label=\"Green\" class=\"bg-gray\">17-17.5<\/td>\n                            <\/tr>\n                            <tr>\n                                <td data-label=\"Device\">Keycaps<\/td>\n                                <td data-label=\"White\">14-14.5<\/td>\n                                <td data-label=\"Black\">15-15.5<\/td>\n                                <td data-label=\"Red\">16-16.5<\/td>\n                                <td data-label=\"Green\">17-17.5<\/td>\n                            <\/tr>\n                            <tr>\n                                <td data-label=\"Device\" class=\"bg-gray\">CPU<\/td>\n                                <td data-label=\"White\" class=\"bg-gray\">14-14.5<\/td>\n                                <td data-label=\"Black\" class=\"bg-gray\">15-15.5<\/td>\n                                <td data-label=\"Red\" class=\"bg-gray\">16-16.5<\/td>\n                                <td data-label=\"Green\" class=\"bg-gray\">17-17.5<\/td>\n                            <\/tr>\n                            <tr>\n                                <td data-label=\"Device\">Mouse<\/td>\n                                <td data-label=\"White\">14-14.5<\/td>\n                                <td data-label=\"Black\">15-15.5<\/td>\n                                <td data-label=\"Red\">16-16.5<\/td>\n                                <td data-label=\"Green\">17-17.5<\/td>\n                            <\/tr>\n                        <\/tbody>",
+        "sizechart_enable": false,
+        "size_lable": "",
+        "sizechart_info": "",
         "notify_text": ""
       }
     },
@@ -107,109 +101,6 @@
         "judge_me_reviews_review_widget_YeNpNe"
       ],
       "settings": {
-      }
-    },
-    "ba7a86bc-a2ce-454a-8d59-6f15f8d7036c": {
-      "type": "product-description",
-      "settings": {
-        "subtitle": "About product",
-        "title": "Description",
-        "desc": "his all-in-one kitchen product has it all: fruits and vegetables of all types, all at once. The best part? They're all healthy and nutritious, so you can enjoy them with peace of mind. Whether you're looking for fresh, summer fruit or a quick, healthy veggie salad, Fruits & Vegetables has you covered. So get cooking with Fruits & Vegetables today!",
-        "r_subtitle": "About product",
-        "r_title": "About product",
-        "r_desc": "Our selection of fresh and colorful fruits and vegetables are perfect for nourishing your body and taste buds. Whether you're looking for an easy meal to make your day or a delicious and healthy snack, our Fruits & Vegetables has you covered!"
-      }
-    },
-    "3101c802-2c5f-4994-a890-9941f8cf4ec4": {
-      "type": "shop-reivew",
-      "blocks": {
-        "3216f091-95ca-485a-b104-8b619a902e31": {
-          "type": "text",
-          "settings": {
-            "title": "Best shop on the world!",
-            "review": "4.5  \/   5.0"
-          }
-        },
-        "f7a5c581-3678-47ee-9487-7e63c6e6818e": {
-          "type": "text",
-          "settings": {
-            "title": "Perfect product on the world!",
-            "review": "4.5 \/   5.0"
-          }
-        },
-        "c5bb41fb-7d41-4d41-a185-a65541c7ddab": {
-          "type": "text",
-          "settings": {
-            "title": "Quick Customer Support!!",
-            "review": "4.5 \/   5.0"
-          }
-        }
-      },
-      "block_order": [
-        "3216f091-95ca-485a-b104-8b619a902e31",
-        "f7a5c581-3678-47ee-9487-7e63c6e6818e",
-        "c5bb41fb-7d41-4d41-a185-a65541c7ddab"
-      ],
-      "settings": {
-        "subtitle": "Daily Discounts",
-        "title": "Tailored Service for Shopper",
-        "desc": "We love organic, fresh-picked vegetables for their taste and health benefits. Fruits & Vegetables has brought you the perfect recipes for all your vegetable needs."
-      }
-    },
-    "36cf9913-d28a-4c5c-b168-b202b51fece3": {
-      "type": "bestseller-product",
-      "blocks": {
-        "f0e642bd-fc32-4c51-8bb4-a0e996320311": {
-          "type": "collection",
-          "settings": {
-            "cat_name": "All Categories",
-            "collection": "all-collection"
-          }
-        },
-        "b4d29833-6128-4fa7-aa43-7ae7b60fdd51": {
-          "type": "collection",
-          "settings": {
-            "cat_name": "Vegetables",
-            "collection": "vegetables"
-          }
-        },
-        "09e543f8-9fc2-45a8-9759-92148fd3cbc4": {
-          "type": "collection",
-          "settings": {
-            "cat_name": "Fruits",
-            "collection": "fruits"
-          }
-        },
-        "e7e95c93-4bac-4d94-9c3a-560b402c8f4f": {
-          "type": "collection",
-          "settings": {
-            "cat_name": "Accessories",
-            "collection": "accessories"
-          }
-        },
-        "8c91a792-78c4-41fd-abb0-8bdf0701de69": {
-          "type": "collection",
-          "settings": {
-            "cat_name": "Cheeses",
-            "collection": "bakers"
-          }
-        }
-      },
-      "block_order": [
-        "f0e642bd-fc32-4c51-8bb4-a0e996320311",
-        "b4d29833-6128-4fa7-aa43-7ae7b60fdd51",
-        "09e543f8-9fc2-45a8-9759-92148fd3cbc4",
-        "e7e95c93-4bac-4d94-9c3a-560b402c8f4f",
-        "8c91a792-78c4-41fd-abb0-8bdf0701de69"
-      ],
-      "settings": {
-        "title": "Our Bestsellers",
-        "show_secondary_image": false,
-        "show_vendor": true,
-        "show_review": true,
-        "show_variants": true,
-        "show_qty": true,
-        "pro_img_widthheight": "306x203"
       }
     },
     "be118ccd-f319-4118-a783-b7c4e5af7830": {
@@ -335,9 +226,6 @@
   "order": [
     "main",
     "1717257222d70e1c47",
-    "ba7a86bc-a2ce-454a-8d59-6f15f8d7036c",
-    "3101c802-2c5f-4994-a890-9941f8cf4ec4",
-    "36cf9913-d28a-4c5c-b168-b202b51fece3",
     "be118ccd-f319-4118-a783-b7c4e5af7830",
     "d437016c-526f-4f89-9504-f9b763d52f8a",
     "subscription_banner_gGqWGN",
