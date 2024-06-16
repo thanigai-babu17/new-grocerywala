@@ -1223,7 +1223,8 @@ p:not(:last-of-type) {
 /* !!!!          COMMON BUTTON              !!!! */
 .btn,
 #customer_login_link,
-#customer_register_link {
+#customer_register_link,
+.shopify-payment-button__button {
 	text-align: center;
 	padding: 9px 12px 9px 12px;
 	font-family: var(--first-font);
@@ -3950,7 +3951,6 @@ del {
 }
 /* Product page */
 .product-page-first-section {
-	background: #f3f0ee;
 	padding: 32px 0 61px;
 }
 .pdp-left-column {
@@ -6732,8 +6732,7 @@ button.shopify-payment-button__more-options.shopify-payment-button__button--hidd
 	width: 100%;
 }
 .shopify-payment-button__button--unbranded {
-	background: var(--theme-color) !important;
-	color: var(--second-color) !important;
+	/* background: var(--theme-color) !important;
 	padding: 13px 35px;
 	font-family: var(--first-font) !important;
 	border-radius: 11px;
@@ -6741,12 +6740,9 @@ button.shopify-payment-button__more-options.shopify-payment-button__button--hidd
 	font-size: 14px;
 	line-height: 1;
 	opacity: 1 !important;
-	cursor: pointer;
+	cursor: pointer; */
 }
-.shopify-payment-button__button--unbranded:hover {
-	background: var(--second-color) !important;
-	color: var(--theme-color) !important;
-}
+
 /*======================= SHF product review =====================*/
 .jdgm-rev-widg__summary-stars {
 	margin-bottom: 10px !important;

@@ -5,7 +5,7 @@
   <link id="ModelViewerStyle" rel="stylesheet" href="https://cdn.shopify.com/shopifycloud/model-viewer-ui/assets/v1.0/model-viewer-ui.css" media="print" onload="this.media='all'">
   <link id="ModelViewerOverride" rel="stylesheet" href="{{ 'component-model-viewer-ui.css' | asset_url }}" media="print" onload="this.media='all'">
 {%- endif -%}
-<section class="product-page-first-section">
+<section class="product-page-first-section background-section">
 <div class="container">
     <div class="row">
         <div id="ProductInfo-{{ section.id }}" class="col-md-4 col-12 pdp-left-column">
@@ -16,12 +16,7 @@
                     {%- when 'backbtn' -%}
                         <a href="javascript&colon;history.go(-1)" class="back-btn">
                             <span class="svg-ic">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="11" height="5" viewBox="0 0 11 5"
-                                    fill="none">
-                                    <path fill-rule="evenodd" clip-rule="evenodd"
-                                        d="M10.5791 2.28954C10.5791 2.53299 10.3818 2.73035 10.1383 2.73035L1.52698 2.73048L2.5628 3.73673C2.73742 3.90636 2.74146 4.18544 2.57183 4.36005C2.40219 4.53467 2.12312 4.53871 1.9485 4.36908L0.133482 2.60587C0.0480403 2.52287 -0.000171489 2.40882 -0.000171488 2.2897C-0.000171486 2.17058 0.0480403 2.05653 0.133482 1.97353L1.9485 0.210321C2.12312 0.0406877 2.40219 0.044729 2.57183 0.219347C2.74146 0.393966 2.73742 0.673036 2.5628 0.842669L1.52702 1.84888L10.1383 1.84875C10.3817 1.84874 10.5791 2.04609 10.5791 2.28954Z"
-                                        fill="white"></path>
-                                </svg>
+                              {% render 'icon' icon: 'chevron-left' width: 10 height: 10 %}
                             </span>
                             Back to category
                         </a>
@@ -143,7 +138,7 @@
                                 </div> 
                                 {%- form 'product', product, id: product_form_id, class: 'form', novalidate: 'novalidate', data-type: 'add-to-cart-form' -%}
                                     <input type="hidden" name="id" value="{{ product.selected_or_first_available_variant.id }}" disabled>
-                                    <button type="submit" name="add" class="btn addcart-btn product-form__submit" aria-label="{{ 'products.product.add_to_cart' | t }}" {% if product.selected_or_first_available_variant.available == false %}disabled{% endif %}>
+                                    <button type="submit" name="add" class="btn btn--primary btn--lg addcart-btn product-form__submit" aria-label="{{ 'products.product.add_to_cart' | t }}" {% if product.selected_or_first_available_variant.available == false %}disabled{% endif %}>
                                         <span>  
                                             {%- if product.selected_or_first_available_variant.available -%}
                                                 {{ 'products.product.add_to_cart' | t }}
@@ -164,7 +159,9 @@
                                             </svg>
                                         </div> 
                                     </button>
-                                    <div class="product-form__buttons" style="{% if product.selected_or_first_available_variant.available %}display: block;{% else %}display: none;{% endif %}">{{ form | payment_button }}</div>
+                                    <div class="product-form__buttons" style="{% if product.selected_or_first_available_variant.available %}display: block;{% else %}display: none;{% endif %}">
+                                      {{ form | payment_button }}
+                                    </div>
                                     <div class="notify-sold" {% if product.selected_or_first_available_variant.available %}style="display: none;"{% endif %}>
                                        <div id="notify-me"><button type="button" class="notify-btn">Notify me</button></div>
                                     </div>

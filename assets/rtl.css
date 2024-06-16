@@ -6364,20 +6364,10 @@ button.shopify-payment-button__more-options.shopify-payment-button__button--hidd
   margin-top: 20px;
 }
 .shopify-payment-button__button--unbranded {
-  background: var(--theme-color)!important;
-  color: var(--second-color)!important;
-  padding: 13px 35px;
-  font-family: var(--first-font)!important;
-  border-radius: 11px;
-  font-weight: 600;
-  font-size: 14px;
-  line-height: 1;
-  opacity:1 !important;
-  cursor: pointer;
+
 }
 .shopify-payment-button__button--unbranded:hover {
-  background: var(--second-color) !important;
-  color: var(--theme-color)!important;
+
 }
 /*======================= SHF product review =====================*/
 .jdgm-widget .jdgm-rev-widg .jdgm-star {
