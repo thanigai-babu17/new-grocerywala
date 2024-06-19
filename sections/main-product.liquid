@@ -350,7 +350,12 @@
     </div>
 </div>
 </section>
-{% render 'recently-viewed' %}
+
+{% if section.settings.enable_recent_view %}
+  {% render 'recently-viewed' %}
+{% endif %}
+
+
 <div class="size-popup">
   <div class="container">
       <div class="size-table-wrapper">
@@ -622,6 +627,12 @@
       "type": "text",
       "id": "notify_text",
       "label": "Notify Text"
+    },
+    {
+      "type": "checkbox",
+      "id": "enable_recent_view",
+      "label": "Enable Recently Viewed",
+      "default": false
     }
   ]
 }

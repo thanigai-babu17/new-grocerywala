@@ -6363,12 +6363,6 @@ button.shopify-payment-button__more-options.shopify-payment-button__button--hidd
 .shopify-challenge__container #g-recaptcha {
   margin-top: 20px;
 }
-.shopify-payment-button__button--unbranded {
-
-}
-.shopify-payment-button__button--unbranded:hover {
-
-}
 /*======================= SHF product review =====================*/
 .jdgm-widget .jdgm-rev-widg .jdgm-star {
     font-size: 12px;
