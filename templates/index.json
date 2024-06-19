@@ -185,6 +185,72 @@
         "featured_img": "shopify:\/\/shop_images\/featured-image-banner.webp"
       }
     },
+    "offers_and_coupons_9rFe8H": {
+      "type": "offers-and-coupons",
+      "blocks": {
+        "offer_GxKyAL": {
+          "type": "offer",
+          "settings": {
+            "icon": "shopify:\/\/shop_images\/fav-icon-Grocerywala.svg",
+            "name": "GROCERY NEW",
+            "description": "Get 20% cashback using Freecharge",
+            "save_text": "You will save ₹50 on cart",
+            "discount_code": "GWL150OFF"
+          }
+        },
+        "offer_L3FmTm": {
+          "type": "offer",
+          "settings": {
+            "icon": "shopify:\/\/shop_images\/fav-icon-Grocerywala.svg",
+            "name": "GROCERY NEW",
+            "description": "Get 20% cashback using Freecharge",
+            "save_text": "You will save ₹50 on cart",
+            "discount_code": "GWL150OFF"
+          }
+        },
+        "offer_9rd79c": {
+          "type": "offer",
+          "settings": {
+            "icon": "shopify:\/\/shop_images\/fav-icon-Grocerywala.svg",
+            "name": "GROCERY NEW",
+            "description": "Get 20% cashback using Freecharge",
+            "save_text": "You will save ₹50 on cart",
+            "discount_code": "GWL150OFF"
+          }
+        },
+        "offer_UwbmKJ": {
+          "type": "offer",
+          "settings": {
+            "icon": "shopify:\/\/shop_images\/fav-icon-Grocerywala.svg",
+            "name": "GROCERY NEW",
+            "description": "Get 20% cashback using Freecharge",
+            "save_text": "You will save ₹50 on cart",
+            "discount_code": "GWL150OFF"
+          }
+        },
+        "offer_6kpVk6": {
+          "type": "offer",
+          "settings": {
+            "icon": "shopify:\/\/shop_images\/fav-icon-Grocerywala.svg",
+            "name": "GROCERY NEW",
+            "description": "Get 20% cashback using Freecharge",
+            "save_text": "You will save ₹50 on cart",
+            "discount_code": "GWL150OFF"
+          }
+        }
+      },
+      "block_order": [
+        "offer_GxKyAL",
+        "offer_L3FmTm",
+        "offer_9rd79c",
+        "offer_UwbmKJ",
+        "offer_6kpVk6"
+      ],
+      "settings": {
+        "title": "Coupons & Offers",
+        "additional_classes": ""
+      }
+    },
     "collection_slider_c7fFVc": {
       "type": "collection-slider",
       "settings": {
@@ -425,6 +491,7 @@
     "categories_slider_eQ7CkB",
     "weekly_specials_QPGwDP",
     "featured_banner_t9cgmm",
+    "offers_and_coupons_9rFe8H",
     "collection_slider_c7fFVc",
     "featured_products_93EmAR",
     "collection_slider_MWcTR4",

@@ -85,7 +85,8 @@
         "sizechart_enable": false,
         "size_lable": "",
         "sizechart_info": "",
-        "notify_text": ""
+        "notify_text": "",
+        "enable_recent_view": false
       }
     },
     "why_grocerywala_ykHj3g": {
@@ -132,6 +133,61 @@
       ],
       "settings": {
         "title": "Why choose Grocerywala ?"
+      }
+    },
+    "offers_and_coupons_9rFe8H": {
+      "type": "offers-and-coupons",
+      "blocks": {
+        "offer_GxKyAL": {
+          "type": "offer",
+          "settings": {
+            "icon": "shopify:\/\/shop_images\/fav-icon-Grocerywala.svg",
+            "name": "GROCERY NEW",
+            "description": "Get 20% cashback using Freecharge",
+            "save_text": "You will save ₹50 on cart",
+            "discount_code": "GWL150OFF"
+          }
+        },
+        "offer_L3FmTm": {
+          "type": "offer",
+          "settings": {
+            "icon": "shopify:\/\/shop_images\/fav-icon-Grocerywala.svg",
+            "name": "GROCERY NEW",
+            "description": "Get 20% cashback using Freecharge",
+            "save_text": "You will save ₹50 on cart",
+            "discount_code": "GWL150OFF"
+          }
+        },
+        "offer_9rd79c": {
+          "type": "offer",
+          "settings": {
+            "icon": "shopify:\/\/shop_images\/fav-icon-Grocerywala.svg",
+            "name": "GROCERY NEW",
+            "description": "Get 20% cashback using Freecharge",
+            "save_text": "You will save ₹50 on cart",
+            "discount_code": "GWL150OFF"
+          }
+        },
+        "offer_qCtNFi": {
+          "type": "offer",
+          "settings": {
+            "icon": "shopify:\/\/shop_images\/fav-icon-Grocerywala.svg",
+            "name": "GROCERY NEW",
+            "description": "Get 20% cashback using Freecharge",
+            "save_text": "You will save ₹50 on cart",
+            "discount_code": "GWPL56"
+          }
+        }
+      },
+      "block_order": [
+        "offer_GxKyAL",
+        "offer_L3FmTm",
+        "offer_9rd79c",
+        "offer_qCtNFi"
+      ],
+      "settings": {
+        "title": "Additional Offers",
+        "additional_classes": "background-section"
       }
     },
     "1717257222d70e1c47": {
@@ -272,6 +328,7 @@
   "order": [
     "main",
     "why_grocerywala_ykHj3g",
+    "offers_and_coupons_9rFe8H",
     "1717257222d70e1c47",
     "be118ccd-f319-4118-a783-b7c4e5af7830",
     "d437016c-526f-4f89-9504-f9b763d52f8a",

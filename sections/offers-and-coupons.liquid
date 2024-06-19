@@ -1,0 +1,139 @@
+{{ 'offers-and-coupons.css' | asset_url | stylesheet_tag }}
+
+<div class="off-and-coup__wrap {{ section.settings.additional_classes }}">
+  <div class="container off-and-coup__container">
+    <h3 class="off-and-coup__section-title">
+      {{ section.settings.title }}
+    </h3>
+    <div class="off-and-coup__row">
+      <div class="swiper-wrapper">
+        {% for block in section.blocks %}
+          {% if block.type == 'offer' %}
+            <div class="off-and-coup__slide swiper-slide">
+              <div class="off-and-coup__slide-header">
+                <div class="offer-slide__icon">
+                  <img
+                    loading="lazy"
+                    src="{{ block.settings.icon |  img_url: 'master' }}"
+                    alt="{{ block.settings.icon.alt }}">
+                </div>
+                <div class="offer-slide__name">
+                  {{ block.settings.name }}
+                </div>
+              </div>
+              <h3 class="offer-slide__description">
+                {{ block.settings.description }}
+              </h3>
+              <div class="offer-slide__footer">
+                <div class="offer-slide__save">
+                  {{ block.settings.save_text }}
+                </div>
+                <span
+                  role="button"
+                  class="offer-slide__code"
+                  data-coupon-code="{{ block.settings.discount_code }}">
+                  Copy
+                  {% render 'icon'
+                    , icon: 'copy'
+                    , width: 24
+                    , height: 24 %}
+                </span>
+              </div>
+            </div>
+          {% endif %}
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+    const slideLength = {{ section.blocks.size }} || 1;
+    const swiper = new Swiper('.off-and-coup__row', {
+      speed: 600,
+      spaceBetween: 30,
+      slidesPerView: 'auto',
+      slidesPerGroup: 1,
+      slideShadows: true,
+      breakpoints: {
+        768: {
+          slidesPerView: parseInt(Math.round(slideLength / 2)),
+        },
+        998: {
+          slidesPerView: parseInt(Math.abs(slideLength - 1)),
+        }
+      },
+    });
+
+  //  when clicked on copy copies the discount code to clipboard
+    $('.offer-slide__code').on('click', function() {
+        const couponCode = $(this).data('coupon-code');
+        const $temp = $("<input>");
+        $("body").append($temp);
+        $temp.val(couponCode).select();
+        document.execCommand("copy");
+        $temp.remove();
+    });
+  });
+</script>
+
+{% schema %}
+  {
+    "name": "Offers and Coupons",
+    "class": "padding-bottom",
+    "settings": [
+      {
+        "type": "text",
+        "id": "title",
+        "label": "Section Title",
+        "default": "Coupons & Offers"
+      }, {
+        "type": "text",
+        "id": "additional_classes",
+        "label": "Custom Css Classes"
+      }
+    ],
+    "blocks": [
+      {
+        "type": "offer",
+        "name": "Offer",
+        "settings": [
+          {
+            "type": "image_picker",
+            "id": "icon",
+            "label": "Offer Icon",
+            "info": "Icon for the offer upload in 1/1 ratio"
+          },
+          {
+            "type": "text",
+            "id": "name",
+            "label": "Name",
+            "default": "GROCERY NEW"
+          },
+          {
+            "type": "text",
+            "id": "description",
+            "label": "Description",
+            "default": "Get 20% cashback using Freecharge"
+          },
+          {
+            "type": "text",
+            "id": "save_text",
+            "label": "Save text",
+            "default": "You will save ₹50 on cart"
+          }, {
+            "type": "text",
+            "id": "discount_code",
+            "label": "Discount Code"
+          }
+        ]
+      }
+    ],
+    "presets": [
+      {
+        "name": "Offers and Coupons"
+      }
+    ]
+  }
+{% endschema %}
