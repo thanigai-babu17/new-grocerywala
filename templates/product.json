@@ -3,11 +3,6 @@
     "main": {
       "type": "main-product",
       "blocks": {
-        "judge_me_reviews_preview_badge_MAhc7z": {
-          "type": "shopify:\/\/apps\/judge-me-reviews\/blocks\/preview_badge\/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
-          "settings": {
-          }
-        },
         "b10cd43d-f259-475b-9757-31afbc700c40": {
           "type": "vendor",
           "settings": {
@@ -15,6 +10,11 @@
         },
         "2e5ab840-409d-4a4b-a243-d22337d0a5d2": {
           "type": "title",
+          "settings": {
+          }
+        },
+        "judge_me_reviews_preview_badge_MAhc7z": {
+          "type": "shopify:\/\/apps\/judge-me-reviews\/blocks\/preview_badge\/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
           "settings": {
           }
         },
@@ -26,7 +26,7 @@
         "ac6d5564-0ab3-4bc8-a98a-baea7e4d93fe": {
           "type": "variant_picker",
           "settings": {
-            "picker_type": "dropdown"
+            "picker_type": "button"
           }
         },
         "db437cdc-76df-4a2e-86bd-59abf4157285": {
@@ -36,6 +36,11 @@
         },
         "51843371-c6d5-4bb1-b7a5-e1d4493fb741": {
           "type": "price",
+          "settings": {
+          }
+        },
+        "83a97dd2-5a43-41ff-bbd6-18054d25b6ff": {
+          "type": "description",
           "settings": {
           }
         },
@@ -53,31 +58,20 @@
           "type": "pro_count",
           "settings": {
           }
-        },
-        "83a97dd2-5a43-41ff-bbd6-18054d25b6ff": {
-          "type": "description",
-          "settings": {
-          }
-        },
-        "afe689bc-1aed-4e9b-a194-6c9b4e9ecdba": {
-          "type": "pro_detail",
-          "settings": {
-          }
         }
       },
       "block_order": [
-        "judge_me_reviews_preview_badge_MAhc7z",
         "b10cd43d-f259-475b-9757-31afbc700c40",
         "2e5ab840-409d-4a4b-a243-d22337d0a5d2",
+        "judge_me_reviews_preview_badge_MAhc7z",
         "0078c5d7-e2d2-4022-b67d-8f228ae79493",
         "ac6d5564-0ab3-4bc8-a98a-baea7e4d93fe",
         "db437cdc-76df-4a2e-86bd-59abf4157285",
         "51843371-c6d5-4bb1-b7a5-e1d4493fb741",
+        "83a97dd2-5a43-41ff-bbd6-18054d25b6ff",
         "0a0dd0ba-5ba7-47f2-bfaa-86c8a1e38398",
         "7b740e5c-3489-4fbe-9053-31559dd94292",
-        "a8563a57-7518-4d53-86c4-50b47cd8402d",
-        "83a97dd2-5a43-41ff-bbd6-18054d25b6ff",
-        "afe689bc-1aed-4e9b-a194-6c9b4e9ecdba"
+        "a8563a57-7518-4d53-86c4-50b47cd8402d"
       ],
       "settings": {
         "pro_img_widthheight": "520x347",
@@ -87,52 +81,6 @@
         "sizechart_info": "",
         "notify_text": "",
         "enable_recent_view": false
-      }
-    },
-    "why_grocerywala_ykHj3g": {
-      "type": "why-grocerywala",
-      "blocks": {
-        "slide_6imPpV": {
-          "type": "slide",
-          "settings": {
-            "icon": "<svg xmlns=\"http:\/\/www.w3.org\/2000\/svg\" width=\"56\" height=\"56\" viewbox=\"0 0 56 56\" fill=\"none\">\n<path d=\"M4.125 28C4.125 14.7452 14.8702 4 28.125 4C41.3798 4 52.125 14.7452 52.125 28C52.125 41.2548 41.3798 52 28.125 52C14.8702 52 4.125 41.2548 4.125 28Z\" fill=\"#ECF6E0\"><\/path>\n<path d=\"M4.125 28C4.125 14.7452 14.8702 4 28.125 4C41.3798 4 52.125 14.7452 52.125 28C52.125 41.2548 41.3798 52 28.125 52C14.8702 52 4.125 41.2548 4.125 28Z\" stroke=\"#F8FBF3\" stroke-width=\"7.2\"><\/path>\n<path d=\"M38.125 28C38.125 22.4771 33.6478 18 28.125 18C22.6021 18 18.125 22.4771 18.125 28C18.125 33.5228 22.6021 38 28.125 38C33.6478 38 38.125 33.5228 38.125 28Z\" stroke=\"#8BC53F\" stroke-width=\"1.5\"><\/path>\n<path d=\"M24.125 28.75C24.125 28.75 25.725 29.6625 26.525 31C26.525 31 28.925 25.75 32.125 24\" stroke=\"#8BC53F\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><\/path>\n<\/svg>",
-            "title": "Quality",
-            "sub_title": "You can trust"
-          }
-        },
-        "slide_AP4CjG": {
-          "type": "slide",
-          "settings": {
-            "icon": "<svg xmlns=\"http:\/\/www.w3.org\/2000\/svg\" width=\"56\" height=\"56\" viewbox=\"0 0 56 56\" fill=\"none\">\n<path d=\"M4.375 28C4.375 14.7452 15.1202 4 28.375 4C41.6298 4 52.375 14.7452 52.375 28C52.375 41.2548 41.6298 52 28.375 52C15.1202 52 4.375 41.2548 4.375 28Z\" fill=\"#ECF6E0\"><\/path>\n<path d=\"M4.375 28C4.375 14.7452 15.1202 4 28.375 4C41.6298 4 52.375 14.7452 52.375 28C52.375 41.2548 41.6298 52 28.375 52C15.1202 52 4.375 41.2548 4.375 28Z\" stroke=\"#F8FBF3\" stroke-width=\"7.2\"><\/path>\n<path d=\"M28.375 38C33.8978 38 38.375 33.5228 38.375 28C38.375 22.4772 33.8978 18 28.375 18C22.8522 18 18.375 22.4772 18.375 28C18.375 33.5228 22.8522 38 28.375 38Z\" stroke=\"#8AC43F\" stroke-width=\"1.5\"><\/path>\n<path d=\"M28.375 24V28L30.375 30\" stroke=\"#8AC43F\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><\/path>\n<\/svg>",
-            "title": "On time",
-            "sub_title": "Guarantee"
-          }
-        },
-        "slide_qGfXrV": {
-          "type": "slide",
-          "settings": {
-            "icon": "<svg xmlns=\"http:\/\/www.w3.org\/2000\/svg\" width=\"56\" height=\"56\" viewbox=\"0 0 56 56\" fill=\"none\">\n<path d=\"M3.625 28C3.625 14.7452 14.3702 4 27.625 4C40.8798 4 51.625 14.7452 51.625 28C51.625 41.2548 40.8798 52 27.625 52C14.3702 52 3.625 41.2548 3.625 28Z\" fill=\"#ECF6E0\"><\/path>\n<path d=\"M3.625 28C3.625 14.7452 14.3702 4 27.625 4C40.8798 4 51.625 14.7452 51.625 28C51.625 41.2548 40.8798 52 27.625 52C14.3702 52 3.625 41.2548 3.625 28Z\" stroke=\"#F8FBF3\" stroke-width=\"7.2\"><\/path>\n<path d=\"M19.625 30H22.0198C22.314 30 22.6041 30.0663 22.8672 30.1936L24.9092 31.1816C25.1722 31.3089 25.4624 31.3751 25.7565 31.3751H26.7991C27.8075 31.3751 28.625 32.1662 28.625 33.142C28.625 33.1814 28.598 33.2161 28.5588 33.2269L26.0179 33.9295C25.5621 34.0555 25.074 34.0116 24.65 33.8064L22.4671 32.7503\" stroke=\"#8AC43F\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><\/path>\n<path d=\"M28.625 32.5L33.2178 31.0889C34.032 30.8352 34.9121 31.136 35.4221 31.8423C35.7909 32.3529 35.6407 33.0842 35.1035 33.3942L27.5879 37.7305C27.1099 38.0063 26.5459 38.0736 26.0202 37.9176L19.625 36.0199\" stroke=\"#8AC43F\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><\/path>\n<path d=\"M30.625 28H28.625C26.7394 28 25.7966 28 25.2108 27.4142C24.625 26.8284 24.625 25.8856 24.625 24V22C24.625 20.1144 24.625 19.1716 25.2108 18.5858C25.7966 18 26.7394 18 28.625 18H30.625C32.5106 18 33.4534 18 34.0392 18.5858C34.625 19.1716 34.625 20.1144 34.625 22V24C34.625 25.8856 34.625 26.8284 34.0392 27.4142C33.4534 28 32.5106 28 30.625 28Z\" stroke=\"#8AC43F\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><\/path>\n<path d=\"M28.625 21H30.625\" stroke=\"#8AC43F\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><\/path>\n<\/svg>",
-            "title": "Delivery",
-            "sub_title": "with care"
-          }
-        },
-        "slide_LYPaN3": {
-          "type": "slide",
-          "settings": {
-            "icon": "<svg xmlns=\"http:\/\/www.w3.org\/2000\/svg\" width=\"56\" height=\"56\" viewbox=\"0 0 56 56\" fill=\"none\">\n<path d=\"M3.875 28C3.875 14.7452 14.6202 4 27.875 4C41.1298 4 51.875 14.7452 51.875 28C51.875 41.2548 41.1298 52 27.875 52C14.6202 52 3.875 41.2548 3.875 28Z\" fill=\"#ECF6E0\"><\/path>\n<path d=\"M3.875 28C3.875 14.7452 14.6202 4 27.875 4C41.1298 4 51.875 14.7452 51.875 28C51.875 41.2548 41.1298 52 27.875 52C14.6202 52 3.875 41.2548 3.875 28Z\" stroke=\"#F8FBF3\" stroke-width=\"7.2\"><\/path>\n<path d=\"M31.2769 31.9773H34.5162C35.7954 31.9557 37.7496 32.629 37.7496 35.0572C37.7496 37.5767 35.3381 37.9991 34.5162 37.9991C33.6943 37.9991 25.9325 37.9991 23.6953 37.9991C21.1893 37.9991 17.751 37.4915 17.751 33.1682V24.0029H37.7496V28.5199M31.2769 31.9773C31.2823 31.7634 31.3733 31.5513 31.5501 31.3972L33.2519 29.9769M31.2769 31.9773C31.2712 32.2055 31.363 32.4358 31.5523 32.5997L33.2519 33.9833\" stroke=\"#8AC43E\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><\/path>\n<path d=\"M17.7559 23.9912L18.6774 21.6903C19.4252 19.9021 19.7991 19.008 20.5569 18.5046C21.3148 18.0012 22.2869 18.0012 24.2311 18.0012H31.2504C33.1947 18.0012 34.1667 18.0012 34.9246 18.5046C35.6825 19.008 36.0563 19.9021 36.8042 21.6903L37.75 23.9948\" stroke=\"#8AC43E\" stroke-width=\"1.5\" stroke-linecap=\"round\"><\/path>\n<path d=\"M27.7129 24.0012V18.0012\" stroke=\"#8AC43E\" stroke-width=\"1.5\" stroke-linecap=\"round\"><\/path>\n<path d=\"M25.7129 28.0012H29.7129\" stroke=\"#8AC43E\" stroke-width=\"1.5\" stroke-linecap=\"round\"><\/path>\n<\/svg>",
-            "title": "Return policy",
-            "sub_title": "Easy"
-          }
-        }
-      },
-      "block_order": [
-        "slide_6imPpV",
-        "slide_AP4CjG",
-        "slide_qGfXrV",
-        "slide_LYPaN3"
-      ],
-      "settings": {
-        "title": "Why choose Grocerywala ?"
       }
     },
     "offers_and_coupons_9rFe8H": {
@@ -190,6 +138,57 @@
         "additional_classes": "background-section"
       }
     },
+    "why_grocerywala_ykHj3g": {
+      "type": "why-grocerywala",
+      "blocks": {
+        "slide_6imPpV": {
+          "type": "slide",
+          "settings": {
+            "icon": "<svg xmlns=\"http:\/\/www.w3.org\/2000\/svg\" width=\"56\" height=\"56\" viewbox=\"0 0 56 56\" fill=\"none\">\n<path d=\"M4.125 28C4.125 14.7452 14.8702 4 28.125 4C41.3798 4 52.125 14.7452 52.125 28C52.125 41.2548 41.3798 52 28.125 52C14.8702 52 4.125 41.2548 4.125 28Z\" fill=\"#ECF6E0\"><\/path>\n<path d=\"M4.125 28C4.125 14.7452 14.8702 4 28.125 4C41.3798 4 52.125 14.7452 52.125 28C52.125 41.2548 41.3798 52 28.125 52C14.8702 52 4.125 41.2548 4.125 28Z\" stroke=\"#F8FBF3\" stroke-width=\"7.2\"><\/path>\n<path d=\"M38.125 28C38.125 22.4771 33.6478 18 28.125 18C22.6021 18 18.125 22.4771 18.125 28C18.125 33.5228 22.6021 38 28.125 38C33.6478 38 38.125 33.5228 38.125 28Z\" stroke=\"#8BC53F\" stroke-width=\"1.5\"><\/path>\n<path d=\"M24.125 28.75C24.125 28.75 25.725 29.6625 26.525 31C26.525 31 28.925 25.75 32.125 24\" stroke=\"#8BC53F\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><\/path>\n<\/svg>",
+            "title": "Quality",
+            "sub_title": "You can trust"
+          }
+        },
+        "slide_AP4CjG": {
+          "type": "slide",
+          "settings": {
+            "icon": "<svg xmlns=\"http:\/\/www.w3.org\/2000\/svg\" width=\"56\" height=\"56\" viewbox=\"0 0 56 56\" fill=\"none\">\n<path d=\"M4.375 28C4.375 14.7452 15.1202 4 28.375 4C41.6298 4 52.375 14.7452 52.375 28C52.375 41.2548 41.6298 52 28.375 52C15.1202 52 4.375 41.2548 4.375 28Z\" fill=\"#ECF6E0\"><\/path>\n<path d=\"M4.375 28C4.375 14.7452 15.1202 4 28.375 4C41.6298 4 52.375 14.7452 52.375 28C52.375 41.2548 41.6298 52 28.375 52C15.1202 52 4.375 41.2548 4.375 28Z\" stroke=\"#F8FBF3\" stroke-width=\"7.2\"><\/path>\n<path d=\"M28.375 38C33.8978 38 38.375 33.5228 38.375 28C38.375 22.4772 33.8978 18 28.375 18C22.8522 18 18.375 22.4772 18.375 28C18.375 33.5228 22.8522 38 28.375 38Z\" stroke=\"#8AC43F\" stroke-width=\"1.5\"><\/path>\n<path d=\"M28.375 24V28L30.375 30\" stroke=\"#8AC43F\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><\/path>\n<\/svg>",
+            "title": "On time",
+            "sub_title": "Guarantee"
+          }
+        },
+        "slide_qGfXrV": {
+          "type": "slide",
+          "settings": {
+            "icon": "<svg xmlns=\"http:\/\/www.w3.org\/2000\/svg\" width=\"56\" height=\"56\" viewbox=\"0 0 56 56\" fill=\"none\">\n<path d=\"M3.625 28C3.625 14.7452 14.3702 4 27.625 4C40.8798 4 51.625 14.7452 51.625 28C51.625 41.2548 40.8798 52 27.625 52C14.3702 52 3.625 41.2548 3.625 28Z\" fill=\"#ECF6E0\"><\/path>\n<path d=\"M3.625 28C3.625 14.7452 14.3702 4 27.625 4C40.8798 4 51.625 14.7452 51.625 28C51.625 41.2548 40.8798 52 27.625 52C14.3702 52 3.625 41.2548 3.625 28Z\" stroke=\"#F8FBF3\" stroke-width=\"7.2\"><\/path>\n<path d=\"M19.625 30H22.0198C22.314 30 22.6041 30.0663 22.8672 30.1936L24.9092 31.1816C25.1722 31.3089 25.4624 31.3751 25.7565 31.3751H26.7991C27.8075 31.3751 28.625 32.1662 28.625 33.142C28.625 33.1814 28.598 33.2161 28.5588 33.2269L26.0179 33.9295C25.5621 34.0555 25.074 34.0116 24.65 33.8064L22.4671 32.7503\" stroke=\"#8AC43F\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><\/path>\n<path d=\"M28.625 32.5L33.2178 31.0889C34.032 30.8352 34.9121 31.136 35.4221 31.8423C35.7909 32.3529 35.6407 33.0842 35.1035 33.3942L27.5879 37.7305C27.1099 38.0063 26.5459 38.0736 26.0202 37.9176L19.625 36.0199\" stroke=\"#8AC43F\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><\/path>\n<path d=\"M30.625 28H28.625C26.7394 28 25.7966 28 25.2108 27.4142C24.625 26.8284 24.625 25.8856 24.625 24V22C24.625 20.1144 24.625 19.1716 25.2108 18.5858C25.7966 18 26.7394 18 28.625 18H30.625C32.5106 18 33.4534 18 34.0392 18.5858C34.625 19.1716 34.625 20.1144 34.625 22V24C34.625 25.8856 34.625 26.8284 34.0392 27.4142C33.4534 28 32.5106 28 30.625 28Z\" stroke=\"#8AC43F\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><\/path>\n<path d=\"M28.625 21H30.625\" stroke=\"#8AC43F\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><\/path>\n<\/svg>",
+            "title": "Delivery",
+            "sub_title": "with care"
+          }
+        },
+        "slide_LYPaN3": {
+          "type": "slide",
+          "settings": {
+            "icon": "<svg xmlns=\"http:\/\/www.w3.org\/2000\/svg\" width=\"56\" height=\"56\" viewbox=\"0 0 56 56\" fill=\"none\">\n<path d=\"M3.875 28C3.875 14.7452 14.6202 4 27.875 4C41.1298 4 51.875 14.7452 51.875 28C51.875 41.2548 41.1298 52 27.875 52C14.6202 52 3.875 41.2548 3.875 28Z\" fill=\"#ECF6E0\"><\/path>\n<path d=\"M3.875 28C3.875 14.7452 14.6202 4 27.875 4C41.1298 4 51.875 14.7452 51.875 28C51.875 41.2548 41.1298 52 27.875 52C14.6202 52 3.875 41.2548 3.875 28Z\" stroke=\"#F8FBF3\" stroke-width=\"7.2\"><\/path>\n<path d=\"M31.2769 31.9773H34.5162C35.7954 31.9557 37.7496 32.629 37.7496 35.0572C37.7496 37.5767 35.3381 37.9991 34.5162 37.9991C33.6943 37.9991 25.9325 37.9991 23.6953 37.9991C21.1893 37.9991 17.751 37.4915 17.751 33.1682V24.0029H37.7496V28.5199M31.2769 31.9773C31.2823 31.7634 31.3733 31.5513 31.5501 31.3972L33.2519 29.9769M31.2769 31.9773C31.2712 32.2055 31.363 32.4358 31.5523 32.5997L33.2519 33.9833\" stroke=\"#8AC43E\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><\/path>\n<path d=\"M17.7559 23.9912L18.6774 21.6903C19.4252 19.9021 19.7991 19.008 20.5569 18.5046C21.3148 18.0012 22.2869 18.0012 24.2311 18.0012H31.2504C33.1947 18.0012 34.1667 18.0012 34.9246 18.5046C35.6825 19.008 36.0563 19.9021 36.8042 21.6903L37.75 23.9948\" stroke=\"#8AC43E\" stroke-width=\"1.5\" stroke-linecap=\"round\"><\/path>\n<path d=\"M27.7129 24.0012V18.0012\" stroke=\"#8AC43E\" stroke-width=\"1.5\" stroke-linecap=\"round\"><\/path>\n<path d=\"M25.7129 28.0012H29.7129\" stroke=\"#8AC43E\" stroke-width=\"1.5\" stroke-linecap=\"round\"><\/path>\n<\/svg>",
+            "title": "Return policy",
+            "sub_title": "Easy"
+          }
+        }
+      },
+      "block_order": [
+        "slide_6imPpV",
+        "slide_AP4CjG",
+        "slide_qGfXrV",
+        "slide_LYPaN3"
+      ],
+      "settings": {
+        "title": "Why choose Grocerywala ?"
+      }
+    },
+    "product_additional_info_Y7rV9q": {
+      "type": "product-additional-info",
+      "settings": {
+      }
+    },
     "1717257222d70e1c47": {
       "type": "apps",
       "blocks": {
@@ -203,75 +202,6 @@
         "judge_me_reviews_review_widget_YeNpNe"
       ],
       "settings": {
-      }
-    },
-    "be118ccd-f319-4118-a783-b7c4e5af7830": {
-      "type": "testimonials",
-      "blocks": {
-        "09919d69-5dba-41cc-83db-a3fb28ee3b5e": {
-          "type": "text",
-          "settings": {
-            "review": "4.5   \/5.0",
-            "title": "Excellent   service!",
-            "desc": "I was so impressed with the customer service I received from [company name]. The staff was friendly and helpful, and they went above and beyond to make sure I was satisfied with my purchase.",
-            "author": "john doe",
-            "Designation": "Client",
-            "subtitle": "Basil Leaves"
-          }
-        },
-        "86535f6b-ba65-46c4-9971-0db5a1c3ca01": {
-          "type": "text",
-          "settings": {
-            "review": "4.5    \/5.0",
-            "title": "Great Products",
-            "desc": "I was hesitant to order online, but I'm so glad I did! The product arrived quickly and in perfect condition. I would definitely use [company name] again.",
-            "author": "Isabel Hanson",
-            "Designation": "SEO",
-            "subtitle": "Basil Leaves"
-          }
-        },
-        "5c27c783-a665-4ad7-8e53-bec73ab85320": {
-          "type": "text",
-          "settings": {
-            "review": "4.5   \/  5.0",
-            "title": "Great Customer Support",
-            "desc": "I'm so happy with my purchase from [company name]. The product is exactly what I was looking for, and it's even better than I expected. I would definitely recommend this company to anyone.",
-            "author": "Ewan Sharpe",
-            "Designation": "Developer",
-            "subtitle": "Basil Leaves"
-          }
-        },
-        "26208ef8-a122-421f-810b-5c73a030933b": {
-          "type": "text",
-          "settings": {
-            "review": "4.5     \/  5.0",
-            "title": "Helpful Products",
-            "desc": "Great theme with LOTS of options and GREAT support. Their support is awesome.  Great communication and service!.",
-            "author": "Sarah Williams",
-            "Designation": "Patient",
-            "subtitle": "Basil Leaves"
-          }
-        }
-      },
-      "block_order": [
-        "09919d69-5dba-41cc-83db-a3fb28ee3b5e",
-        "86535f6b-ba65-46c4-9971-0db5a1c3ca01",
-        "5c27c783-a665-4ad7-8e53-bec73ab85320",
-        "26208ef8-a122-421f-810b-5c73a030933b"
-      ],
-      "settings": {
-        "title": "Testimonials",
-        "desc": "Grocery stores are an important part of the food supply chain. They provide a convenient way for consumers to purchase a variety of food products, and they play a role in ensuring that food is safe and accessible to everyone."
-      }
-    },
-    "d437016c-526f-4f89-9504-f9b763d52f8a": {
-      "type": "featured-blog",
-      "settings": {
-        "title": "Blog & Articles",
-        "desc": "The cost of groceries can vary depending on the type of store, the location of the store, and the specific products that are purchased. In general, grocery prices are higher in urban areas than in rural areas.",
-        "blog": "food",
-        "post_limit": "5",
-        "blog_show_date": true
       }
     },
     "subscription_banner_gGqWGN": {
@@ -327,11 +257,10 @@
   },
   "order": [
     "main",
-    "why_grocerywala_ykHj3g",
     "offers_and_coupons_9rFe8H",
+    "why_grocerywala_ykHj3g",
+    "product_additional_info_Y7rV9q",
     "1717257222d70e1c47",
-    "be118ccd-f319-4118-a783-b7c4e5af7830",
-    "d437016c-526f-4f89-9504-f9b763d52f8a",
     "subscription_banner_gGqWGN",
     "grocerywala_highlights_bMjmLr"
   ]

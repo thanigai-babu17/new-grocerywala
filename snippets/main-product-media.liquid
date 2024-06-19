@@ -1,0 +1,121 @@
+{% comment %} This file contains product media slider and its components {% endcomment %}
+
+
+
+<media-gallery id="MediaGallery-{{ section.id }}" class="pdp-center-inner-sliders">
+    <div id="GalleryStatus-{{ section.id }}" class="visually-hidden" role="status"></div>
+    <div id="Slider-Gallery-{{ section.id }}" class="main-slider-wrp">
+      <div class="pdp-main-slider">
+        {%- liquid
+          assign variant_images = product.images | where: 'attached_to_variant?', true | map: 'src'
+          assign media_count = product.media.size
+          if section.settings.hide_variants
+            assign media_count = media_count | minus: variant_images.size | plus: 1
+          endif
+
+          if section.settings.media_size == 'large'
+            assign media_width = 0.65
+          elsif section.settings.media_size == 'medium'
+            assign media_width = 0.55
+          elsif section.settings.media_size == 'small'
+            assign media_width = 0.45
+          endif
+        -%}
+        {%- if product.selected_or_first_available_variant.featured_media != null -%}
+          {%- assign featured_media = product.selected_or_first_available_variant.featured_media -%}
+          <div
+            id="Slide-{{ section.id }}-{{ featured_media.id }}"
+            class="pdp-main-slider-itm grid__item is-active{% if featured_media.media_type != 'image' %} product__media-item--full{% endif %}{% if variant_images contains featured_media.src %} product__media-item--variant{% endif %}"
+            data-media-id="{{ section.id }}-{{ featured_media.id }}"
+          >
+            {%- assign media_position = 1 -%}
+            {% render 'product-thumbnail',
+              media: featured_media,
+              position: media_position,
+              loop: section.settings.enable_video_looping,
+              modal_id: section.id,
+              xr_button: true,
+              media_width: media_width,
+              pro_img_widthheight: section.settings.pro_img_widthheight
+            %}
+          </div>
+        {%- endif -%}
+        {%- for media in product.media -%}
+          {%- unless media.id == product.selected_or_first_available_variant.featured_media.id -%}
+            <div
+              id="Slide-{{ section.id }}-{{ media.id }}"
+              class="pdp-main-slider-itm grid__item{% if product.selected_or_first_available_variant.featured_media == null and forloop.index == 1 %} is-active{% endif %}{% if media.media_type != 'image' %} product__media-item--full{% endif %}{% if section.settings.hide_variants and variant_images contains media.src %} product__media-item--variant{% endif %}"
+              data-media-id="{{ section.id }}-{{ media.id }}"
+            >
+              {%- assign media_position = media_position | default: 0 | plus: 1 -%}
+              {% render 'product-thumbnail',
+                media: media,
+                position: media_position,
+                loop: section.settings.enable_video_looping,
+                modal_id: section.id,
+                xr_button: true,
+                media_width: media_width,
+                pro_img_widthheight: section.settings.pro_img_widthheight
+              %}
+            </div>
+          {%- endunless -%}
+        {%- endfor -%}
+      </div>
+    </div>
+    <div id="Slider-Thumbnails-{{ section.id }}" class="pdp-thumb-wrap">
+      <div class="pdp-thumb-slider common-arrows {% if product.images.size <= 5 %}no-transform{% endif %}">
+        {%- if featured_media != null -%}
+          {%- capture media_index -%}
+                      {%- if featured_media.media_type == 'model' -%}{%- increment model_index -%}
+                      {%- elsif featured_media.media_type == 'video' or featured_media.media_type == 'external_video' -%}{%- increment video_index -%}
+                      {%- elsif featured_media.media_type == 'image'%}{%- increment image_index -%}
+                      {%- endif -%}
+                      {%- endcapture -%}
+          {%- assign media_index = media_index | plus: 1 -%}
+          <div
+            id="Slide-Thumbnails-{{ section.id }}-0"
+            class="pdp-thumb-slider-itm {% if variant_images contains featured_media.src %} thumbnail-list_item--variant{% endif %}"
+            data-target="{{ section.id }}-{{ featured_media.id }}"
+            data-media-position="{{ media_index }}"
+          >
+            <div class="pdp-thumb-img">
+              <img
+                id="Thumbnail-{{ section.id }}-0"
+                src="{{ featured_media | img_url: section.settings.pro_thumb_img_widthheight }}"
+                loading="lazy"
+              >
+            </div>
+          </div>
+        {%- endif -%}
+        {%- for media in product.media -%}
+          {%- unless media.id == product.selected_or_first_available_variant.featured_media.id -%}
+            {%- capture media_index -%}
+                          {%- if media.media_type == 'model' -%}{%- increment model_index -%}
+                          {%- elsif media.media_type == 'video' or media.media_type == 'external_video' -%}{%- increment video_index -%}
+                          {%- elsif media.media_type == 'image'%}{%- increment image_index -%}
+                          {%- endif -%}
+                      {%- endcapture -%}
+            {%- assign media_index = media_index | plus: 1 -%}
+            <div
+              id="Slide-Thumbnails-{{ section.id }}-0"
+              class="pdp-thumb-slider-itm {% if variant_images contains featured_media.src %} thumbnail-list_item--variant{% endif %}"
+              data-target="{{ section.id }}-{{ featured_media.id }}"
+              data-media-position="{{ media_index }}"
+            >
+              <div class="pdp-thumb-img">
+                <img
+                  id="Thumbnail-{{ section.id }}-{{ forloop.index }}"
+                  src="{{ media | img_url: section.settings.pro_thumb_img_widthheight }}"
+                  loading="lazy"
+                >
+              </div>
+            </div>
+          {%- endunless -%}
+        {%- endfor -%}
+      </div>
+      <div class="pdp-thumb-nav-wrap">
+        <div class="pdp-thumb-nav"></div>
+        <p>Slide slider</p>
+      </div>
+    </div>
+  </media-gallery>

@@ -1,0 +1,49 @@
+{{ 'product-additional-info.css' | asset_url | stylesheet_tag }}
+{% assign additional_info = product.metafields.custom.additional_info_list %}
+
+{% if additional_info != blank %}
+  <div class="additional-parent-wrapper padding-bottom">
+    <div class="additional-info__wrap background-section">
+      <div class="container additional-info__container">
+        <h3 class="additional-info__title">
+          {{ product.title }}
+        </h3>
+        <div class="additional-info__content">
+          {% for info in additional_info.value %}
+            <div class="set has-children is-open">
+              <a href="javascript:;" class="acnav-label">
+                {{ info.title }}
+              </a>
+              <div class="acnav-list" style="display: block;">
+                {{ info.content | metafield_tag }}
+              </div>
+            </div>
+          {% endfor %}
+        </div>
+      </div>
+    </div>
+  </div>
+
+{% endif %}
+
+
+{% schema %}
+  {
+    "name": "Product additional Info",
+    "enabled_on": {
+      "templates": ["product"]
+    },
+    "settings": [
+      {
+        "type": "header",
+        "content": "Additional Info",
+        "info": "This section will be dynamically populated from metaobjects"
+      }
+    ],
+    "presets": [
+      {
+        "name": "Product additional info"
+      }
+    ]
+  }
+{% endschema %}
