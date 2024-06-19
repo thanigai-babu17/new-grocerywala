@@ -1,4 +1,4 @@
-.why-grocery__wrap.background-section {
+.container.why-grocery__container {
 	overflow: hidden;
 }
 
@@ -33,4 +33,21 @@
 .why-grocery__substitle {
 	color: var(--grey-800);
 	font-weight: 500;
+}
+
+.why-grocery__row {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+	gap: 22px;
+}
+
+@media screen and (max-width: 998px) {
+	.why-grocery__row {
+		grid-template-columns: 1fr 1fr;
+	}
+
+    .why-grocery__icon svg{
+        width: 36px;
+        height: 36px;
+    }
 }
