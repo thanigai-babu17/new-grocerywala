@@ -3959,10 +3959,13 @@ del {
 .pdp-right-column {
 	width: 28.2%;
 }
+
 .pdp-main-slider {
 	background: var(--white);
-	mix-blend-mode: multiply;
+	border-radius: 8px;
+	overflow: hidden;
 }
+
 .pdp-main-img {
 	position: relative;
 	padding-top: 77%;
@@ -3986,22 +3989,29 @@ del {
 	object-position: center;
 }
 .pdp-thumb-img {
-	position: relative;
-	padding-top: 70%;
+    position: relative;
+    padding-top: 70%;
+    aspect-ratio: 1 / 1;
 }
+
 .pdp-thumb-slider-itm {
 	margin: 0 6px 0 6px;
-	border: 1px solid transparent;
+	border: 2px solid transparent;
+	border-radius: 8px;
+	background-color: var(--white);
+	overflow: hidden;
 }
 .pdp-thumb-slider-itm.slick-current {
-	border-color: var(--theme-color);
+	border-color: var(--theme-color-light);
 }
 .pdp-thumb-wrap {
-	display: flex;
-	align-items: center;
-	flex-wrap: wrap;
-	justify-content: center;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-top: 18px;
 }
+
 .pdp-thumb-slider {
 	max-width: 50%;
 	width: 100%;
@@ -5980,12 +5990,25 @@ button {
 	display: none;
 }
 label.color-swatch {
-	border: 1px solid #788c6d;
-	padding: 5px;
-	margin: 0 5px 0px 0;
-	display: inline-block;
-	font-size: 13px;
+	border: 1px solid #C3C3C3;
+    padding: 10px 14px;
+    margin: 0 5px 0px 0;
+    font-size: 14px;
+	line-height: 1;
+    border-radius: 8px;
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	cursor: pointer;
+	font-weight: 500;
 }
+
+fieldset input[type='radio']:checked + label{
+	background-color: var(--theme-color);
+	color: var(--white);
+	border-color: var(--theme-color);
+}
+
 .pdp-right-column-inner .review-wrap {
 	justify-content: space-between;
 }
@@ -8548,6 +8571,9 @@ deferred-media.deferred-media {
 	display: flex;
 	flex-direction: column;
 	gap: 12px;
+	background-color: var(--white);
+	padding: 12px 18px;
+	border-radius: 8px;
 }
 
 .product-meta-info product-form,
@@ -8555,4 +8581,8 @@ deferred-media.deferred-media {
 	display: flex;
 	flex-direction: column;
 	gap: 12px;
+}
+
+variant-radios.size-selectors{
+	flex-direction: column;
 }
