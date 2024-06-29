@@ -1,0 +1,14 @@
+<span data-share="{{ shop.url }}{{ product.url }}" class="product-share-btn">
+  {% render 'icon', icon: 'share' %}
+</span>
+
+<script>
+  $('.product-share-btn').on('click', function () {
+    const couponCode = $(this).data('share');
+    const $temp = $('<input>');
+    $('body').append($temp);
+    $temp.val(couponCode).select();
+    document.execCommand('copy');
+    $temp.remove();
+  });
+</script>

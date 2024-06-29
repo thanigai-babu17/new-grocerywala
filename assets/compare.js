@@ -20,6 +20,7 @@ if(getcookie){
 
 
 $(document).on("change",'.pro-compare input',function(){
+    console.log("compare running");
     var getoldcookie = getCookie('compare');
 
     if(getoldcookie){

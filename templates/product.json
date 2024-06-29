@@ -8,6 +8,16 @@
           "settings": {
           }
         },
+        "7b740e5c-3489-4fbe-9053-31559dd94292": {
+          "type": "pro_wish",
+          "settings": {
+          }
+        },
+        "share_btn_DrzmaD": {
+          "type": "share_btn",
+          "settings": {
+          }
+        },
         "2e5ab840-409d-4a4b-a243-d22337d0a5d2": {
           "type": "title",
           "settings": {
@@ -15,6 +25,11 @@
         },
         "judge_me_reviews_preview_badge_MAhc7z": {
           "type": "shopify:\/\/apps\/judge-me-reviews\/blocks\/preview_badge\/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+          "settings": {
+          }
+        },
+        "83a97dd2-5a43-41ff-bbd6-18054d25b6ff": {
+          "type": "description",
           "settings": {
           }
         },
@@ -29,28 +44,14 @@
             "picker_type": "button"
           }
         },
-        "db437cdc-76df-4a2e-86bd-59abf4157285": {
-          "type": "quantity_selector",
+        "quantity_price_i3Vhcj": {
+          "type": "quantity_price",
           "settings": {
-          }
-        },
-        "51843371-c6d5-4bb1-b7a5-e1d4493fb741": {
-          "type": "price",
-          "settings": {
-          }
-        },
-        "83a97dd2-5a43-41ff-bbd6-18054d25b6ff": {
-          "type": "description",
-          "settings": {
+            "enable_qty_selector": true
           }
         },
         "0a0dd0ba-5ba7-47f2-bfaa-86c8a1e38398": {
           "type": "pro_btn",
-          "settings": {
-          }
-        },
-        "7b740e5c-3489-4fbe-9053-31559dd94292": {
-          "type": "pro_wish",
           "settings": {
           }
         },
@@ -62,15 +63,15 @@
       },
       "block_order": [
         "b10cd43d-f259-475b-9757-31afbc700c40",
+        "7b740e5c-3489-4fbe-9053-31559dd94292",
+        "share_btn_DrzmaD",
         "2e5ab840-409d-4a4b-a243-d22337d0a5d2",
         "judge_me_reviews_preview_badge_MAhc7z",
+        "83a97dd2-5a43-41ff-bbd6-18054d25b6ff",
         "0078c5d7-e2d2-4022-b67d-8f228ae79493",
         "ac6d5564-0ab3-4bc8-a98a-baea7e4d93fe",
-        "db437cdc-76df-4a2e-86bd-59abf4157285",
-        "51843371-c6d5-4bb1-b7a5-e1d4493fb741",
-        "83a97dd2-5a43-41ff-bbd6-18054d25b6ff",
+        "quantity_price_i3Vhcj",
         "0a0dd0ba-5ba7-47f2-bfaa-86c8a1e38398",
-        "7b740e5c-3489-4fbe-9053-31559dd94292",
         "a8563a57-7518-4d53-86c4-50b47cd8402d"
       ],
       "settings": {

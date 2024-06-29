@@ -1,0 +1,24 @@
+<div
+  class="quantity-select {% if settings.inputs_shadow_vertical_offset != 0 and settings.inputs_shadow_vertical_offset < 0 %} product-form__quantity-top{% endif %}"
+  style="{% if product.selected_or_first_available_variant.available %}display: flex;{% else %}display: none;{% endif %}"
+  {{ block.shopify_attributes }}
+>
+  <span class="lbl" for="Quantity-{{ section.id }}">{{- 'products.product.quantity.label' | t }}</span>
+  <quantity-input class="quantity qty-spinner">
+    <button class="quantity__button no-js-hidden quantity-decrement " name="minus" type="button">
+      {% render 'icon' icon: 'decrement' %}
+    </button>
+    <input
+      class="quantity__input"
+      type="number"
+      name="quantity"
+      id="Quantity-{{ section.id }}"
+      min="1"
+      value="1"
+      form="{{ product_form_id }}"
+    >
+    <button class="quantity__button no-js-hidden quantity-increment" name="plus" type="button">
+        {% render 'icon' icon: 'increment' %}
+    </button>
+  </quantity-input>
+</div>

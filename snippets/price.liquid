@@ -30,10 +30,20 @@ if target == product and product.price_varies
 endif
 -%}
 <ins class="price-item--regular">{{ money_price }}</ins>
-<del class="price-item--sale">
-  {% if settings.currency_code_enabled %}
-    {{ compare_at_price | money_with_currency }}
-  {% else %}
-    {{ compare_at_price | money }}
-  {% endif %}
-</del>
+{% if compare_at_price != blank %}
+  <del class="price-item--sale">
+    {% if settings.currency_code_enabled %}
+      {{ compare_at_price | money_with_currency }}
+    {% else %}
+      {{ compare_at_price | money }}
+    {% endif %}
+  </del>
+{% endif %}
+{% assign price_difference = compare_at_price | minus: price %}
+{% assign discount_percentage = price_difference | times: 100 | divided_by: compare_at_price %}
+{% if discount_percentage > 0 %}
+  <span class="price-item--discount">
+    {{ discount_percentage | round }}% off
+  </span>
+{% endif %}
+

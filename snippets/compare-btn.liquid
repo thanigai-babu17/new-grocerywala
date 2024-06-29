@@ -1,0 +1,27 @@
+<button class="btn btn--secondary btn--lg btn--full" id="addToCompare" type="button">
+  <span id="compareBtnTxt">Add to Compare</span>
+  {% render 'icon', icon: 'compare', width: 18, height: 18 %}
+</button>
+
+<script>
+  const productHandle = `{{ product.handle }}`;
+  const compareBtnTxt = document.getElementById('compareBtnTxt');
+  const addToCompareBtn = document.getElementById('addToCompare');
+  let isAddedToCompare = false;
+  addToCompareBtn.addEventListener('click', () => {
+    const getcookie = getCookie('compare');
+    if(isAddedToCompare) return window.location.href = "/pages/compare";
+    let splitcookie = getcookie ? getcookie.split('__') : [];
+    const inArray = splitcookie.includes(productHandle);
+    if (inArray) {
+      splitcookie = splitcookie.filter(value => value !== productHandle);
+    } else {
+      splitcookie.push(productHandle);     
+    }    
+    compareBtnTxt.innerHTML = 'View Comparisons';
+    const setcookie = splitcookie.join('__');
+    setCookie('compare', setcookie, 1);
+    alert("Product added to comparison!");
+    isAddedToCompare = true;
+  });
+</script>

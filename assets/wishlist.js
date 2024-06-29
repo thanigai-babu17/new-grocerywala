@@ -27,7 +27,7 @@ if(getcookie){
         if ($.inArray(pro_handle, splitcookie) !== -1) {
             this_data.find(".pro-wishlist input").addClass("wishlist_active");
             this_data.find(".pro-wishlist").addClass("active");
-            $(".pdp-right-column-inner .pro-wishlist.active").find("label .wishlist-label").html('Added to wishlist<svg xmlns="http://www.w3.org/2000/svg" id="Filled" viewBox="0 0 24 24" width="16" height="16" fill="#ff0000"><path d="M17.5,1.917a6.4,6.4,0,0,0-5.5,3.3,6.4,6.4,0,0,0-5.5-3.3A6.8,6.8,0,0,0,0,8.967c0,4.547,4.786,9.513,8.8,12.88a4.974,4.974,0,0,0,6.4,0C19.214,18.48,24,13.514,24,8.967A6.8,6.8,0,0,0,17.5,1.917Z"></path><use xlink:href="#icon-close"></use></svg>');
+            $(".pdp-right-column-inner .pro-wishlist.active").find("label .wishlist-label").html('<svg xmlns="http://www.w3.org/2000/svg" id="Filled" viewBox="0 0 24 24" width="16" height="16" fill="#ff0000"><path d="M17.5,1.917a6.4,6.4,0,0,0-5.5,3.3,6.4,6.4,0,0,0-5.5-3.3A6.8,6.8,0,0,0,0,8.967c0,4.547,4.786,9.513,8.8,12.88a4.974,4.974,0,0,0,6.4,0C19.214,18.48,24,13.514,24,8.967A6.8,6.8,0,0,0,17.5,1.917Z"></path><use xlink:href="#icon-close"></use></svg>');
         }
     }
   }
@@ -47,7 +47,7 @@ $(document).on("change",'.pro-wishlist input',function(){
       $(this).addClass("wishlist_active");
       $(this).parents(".pro-wishlist").addClass("active");
       $(".wish-lbl-wrp .pro-wishlist.active").find("label .wishlist-label").html('<svg xmlns="http://www.w3.org/2000/svg" id="Filled" viewBox="0 0 24 24" width="16" height="16" fill="#ff0000"><path d="M17.5,1.917a6.4,6.4,0,0,0-5.5,3.3,6.4,6.4,0,0,0-5.5-3.3A6.8,6.8,0,0,0,0,8.967c0,4.547,4.786,9.513,8.8,12.88a4.974,4.974,0,0,0,6.4,0C19.214,18.48,24,13.514,24,8.967A6.8,6.8,0,0,0,17.5,1.917Z"></path><use xlink:href="#icon-close"></use></svg>');
-      $(".pdp-right-column-inner .pro-wishlist.active").find("label .wishlist-label").html('Added to wishlist<svg xmlns="http://www.w3.org/2000/svg" id="Filled" viewBox="0 0 24 24" width="16" height="16" fill="#ff0000"><path d="M17.5,1.917a6.4,6.4,0,0,0-5.5,3.3,6.4,6.4,0,0,0-5.5-3.3A6.8,6.8,0,0,0,0,8.967c0,4.547,4.786,9.513,8.8,12.88a4.974,4.974,0,0,0,6.4,0C19.214,18.48,24,13.514,24,8.967A6.8,6.8,0,0,0,17.5,1.917Z"></path><use xlink:href="#icon-close"></use></svg>');
+      $(".pdp-right-column-inner .pro-wishlist.active").find("label .wishlist-label").html('<svg xmlns="http://www.w3.org/2000/svg" id="Filled" viewBox="0 0 24 24" width="16" height="16" fill="#ff0000"><path d="M17.5,1.917a6.4,6.4,0,0,0-5.5,3.3,6.4,6.4,0,0,0-5.5-3.3A6.8,6.8,0,0,0,0,8.967c0,4.547,4.786,9.513,8.8,12.88a4.974,4.974,0,0,0,6.4,0C19.214,18.48,24,13.514,24,8.967A6.8,6.8,0,0,0,17.5,1.917Z"></path><use xlink:href="#icon-close"></use></svg>');
  
       var DataVal = $(this).attr("pro-handle");
       var getcookie = getCookie('wishlist');

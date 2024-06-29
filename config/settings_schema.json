@@ -185,6 +185,12 @@
       },
       {
         "type": "color",
+        "id": "accent_color1",
+        "label": "Accent Color 1",
+        "default":"#FFA820"
+      },
+      {
+        "type": "color",
         "id": "primary_font",
         "label": "t:settings_schema.color.settings.primary_font"
       },
