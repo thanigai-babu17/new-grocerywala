@@ -69,7 +69,7 @@
                       {% if product.metafields.custom.description %}
                         {{ product.metafields.custom.description }}
                       {% else %}
-                        {{ product.description | strip_html | truncatewords: 25 }}
+                        {{ product.description | strip_html }}
                       {% endif %}
                     </p>
                   </div>
