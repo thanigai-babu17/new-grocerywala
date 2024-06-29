@@ -205,6 +205,12 @@
       "settings": {
       }
     },
+    "similar_products_epVrLc": {
+      "type": "similar-products",
+      "settings": {
+        "title": "You may also like"
+      }
+    },
     "subscription_banner_gGqWGN": {
       "type": "subscription-banner",
       "settings": {
@@ -262,6 +268,7 @@
     "why_grocerywala_ykHj3g",
     "product_additional_info_Y7rV9q",
     "1717257222d70e1c47",
+    "similar_products_epVrLc",
     "subscription_banner_gGqWGN",
     "grocerywala_highlights_bMjmLr"
   ]

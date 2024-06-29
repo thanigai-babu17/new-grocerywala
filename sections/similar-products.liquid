@@ -1,0 +1,116 @@
+<style>
+  .product-slider__container {
+    overflow: hidden;
+  }
+
+  .product-slider__header {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 26px;
+  }
+
+  .product-slider__swiper .product-slide {
+    max-width: 316px;
+    height: auto;
+  }
+
+  .product-slider__swiper .product-slide .product-card-inner.card-inner {
+    height: 100%;
+  }
+
+  @media screen and (max-width: 767px) {
+    .product-slider__swiper .product-slide {
+      max-width: 265px;
+    }
+  }
+</style>
+
+<div
+  class="product-slider__wrap product-recommendations"
+  data-url="{{ routes.product_recommendations_url }}?section_id={{ section.id }}&product_id={{ product.id }}&limit=4&intent=related"
+>
+  <div class="product-slider__container container padding-bottom">
+    <div class="product-slider__header">
+      <h3 class="product-slider__title">
+        {{ section.settings.title }}
+      </h3>
+    </div>
+    <div class="product-slider__swiper">
+      <div class="swiper-wrapper">
+        {% for product in recommendations.products %}
+          <div class="product-slide swiper-slide">
+            {% render 'card-product',
+              card_product: product,
+              pro_img_widthheight: '600x400',
+              show_secondary_image: false,
+              show_vendor: true,
+              show_review: true,
+              show_qty: false,
+              show_variants: true
+            %}
+          </div>
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      const productRecommendationsSection = document.querySelector('.product-recommendations');
+      const url = productRecommendationsSection.dataset.url;
+
+      fetch(url)
+        .then((response) => response.text())
+        .then((text) => {
+          const html = document.createElement('div');
+          html.innerHTML = text;
+          const recommendations = html.querySelector('.product-recommendations');
+          if (recommendations && recommendations.innerHTML.trim().length) {
+            productRecommendationsSection.innerHTML = recommendations.innerHTML;
+
+            // Initialize the Swiper after the content is loaded
+            const swiper = new Swiper('.product-slider__swiper', {
+              speed: 400,
+              spaceBetween: 18,
+              slidesPerView: 'auto',
+              slidesPerGroup: 1,
+              slideShadows: true,
+              breakpoints: {
+                1200: {
+                  slidesPerView: 4,
+                  spaceBetween: 40,
+                },
+                767: {
+                  slidesPerView: 3,
+                },
+              },
+            });
+          }
+        })
+        .catch((e) => {
+          console.error(e);
+        });
+    });
+  </script>
+</div>
+
+{% schema %}
+{
+  "name": "Product Recommendation",
+  "templates": ["product"],
+  "settings": [
+    {
+      "type": "text",
+      "label": "Title",
+      "id": "title"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Product Recommendation"
+    }
+  ]
+}
+{% endschema %}
