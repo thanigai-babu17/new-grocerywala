@@ -3411,6 +3411,12 @@ del {
 	width: 100%;
 }
 
+@media screen and (max-width:500) {
+	.product-card__bottom{
+		flex-direction: column;
+	}
+}
+
 .addtocart-btn {
 	padding: 11.3px 15px;
 	border-radius: 10px;
