@@ -8560,6 +8560,12 @@ deferred-media.deferred-media {
 	position: relative;
 }
 
+@media screen and (max-width:768px) {
+	.pdp-right-column-inner{
+		padding-top: 36px;
+	}
+}
+
 /* .product-meta-info product-form,
 .product-meta-info product-form form{
 	display: flex;
@@ -8633,6 +8639,17 @@ variant-radios.size-selectors{
 	display: flex;
 	align-items: center;
 	gap: 18px;
+}
+
+@media screen and (max-width:500px) {
+	.product-form form{
+		flex-direction: column;
+	}
+
+	.quantity-price__content{
+		flex-direction: column;
+		align-items: self-start;
+	}
 }
 
 .product-form {

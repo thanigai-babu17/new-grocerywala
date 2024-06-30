@@ -15,7 +15,8 @@
                   <img
                     loading="lazy"
                     src="{{ block.settings.icon |  img_url: 'master' }}"
-                    alt="{{ block.settings.icon.alt }}">
+                    alt="{{ block.settings.icon.alt }}"
+                  >
                 </div>
                 <div class="offer-slide__name">
                   {{ block.settings.name }}
@@ -31,12 +32,10 @@
                 <span
                   role="button"
                   class="offer-slide__code"
-                  data-coupon-code="{{ block.settings.discount_code }}">
+                  data-coupon-code="{{ block.settings.discount_code }}"
+                >
                   Copy
-                  {% render 'icon'
-                    , icon: 'copy'
-                    , width: 24
-                    , height: 24 %}
+                  {% render 'icon', icon: 'copy', width: 24, height: 24 %}
                 </span>
               </div>
             </div>
@@ -79,61 +78,63 @@
 </script>
 
 {% schema %}
-  {
-    "name": "Offers and Coupons",
-    "class": "padding-bottom",
-    "settings": [
-      {
-        "type": "text",
-        "id": "title",
-        "label": "Section Title",
-        "default": "Coupons & Offers"
-      }, {
-        "type": "text",
-        "id": "additional_classes",
-        "label": "Custom Css Classes"
-      }
-    ],
-    "blocks": [
-      {
-        "type": "offer",
-        "name": "Offer",
-        "settings": [
-          {
-            "type": "image_picker",
-            "id": "icon",
-            "label": "Offer Icon",
-            "info": "Icon for the offer upload in 1/1 ratio"
-          },
-          {
-            "type": "text",
-            "id": "name",
-            "label": "Name",
-            "default": "GROCERY NEW"
-          },
-          {
-            "type": "text",
-            "id": "description",
-            "label": "Description",
-            "default": "Get 20% cashback using Freecharge"
-          },
-          {
-            "type": "text",
-            "id": "save_text",
-            "label": "Save text",
-            "default": "You will save ₹50 on cart"
-          }, {
-            "type": "text",
-            "id": "discount_code",
-            "label": "Discount Code"
-          }
-        ]
-      }
-    ],
-    "presets": [
-      {
-        "name": "Offers and Coupons"
-      }
-    ]
-  }
+{
+  "name": "Offers and Coupons",
+  "class": "padding-bottom",
+  "settings": [
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Section Title",
+      "default": "Coupons & Offers"
+    },
+    {
+      "type": "text",
+      "id": "additional_classes",
+      "label": "Custom Css Classes"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "offer",
+      "name": "Offer",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "icon",
+          "label": "Offer Icon",
+          "info": "Icon for the offer upload in 1/1 ratio"
+        },
+        {
+          "type": "text",
+          "id": "name",
+          "label": "Name",
+          "default": "GROCERY NEW"
+        },
+        {
+          "type": "text",
+          "id": "description",
+          "label": "Description",
+          "default": "Get 20% cashback using Freecharge"
+        },
+        {
+          "type": "text",
+          "id": "save_text",
+          "label": "Save text",
+          "default": "You will save ₹50 on cart"
+        },
+        {
+          "type": "text",
+          "id": "discount_code",
+          "label": "Discount Code"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Offers and Coupons"
+    }
+  ]
+}
 {% endschema %}

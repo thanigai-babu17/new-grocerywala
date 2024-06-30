@@ -1,0 +1,94 @@
+{{ 'offers-and-coupons.css' | asset_url | stylesheet_tag }}
+{% assign product_discounts = product.metafields.custom.discount_codes.value %}
+{% if product_discounts != blank %}
+  <style>
+    .product-offers {
+      margin-top: 18px;
+      background-color: var(--white);
+      padding: 16px 24px;
+      border-radius: 8px;
+      overflow: hidden;
+    }
+
+    .product-offers__title {
+      font-size: 18px;
+      font-weight: 700;
+      line-height: 1.2;
+      text-align: left;
+      padding-bottom: 12px;
+    }
+
+    .offer-slide__description {
+      font-size: 16px;
+      line-height: 1.2;
+    }
+  </style>
+
+  <div class="product-offers">
+    <h3 class="product-offers__title">
+      {{ settings.title }}
+    </h3>
+    <div class="product-offers__slider">
+      <div class="swiper-wrapper">
+        {% for discount in product_discounts %}
+          <div class="off-and-coup__slide swiper-slide">
+            <div class="off-and-coup__slide-header">
+              <div class="offer-slide__icon">
+                <img
+                  loading="lazy"
+                  src="{{ discount.icon |  img_url: 'master' }}"
+                  alt="{{ discount.icon.alt }}"
+                >
+              </div>
+              <div class="offer-slide__name">
+                {{ discount.name }}
+              </div>
+            </div>
+            <h3 class="offer-slide__description">
+              {{ discount.description }}
+            </h3>
+            <div class="offer-slide__footer">
+              <div class="offer-slide__save">
+                {{ discount.save_text }}
+              </div>
+              <span
+                role="button"
+                class="offer-slide__code"
+                data-coupon-code="{{ discount.code }}"
+              >
+                Copy
+                {% render 'icon', icon: 'copy', width: 24, height: 24 %}
+              </span>
+            </div>
+          </div>
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      const swiper = new Swiper('.product-offers__slider', {
+        speed: 600,
+        spaceBetween: 26,
+        slidesPerView: 'auto',
+        slidesPerGroup: 1,
+        slideShadows: true,
+        breakpoints: {
+          1024: {
+            slidesPerView: 2,
+          }
+        },
+      });
+
+      //  when clicked on copy copies the discount code to clipboard
+      $('.offer-slide__code').on('click', function () {
+        const couponCode = $(this).data('coupon-code');
+        const $temp = $('<input>');
+        $('body').append($temp);
+        $temp.val(couponCode).select();
+        document.execCommand('copy');
+        $temp.remove();
+      });
+    });
+  </script>
+{% endif %}
