@@ -2499,7 +2499,7 @@ body.home .header-style-one .extra-menu-col {
 	display: inline-flex;
 	max-width: 56px;
 	padding: 8px 22px 8px 12px;
-	background-color: var(--white);
+	background: var(--white) !important;
 	border-radius: 8px;
 	border: 1px solid #d1d1d1;
 }
@@ -4226,6 +4226,10 @@ del {
 	font-weight: 500;
 }
 
+.common-banner-content img{
+	padding-bottom: 18px;
+}
+
 .common-banner-content .back-btn {
 	margin-bottom: 26px;
 }
@@ -4935,12 +4939,7 @@ table tr:last-of-type {
 }
 /****************** CONTACT PAGE CSS ******************/
 .contact-right-column {
-	margin-top: -270px;
-}
-.contact-form {
-	padding: 24px 20px;
-	border: 1px solid var(--theme-color);
-	background: var(--white);
+	margin-top: -190px;
 }
 .submit-btn svg {
 	width: 20px;
@@ -4961,20 +4960,27 @@ table tr:last-of-type {
 }
 .contact-left-inner ul li h4 {
 	font-weight: 600;
-	text-transform: uppercase;
-	margin-bottom: 15px;
-	font-size: 14px;
+    text-transform: uppercase;
+    margin-bottom: 4px;
+    font-size: 14px;
+	color: var(--theme-color);
 }
 .contact-left-inner ul li p {
 	margin-bottom: 0;
 	letter-spacing: 0;
-	font-size: 20px;
+	font-size: 18px;
 	font-weight: 500;
 	word-break: break-all;
+	color: var(--black);
 }
 .contact-left-inner ul li .address {
-	font-size: 14px;
+	font-size: 18px;
 	line-height: 26px;
+	color: var(--black);
+}
+
+.contact-left-inner ul li p a{
+	color: var(--black);
 }
 /****************** FAQS PAGE CSS ***************/
 .faq-search-form {
@@ -5279,6 +5285,11 @@ table tr:last-of-type {
 	border-bottom: 0;
 }
 /****************  LOGIN PAGE CSS ***************/
+.login-form{
+	background-color: var(--white);
+	border-radius: 8px;
+}
+
 .login-form .submit-btn {
 	max-width: 170px;
 	margin: 0 0 0 15px;
@@ -5287,8 +5298,16 @@ table tr:last-of-type {
 	padding: 0;
 }
 .forgot-pass {
-	color: red;
-	font-size: 14px;
+    color: var(--grey-800);
+    font-size: 14px;
+    margin-right: auto;
+    text-align: right;
+    display: flex;
+    justify-content: right;
+    line-height: 1.4;
+	text-decoration: underline;
+	font-style: italic;
+	padding-top: 4px;
 }
 .login-form p {
 	margin-bottom: 15px;
@@ -8684,4 +8703,58 @@ variant-radios.size-selectors{
 
 .product-share-btn{
 	cursor: pointer;
+}
+
+.contact-right-inner,
+.contact-right-inner {
+	background: var(--white);
+	border: 1px solid #D5D5D5;
+	border-radius: 13px;
+	max-width: 740px;
+    margin-left: 18px;
+}
+
+.contact-right-inner form,
+.contact-right-inner form{
+	padding: 22px;
+}
+
+.contact-right-inner .section-title,
+.contact-left-inner .section-title {
+	margin: 0;
+	padding: 22px;
+	border-bottom:1px solid #D5D5D5;
+}
+
+.contact-left-inner.row{
+	padding-bottom: 16px;
+}
+
+@media screen and (max-width:768px) {
+	.contact-right-inner,
+	.contact-right-inner {
+		margin-left: 0;
+	}
+
+	.contact-right-inner form,
+	.contact-right-inner form{
+		padding: 18px;
+	}
+
+	.contact-right-inner .section-title,
+	.contact-left-inner .section-title {
+		padding: 18px;
+	}
+}
+
+.template-404{
+	height: 100vh;
+}
+
+.recover-password form,
+.form-wrapper.register-form form,
+.customer.addresses form,
+.customer.addresses .add-default{
+	background-color: var(--white);
+	border-radius: 8px;
 }

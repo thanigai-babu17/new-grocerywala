@@ -1,6 +1,6 @@
 <section class="common-banner-section">
   <div class="container">
-    <div class="{% if template == 'page.contact' %}col-md-5 col-12 {% else %} col-lg-6 col-12{% endif %} {% if template == 'page.terms-and-conditions' or template == 'page.privacy-policy' %}col-lg-12 col-12{% endif %}">
+    {% if section.settings.banner_img %}
       <div class="common-banner-content">
         <a href="javascript&colon;history.go(-1)" class="back-btn">
           <span class="svg-ic">
@@ -23,15 +23,55 @@
             <h2>{{ blog.handle }}</h2>
           {%- endif -%}
         </div>
-        <p>
-          {% if collection.description != blank %}
-            {{ collection.description }}
-          {% else %}
-            {{ section.settings.description }}
-          {% endif %}
-        </p>
+        <div class="row">
+          <div class="col-md-3">
+            <img src="{{ section.settings.banner_img | img_url:'master' }}" alt="{{ section.settings.banner_img.alt }}" loading="lazy">
+          </div>
+          <div class="col-md-9">
+            <p>
+              {% if collection.description != blank %}
+                {{ collection.description }}
+              {% else %}
+                {{ section.settings.description }}
+              {% endif %}
+            </p>
+          </div>
+        </div>
       </div>
-    </div>
+    {% else %}
+      <div class="{% if template == 'page.contact' %}col-md-5 col-12 {% else %} col-lg-6 col-12{% endif %} {% if template == 'page.terms-and-conditions' or template == 'page.privacy-policy' %}col-lg-12 col-12{% endif %}">
+        <div class="common-banner-content">
+          <a href="javascript&colon;history.go(-1)" class="back-btn">
+            <span class="svg-ic">
+              {% render 'icon' icon: 'chevron-left' width: 10 height: 10 %}
+            </span>
+            Back to Home
+          </a>
+          <div class="section-title">
+            {% if template == 'list-collections' %}
+              <h2>{{ page.title | escape }}</h2>
+            {% endif %}
+            <h2>{{ page.title | escape }}</h2>
+            {% if template == 'search' %}
+              {%- if search.performed -%}
+                <h2>{{ 'templates.search.title' | t }}</h2>
+              {%- else -%}
+                <h2>{{ 'general.search.search' | t }}</h2>
+              {%- endif -%}
+            {% elsif template == 'blog' %}
+              <h2>{{ blog.handle }}</h2>
+            {%- endif -%}
+          </div>
+          <p>
+            {% if collection.description != blank %}
+              {{ collection.description }}
+            {% else %}
+              {{ section.settings.description }}
+            {% endif %}
+          </p>
+        </div>
+      </div>
+    {% endif %}
   </div>
 </section>
 {% if page.content != blank %}
@@ -52,6 +92,11 @@
         "type": "textarea",
         "id": "description",
         "label": "t:settings_schema.common.settings.desc"
+      },
+      {
+        "type": "image_picker",
+        "id": "banner_img",
+        "label": "Banner Image"
       }
     ]
   }

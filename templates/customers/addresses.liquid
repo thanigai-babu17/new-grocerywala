@@ -12,7 +12,7 @@
   </div>
             <div data-address>
                 <div class="newadd" >
-                  <button class="btn" type="button" aria-expanded="false" aria-controls="AddAddress">
+                  <button class="btn btn--secondary btn--lg" type="button" aria-expanded="false" aria-controls="AddAddress">
                       {{ 'customer.addresses.add_new' | t }}
                   </button>
                 </div>
@@ -105,17 +105,11 @@
                           </div> 
                           <div class="form-container">   
                               <div class="d-flex acc-back-btn-wrp align-items-center justify-content-end">
-                                  <button class="btn-secondary back-btn-acc" type="submit">
-                                      <svg xmlns="http://www.w3.org/2000/svg" width="35" height="14" viewBox="0 0 35 14" fill="none">
-                                          <path d="M25.0749 14L35 7L25.0805 0L29.12 6.06667H0V7.93333H29.12L25.0749 14Z"></path>
-                                      </svg>
+                                  <button class="btn btn--secondary btn--lg back-btn-acc" type="submit">
                                       {{ 'customer.addresses.cancel' | t }} 
                                   </button> 
-                                  <button class="btn continue-btn" type="submit">
+                                  <button class="btn btn--primary btn--lg continue-btn" type="submit">
                                       {{ 'customer.addresses.add' | t }}
-                                      <svg xmlns="http://www.w3.org/2000/svg" width="35" height="14" viewBox="0 0 35 14" fill="none">
-                                          <path d="M25.0749 14L35 7L25.0805 0L29.12 6.06667H0V7.93333H29.12L25.0749 14Z"></path>
-                                      </svg>
                                   </button> 
                               </div> 
                           </div>
@@ -135,7 +129,7 @@
                     </div>
                         <button
                             type="button"
-                            class="btn"
+                            class="btn btn--secondary"
                             id="EditFormButton_{{ address.id }}"
                             aria-label="{{ 'customer.addresses.edit_address' | t }} {{ forloop.index }}"
                             aria-controls="EditAddress_{{ address.id }}"
@@ -146,6 +140,7 @@
                         <button
                             type="button"
                             class="btn"
+                            style="color: #E62B1F;"
                             aria-label="{{ 'customer.addresses.delete' | t }} {{ forloop.index }}"
                             data-target="{{ address.url }}"
                             data-confirm-message="{{ 'customer.addresses.delete_confirm' | t }}">

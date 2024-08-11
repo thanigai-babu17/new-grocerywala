@@ -1,0 +1,127 @@
+<style>
+  .our-team__title {
+    text-align: center;
+  }
+
+  .our-team__grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 32px;
+  }
+
+  .our-team__member {
+    display: flex;
+    flex-direction: column;
+    padding: 32px;
+    box-shadow: 0px 15px 30px 0px #7b7b7b14;
+    border-radius: 40px;
+    border: 1px solid;
+    border-image-source: linear-gradient(180deg, #fbfbfb 0%, rgba(255, 255, 255, 0) 100%);
+  }
+
+  .our-team__member-name {
+    font-size: 24px;
+    line-height: 1.4;
+    text-transform: uppercase;
+    font-weight: 700;
+  }
+
+  .our-team__member-img {
+    padding-bottom: 16px;
+  }
+
+  .our-team__member-img img {
+    width: 100%;
+  }
+
+  .our-team__member-designation {
+    font-size: 20px;
+    line-height: 1.2;
+  }
+
+  @media screen and (max-width: 998px) {
+    .our-team__member-name {
+      font-size: 18px;
+    }
+
+    .our-team__member-designation {
+      font-size: 16px;
+    }
+
+    .our-team__member {
+      padding: 22px;
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    .our-team__grid {
+      grid-template-columns: 1fr;
+    }
+  }
+</style>
+
+<div class="our-team">
+  <div class="container">
+    <h2 class="our-team__title">{{ section.settings.title }}</h2>
+    <div class="our-team__grid">
+      {% for block in section.blocks %}
+        {% if block.type == 'team_member' %}
+          <div class="our-team__member">
+            <div class="our-team__member-img">
+              <img
+                src="{{ block.settings.member_img |  img_url: 'master' }}"
+                alt="{{ block.settings.member_img.alt }}"
+                loading="lazy"
+              >
+            </div>
+            <div class="our-team__member-name">{{ block.settings.member_name }}</div>
+            <div class="our-team__member-designation">{{ block.settings.member_designation }}</div>
+          </div>
+        {% endif %}
+      {% endfor %}
+    </div>
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "Our Teams",
+  "class": "padding-bottom our-team__wrapper background-section",
+  "settings": [
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Section Title",
+      "default": "Our Team"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "team_member",
+      "name": "Team Member",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "member_img",
+          "label": "Profile Image"
+        },
+        {
+          "type": "text",
+          "id": "member_name",
+          "label": "Name"
+        },
+        {
+          "type": "text",
+          "id": "member_designation",
+          "label": "Designation"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Our Teams"
+    }
+  ]
+}
+{% endschema %}

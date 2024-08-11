@@ -3,23 +3,23 @@
     "main": {
       "type": "main-page",
       "settings": {
-        "description": "With that in mind, we strive to deliver accurate, trustworthy, and engaging content to our users. Our team of experts, researchers, and writers work tirelessly to curate high-quality articles, guides, and resources that cover various domains such as technology, science, health, business, and more."
+        "description": "Have questions or need assistance? We're always ready to connect and discuss how we can meet your needs. Reach out to us, and let's create value together."
       }
     },
     "form": {
       "type": "contact-form",
       "settings": {
-        "mobile_title": "Call us",
-        "mobile": "+48 0021-32-12",
+        "mobile_title": "PHONE",
+        "mobile": "+48 536 503 097",
         "address_title": "ADDRESS:",
-        "address": "1093 Marigold Lane,<br> Coral Way, Miami,<br> Florida, 33169",
+        "address": "VISTULA FOODS PRAKASH <br> NAIR AND PARTNERS JOINT STOCK COMPANY,<br> Al. Krakowska 41, 05-090 Janki, Poland",
         "email_title": "EMAIL:",
-        "email": "shop@company.com",
-        "cntform": "Contact form",
+        "email": "sklep@grocerywala.pl",
+        "cntform": "Lets Connect",
         "map_height": "400px",
         "map_api_key": "AIzaSyDS1A1NkVZlfNpumO5nQlAPEKFjyxcvuWs",
         "map_type": "ROADMAP",
-        "map_address": "india"
+        "map_address": "Poland"
       }
     },
     "subscription_banner_gGqWGN": {
