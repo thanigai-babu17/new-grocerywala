@@ -166,7 +166,17 @@
       "tracking_company": "Przewoźnik",
       "tracking_number": "Numer śledzenia",
       "subtotal": "Podsumowanie",
-      "total_duties": "Obowiązki"
+      "total_duties": "Obowiązki",
+      "title": "Zamów {{ name }}",
+      "date_html": "Umieszczono {{ date }}",
+      "cancelled_html": "Zamówienie anulowane w dniu {{ date }}",
+      "cancelled_reason": "Powód: {{ reason }}",
+      "billing_address": "Adres rozliczeniowy",
+      "payment_status": "Status płatności",
+      "shipping_address": "Adres wysyłkowy",
+      "fulfillment_status": "Status realizacji",
+      "discount": "Rabat",
+      "shipping": "Wysyłka"
     },
     "orders": {
       "title": "Historia zamówień",
@@ -197,6 +207,60 @@
       "password": "Hasło",
       "password_confirm": "Potwierdź hasło",
       "submit": "Zresetuj hasło"
+    },
+    "account": {
+      "title": "Konto",
+      "details": "Szczegóły konta",
+      "view_addresses": "Wyświetl adresy",
+      "return": "Powrót do szczegółów konta"
+    },
+    "account_fallback": "Konto",
+    "activate_account": {
+      "title": "Aktywuj konto",
+      "subtext": "Utwórz hasło, aby aktywować swoje konto.",
+      "password": "Hasło",
+      "password_confirm": "Potwierdź hasło",
+      "submit": "Aktywuj konto",
+      "cancel": "Odrzuć zaproszenie"
+    },
+    "addresses": {
+      "title": "Adresy",
+      "default": "Domyślny",
+      "add_new": "Dodaj nowy adres",
+      "edit_address": "Edytuj adres",
+      "first_name": "Imię",
+      "last_name": "Nazwisko",
+      "company": "Firma",
+      "address1": "Adres 1",
+      "address2": "Adres 2",
+      "city": "Miasto",
+      "country": "Kraj\/region",
+      "province": "Województwo",
+      "zip": "Kod pocztowy",
+      "phone": "Telefon",
+      "set_default": "Ustaw jako adres domyślny",
+      "add": "Kontynuować",
+      "update": "Aktualizuj adres",
+      "cancel": "Anulować",
+      "edit": "Redagować",
+      "delete": "Usuwać",
+      "delete_confirm": "Czy na pewno chcesz usunąć ten adres?"
+    },
+    "log_in": "Zaloguj się",
+    "log_out": "Wyloguj się",
+    "login_page": {
+      "cancel": "Anulować",
+      "create_account": "Utwórz konto",
+      "email": "E-mail",
+      "forgot_password": "Zapomniałeś hasła?",
+      "guest_continue": "Kontynuować",
+      "guest_title": "Kontynuuj jako gość",
+      "password": "Hasło",
+      "title": "Zaloguj się",
+      "right-title": "Nowy klient",
+      "description": "Tworząc konto będziesz mógł robić zakupy szybciej, śledzić status zamówienia i śledzić poprzednie zamówienia.",
+      "sign_in": "Zalogować się",
+      "submit": "Składać"
     }
   },
   "gift_cards": {
@@ -213,5 +277,75 @@
       "copy_code_success": "Kod skopiowany pomyślnie",
       "print_gift_card": "Wydrukować"
     }
+  },
+  "products": {
+    "facets": {
+      "filters_selected": {
+        "one": "{{ count }} wybrano",
+        "other": "{{ count }} wybrano"
+      },
+      "filter_selected_accessibility": "{{ type }} ( {{ count }} wybranych filtrów)",
+      "show_more": "Pokaż więcej",
+      "show_less": "Pokaż mniej",
+      "max_price": "Najwyższa cena to {{ price }}",
+      "product_count": {
+        "one": "{{ product_count }} z {{ count }} produktów",
+        "other": "{{ product_count }} z {{ count }} produktów"
+      },
+      "product_count_simple": {
+        "one": "{{ count }} produkt",
+        "other": "{{ count }} produktów"
+      },
+      "reset": "Nastawić",
+      "sort_button": "Sortować",
+      "sort_by_label": "Sortuj według:",
+      "to": "Maksymalna cena:",
+      "clear_filter": "Usuń filtr"
+    }
+  },
+  "templates": {
+    "search": {
+      "no_results": "Nie znaleziono wyników dla „ {{ terms }} ”. Sprawdź pisownię lub użyj innego słowa lub frazy.",
+      "page": "Strona",
+      "products": "Produkty",
+      "results_with_count": {
+        "one": "{{ count }} wynik",
+        "other": "{{ count }} wyników"
+      },
+      "results_with_count_and_term": {
+        "one": "Znaleziono {{ count }} wyników dla „ {{ terms }} ”",
+        "other": "Znaleziono {{ count }} wyników dla „ {{ terms }} ”"
+      },
+      "title": "Wyniki wyszukiwania",
+      "search_for": "Wyszukaj „ {{ terms }} ”"
+    },
+    "cart": {
+      "cart": "Wózek"
+    },
+    "contact": {
+      "form": {
+        "title": "Formularz kontaktowy",
+        "name": "Imię",
+        "email": "E-mail",
+        "emailid": "sklep@firma.com",
+        "lastname": "Nazwisko",
+        "phone": "Numer telefonu",
+        "btn_name": "Wyślij wiadomość",
+        "comment": "Opis:",
+        "commenttext": "Jak możemy pomóc?",
+        "send": "Wysłać",
+        "post_success": "Dziękujemy za kontakt.",
+        "error_heading": "Proszę wypełnić wszystkie pola."
+      }
+    },
+    "404": {
+      "title": "Strona nie znaleziona"
+    }
+  },
+  "localization": {
+    "country_label": "Kraj\/region",
+    "language_label": "Język",
+    "update_language": "Aktualizuj język",
+    "update_country": "Aktualizuj kraj\/region"
   }
 }
