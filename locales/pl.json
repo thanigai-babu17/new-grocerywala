@@ -1,0 +1,155 @@
+/*
+* ------------------------------------------------------------
+* IMPORTANT: The contents of this file are auto-generated.
+*
+* This file may be updated by the Shopify admin language editor
+* or related systems. Please exercise caution as any changes
+* made to this file may be overwritten.
+* ------------------------------------------------------------
+*/
+{
+  "sections": {
+    "header": {
+      "announcement": "Ogłoszenie",
+      "see_all": "Zobacz wszystko",
+      "account": "Moje konto",
+      "c_account": "Utwórz konto",
+      "log_out": "Wyloguj się",
+      "log_in": "Zaloguj się",
+      "wishlist": "Lista życzeń",
+      "cart_count": {
+        "one": "{{ count }} element",
+        "other": "{{ count }} elementów"
+      }
+    },
+    "cart": {
+      "title": "Twój koszyk",
+      "caption": "Elementy koszyka",
+      "remove_title": "Usuń {{ title }}",
+      "subtotal": "Podsumowanie",
+      "new_subtotal": "Nowa suma częściowa",
+      "note": "Zamów specjalne instrukcje",
+      "viewcart": "Wyświetl koszyk",
+      "checkout": "Przejdź do kasy",
+      "empty": "Twój koszyk jest pusty",
+      "cart_error": "Wystąpił błąd podczas aktualizacji koszyka. Spróbuj ponownie.",
+      "cart_quantity_error_html": "Do koszyka możesz dodać nie więcej niż {{ quantity }} tego produktu.",
+      "taxes_and_shipping_policy_at_checkout_html": "Podatki i <a href=\"&lt;span%20class='notranslate'&gt;{{%20link%20}}&lt;\/span&gt;\">koszty wysyłki<\/a> zostaną obliczone przy kasie",
+      "taxes_included_but_shipping_at_checkout": "Podatek wliczony w cenę, koszty wysyłki obliczone przy kasie",
+      "taxes_included_and_shipping_policy_html": "Podatek wliczony w cenę. <a href=\"&lt;span%20class='notranslate'&gt;{{%20link%20}}&lt;\/span&gt;\">Koszt wysyłki<\/a> obliczony przy kasie.",
+      "taxes_and_shipping_at_checkout": "Podatki i koszty wysyłki zostaną obliczone przy kasie",
+      "headings": {
+        "name": "NAZWA",
+        "price": "CENA",
+        "total": "CAŁKOWITY",
+        "quantity": "ILOŚĆ",
+        "image": "OBRAZ"
+      },
+      "update": "Aktualizacja",
+      "login": {
+        "title": "Masz konto?",
+        "paragraph_html": "<a href=\"&lt;span%20class='notranslate'&gt;{{%20link%20}}&lt;\/span&gt;\" class=\"link underlined-link\">Zaloguj się<\/a> , aby szybciej dokonać zakupu."
+      }
+    },
+    "footer": {
+      "payment": "Metody płatności"
+    },
+    "featured_blog": {
+      "view_all": "Zobacz wszystko",
+      "onboarding_title": "Wpis na blogu",
+      "onboarding_content": "Udostępnij swoim klientom podsumowanie wpisu na blogu"
+    },
+    "featured_collection": {
+      "view_all": "Zobacz wszystko",
+      "view_all_label": "Zobacz wszystkie produkty w kolekcji {{ collection_name }}",
+      "slider": "Suwak"
+    },
+    "collection_list": {
+      "view_all": "Zobacz wszystko"
+    },
+    "collection_template": {
+      "empty": "Nie znaleziono produktów",
+      "title": "Kolekcja",
+      "use_fewer_filters_html": "Użyj mniejszej liczby filtrów lub <a class=\"&lt;span class='notranslate'&gt;{{ class }}&lt;\/span&gt;\" href=\"&lt;span%20class='notranslate'&gt;{{%20link%20}}&lt;\/span&gt;\">usuń wszystkie<\/a>"
+    },
+    "video": {
+      "load_video": "Załaduj wideo: {{ description }}"
+    },
+    "slideshow": {
+      "load_slide": "Załaduj slajd",
+      "previous_slideshow": "Poprzedni slajd",
+      "next_slideshow": "Następny slajd",
+      "pause_slideshow": "Wstrzymaj pokaz slajdów",
+      "play_slideshow": "Odtwórz pokaz slajdów",
+      "carousel": "Karuzela",
+      "slide": "Slajd"
+    },
+    "page": {
+      "title": "Tytuł strony"
+    }
+  },
+  "general": {
+    "showmorepro": "Pokaż więcej produktów",
+    "password_page": {
+      "login_form_heading": "Wejdź do sklepu używając hasła:",
+      "login_password_button": "Wprowadź hasło",
+      "login_form_password_label": "Hasło",
+      "login_form_password_placeholder": "Twoje hasło",
+      "login_form_error": "Złe hasło!",
+      "login_form_submit": "Wchodzić",
+      "admin_link_html": "Czy jesteś właścicielem sklepu? <a href=\"\/admin\" class=\"link underlined-link\">Zaloguj się tutaj<\/a>",
+      "powered_by_shopify_html": "Ten sklep będzie obsługiwany przez {{ shopify }}"
+    },
+    "wishlist": {
+      "wishlist": "Lista życzeń",
+      "wishempty": "Twoja lista życzeń jest obecnie pusta!",
+      "removewishlist": "Usuń listę życzeń",
+      "logwish": "Proszę zalogować się na swoje konto",
+      "accwish": "Nie masz konta?",
+      "log_in": "Zaloguj się",
+      "create_accounthome": "Utwórz konto",
+      "con_shop": "Kontynuuj zakupy",
+      "clr_wish": "Wyczyść listę życzeń"
+    },
+    "social": {
+      "alt_text": {
+        "share_on_facebook": "Udostępnij na Facebooku",
+        "share_on_twitter": "Tweetnij na Twitterze",
+        "share_on_pinterest": "Przypnij na Pintereście"
+      },
+      "links": {
+        "twitter": "Świergot"
+      }
+    },
+    "continue_shopping": "Kontynuuj zakupy",
+    "pagination": {
+      "label": "Paginacja",
+      "page": "Strona {{ number }}",
+      "next": "Następna strona",
+      "previous": "Poprzednia strona"
+    },
+    "search": {
+      "search": "Szukaj",
+      "search_place": "Wyszukaj produkt..."
+    },
+    "cart": {
+      "view": "Zobacz mój koszyk ( {{ count }} )",
+      "item_added": "Pozycja dodana do koszyka",
+      "items": "Rzeczy"
+    },
+    "share": {
+      "close": "Zamknij Udostępnij",
+      "copy_to_clipboard": "Kopiuj link",
+      "share_url": "Połączyć",
+      "success_message": "Link skopiowany do schowka"
+    },
+    "slider": {
+      "of": "z",
+      "next_slide": "Przesuń w prawo",
+      "previous_slide": "Przesuń w lewo"
+    }
+  },
+  "newsletter": {
+    "label": "Podaj adres e-mail..."
+  }
+}
