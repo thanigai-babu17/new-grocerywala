@@ -150,7 +150,9 @@
     }
   },
   "newsletter": {
-    "label": "Podaj adres e-mail..."
+    "label": "Podaj adres e-mail...",
+    "success": "Dziękujemy za subskrypcję",
+    "button_label": "Subskrybować"
   },
   "customer": {
     "order": {
@@ -300,7 +302,69 @@
       "sort_button": "Sortować",
       "sort_by_label": "Sortuj według:",
       "to": "Maksymalna cena:",
-      "clear_filter": "Usuń filtr"
+      "clear_filter": "Usuń filtr",
+      "apply": "Stosować",
+      "clear": "Jasne",
+      "clear_all": "Usuń wszystko",
+      "from": "Cena minimalna:",
+      "filter_and_sort": "Filtruj i sortuj",
+      "filter_by_label": "Filtr:",
+      "filter_button": "Filtr"
+    },
+    "product": {
+      "add_to_cart": "Dodaj do koszyka",
+      "choose_options": "Wybierz opcje",
+      "choose_product_options": "Wybierz opcje dla {{ product_name }}",
+      "description": "Opis",
+      "on_sale": "Sprzedaż",
+      "product_variants": "Warianty produktu",
+      "media": {
+        "gallery_viewer": "Przeglądarka galerii",
+        "load_image": "Załaduj obraz {{ index }} w widoku galerii",
+        "load_model": "Załaduj model 3D {{ index }} w widoku galerii",
+        "load_video": "Odtwórz wideo {{ index }} w widoku galerii",
+        "image_available": "Obraz {{ index }} jest teraz dostępny w widoku galerii",
+        "open_media": "Otwórz media {{ index }} w oknie modalnym",
+        "play_model": "Odtwórz przeglądarkę 3D",
+        "play_video": "Odtwórz wideo"
+      },
+      "quantity": {
+        "label": "Ilość",
+        "input_label": "Ilość dla {{ product }}",
+        "increase": "Zwiększ ilość dla {{ product }}",
+        "decrease": "Zmniejsz ilość dla {{ product }}"
+      },
+      "alltext": {
+        "wishempty": "Twoja lista życzeń jest obecnie pusta!"
+      },
+      "pickup_availability": {
+        "view_store_info": "Wyświetl informacje o sklepie",
+        "check_other_stores": "Sprawdź dostępność w innych sklepach",
+        "pick_up_available": "Możliwość odbioru osobistego",
+        "pick_up_available_at_html": "Odbiór możliwy w <span class=\"color-foreground\">{{ location_name }}<\/span>",
+        "pick_up_unavailable_at_html": "Odbiór obecnie niedostępny w <span class=\"color-foreground\">{{ location_name }}<\/span>",
+        "unavailable": "Nie udało się załadować dostępności odbioru",
+        "refresh": "Odświeżać"
+      },
+      "price": {
+        "from_price_html": "Od {{ price }}",
+        "regular_price": "Cena regularna",
+        "sale_price": "Cena sprzedaży",
+        "unit_price": "Cena jednostkowa"
+      },
+      "share": "Podziel się tym produktem",
+      "sold_out": "Wyprzedane",
+      "unavailable": "Nie płynny",
+      "vendor": "Sprzedawca",
+      "video_exit_message": "{{ title }} otwiera pełnoekranowy film w tym samym oknie.",
+      "view_full_details": "Zobacz pełne szczegóły",
+      "xr_button": "Zobacz w swojej przestrzeni",
+      "xr_button_label": "Wyświetl w swojej przestrzeni, załaduj element w oknie rzeczywistości rozszerzonej",
+      "include_taxes": "Podatek wliczony w cenę.",
+      "shipping_policy_html": "<a href=\"&lt;span%20class='notranslate'&gt;{{%20link%20}}&lt;\/span&gt;\">Koszt wysyłki<\/a> obliczany jest przy kasie."
+    },
+    "modal": {
+      "label": "Galeria multimediów"
     }
   },
   "templates": {
@@ -347,5 +411,75 @@
     "language_label": "Język",
     "update_language": "Aktualizuj język",
     "update_country": "Aktualizuj kraj\/region"
+  },
+  "accessibility": {
+    "skip_to_text": "Przejdź do treści",
+    "skip_to_product_info": "Przejdź do informacji o produkcie",
+    "close": "Zamknąć",
+    "unit_price_separator": "za",
+    "vendor": "Sprzedawca:",
+    "error": "Błąd",
+    "refresh_page": "Wybranie opcji powoduje odświeżenie całej strony.",
+    "link_messages": {
+      "new_window": "Otwiera się w nowym oknie.",
+      "external": "Otwiera zewnętrzną stronę internetową."
+    },
+    "loading": "Załadunek...",
+    "total_reviews": "łącznie recenzji",
+    "star_reviews_info": "{{ rating_value }} z {{ rating_max }} gwiazdek",
+    "collapsible_content_title": "Zawartość składana"
+  },
+  "blogs": {
+    "sidebar": {
+      "recent_articles": "Powiązane artykuły",
+      "categories": "Kategorie"
+    },
+    "comments": {
+      "title": "Zostaw komentarz",
+      "name": "Nazwa",
+      "email": "E-mail",
+      "comments": "Uwagi",
+      "message": "Wiadomość",
+      "post": "Dodaj komentarz",
+      "moderated": "Należy pamiętać, że komentarze muszą zostać zatwierdzone przed publikacją",
+      "success_moderated": "Twój komentarz został pomyślnie opublikowany. Opublikujemy go za chwilę, ponieważ nasz blog jest moderowany.",
+      "success": "Twój komentarz został pomyślnie opublikowany! Dziękuję!",
+      "with_count": {
+        "one": "Uwagi",
+        "other": "Uwagi"
+      },
+      "with_count_v": {
+        "one": "Wyświetlenia ( {{ count }} ) ",
+        "other": "Wyświetlenia ( {{ count }} )"
+      }
+    },
+    "article": {
+      "older_post": "Starszy post",
+      "newer_post": "Nowszy post",
+      "read_more": "Przeczytaj więcej",
+      "by_author": "przez {{ author }}",
+      "share_post": "Udostępnij ten post",
+      "posted_in": "Opublikowano w",
+      "back_to_blog": "Powrót do bloga",
+      "tags": "Tagi",
+      "view_all": "Zobacz wszystko",
+      "comments": {
+        "one": "{{ count }} komentarz",
+        "other": "{{ count }} komentarzy"
+      },
+      "moderated": "Należy pamiętać, że komentarze muszą zostać zatwierdzone przed publikacją.",
+      "comment_form_title": "Zostaw komentarz",
+      "name": "Nazwa",
+      "email": "E-mail",
+      "message": "Komentarz",
+      "post": "Dodaj komentarz",
+      "share": "Udostępnij ten artykuł",
+      "success": "Twój komentarz został pomyślnie opublikowany! Dziękuję!",
+      "success_moderated": "Twój komentarz został pomyślnie opublikowany. Opublikujemy go za chwilę, ponieważ nasz blog jest moderowany."
+    }
+  },
+  "onboarding": {
+    "product_title": "Przykładowy tytuł produktu",
+    "collection_title": "Nazwa Twojej kolekcji"
   }
 }
