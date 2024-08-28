@@ -54,7 +54,7 @@
           "settings": {
             "background": "#e4edd8",
             "title": "Coffee & Tea",
-            "cta_url": "",
+            "cta_url": "shopify:\/\/collections\/grocerywala-shop-groceries-coffee-and-tea",
             "featured_img": "shopify:\/\/shop_images\/Mask_group_1.png"
           }
         },
@@ -63,7 +63,7 @@
           "settings": {
             "background": "#e4edd8",
             "title": "Oil, Olive & Vinegar",
-            "cta_url": "",
+            "cta_url": "shopify:\/\/collections\/grocerywala-shop-groceries-oil",
             "featured_img": "shopify:\/\/shop_images\/image_5.png"
           }
         },
@@ -72,7 +72,7 @@
           "settings": {
             "background": "#e4edd8",
             "title": "Groats & Flour",
-            "cta_url": "",
+            "cta_url": "shopify:\/\/collections\/grocerywala-shop-groceries-groats-and-flour",
             "featured_img": "shopify:\/\/shop_images\/image_6.png"
           }
         },
@@ -255,6 +255,7 @@
         "offer_UwbmKJ",
         "offer_6kpVk6"
       ],
+      "disabled": true,
       "settings": {
         "title": "Coupons & Offers",
         "additional_classes": ""
