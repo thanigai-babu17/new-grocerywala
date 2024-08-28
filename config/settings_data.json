@@ -89,15 +89,6 @@
               "imageblink": "shopify:\/\/collections"
             }
           },
-          "a7298f4f-f505-493e-8dd9-38dab56ca47e": {
-            "type": "link-linklist",
-            "settings": {
-              "title": "Best Sellers",
-              "link": "",
-              "diffclassname": "",
-              "links": "best-sellers"
-            }
-          },
           "mob_link_linklist_7PhCye": {
             "type": "mob-link-linklist",
             "settings": {
@@ -109,8 +100,8 @@
           "link_simple_AdaMFE": {
             "type": "link-simple",
             "settings": {
-              "title": "",
-              "link": "",
+              "title": "Incense Sticks",
+              "link": "shopify:\/\/collections\/grocerywala-shop-incense-sticks",
               "diffclassname": ""
             }
           },
@@ -145,17 +136,25 @@
               "link": "shopify:\/\/collections\/all",
               "diffclassname": ""
             }
+          },
+          "link_simple_ir7fbM": {
+            "type": "link-simple",
+            "settings": {
+              "title": "Best Sellers",
+              "link": "shopify:\/\/collections\/best-sellers",
+              "diffclassname": ""
+            }
           }
         },
         "block_order": [
           "d1b60774-590f-40e0-8860-e29584aed4ee",
-          "a7298f4f-f505-493e-8dd9-38dab56ca47e",
           "mob_link_linklist_7PhCye",
           "link_simple_AdaMFE",
           "mob_link_simple_nzha3U",
           "mob_link_simple_Ufadfr",
           "mob_link_simple_tJL9F8",
-          "mob_link_simple_c6VkLJ"
+          "mob_link_simple_c6VkLJ",
+          "link_simple_ir7fbM"
         ],
         "settings": {
           "day": "Monday - Friday",
