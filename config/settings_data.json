@@ -73,14 +73,6 @@
       "header": {
         "type": "header",
         "blocks": {
-          "link_simple_NEk3Aw": {
-            "type": "link-simple",
-            "settings": {
-              "title": "Shop All",
-              "link": "",
-              "diffclassname": ""
-            }
-          },
           "d1b60774-590f-40e0-8860-e29584aed4ee": {
             "type": "link-4linklists",
             "settings": {
@@ -93,7 +85,6 @@
               "links_2": "coffee-tea",
               "link_title3": "Beverages",
               "links_3": "beverages",
-              "image": "shopify:\/\/shop_images\/thandai-mobile.webp",
               "imageblink": "shopify:\/\/products\/sliced-whole-oranges"
             }
           },
@@ -144,7 +135,6 @@
           }
         },
         "block_order": [
-          "link_simple_NEk3Aw",
           "d1b60774-590f-40e0-8860-e29584aed4ee",
           "5dc0b32d-8260-4483-92d1-e4af69f6758d",
           "84b8b5ab-2dc0-484e-bb81-58bfa24be1f7",
