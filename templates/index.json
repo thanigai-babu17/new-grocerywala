@@ -189,7 +189,7 @@
         "tab_label": "SAVINGS",
         "title": "Unbeatable Discounts on Your Favorite Grocerie",
         "description": "Get ready to stock up and save big! Dive into our treasure trove of top-notch groceries with irresistible discounts",
-        "url": "shopify:\/\/pages\/contact",
+        "url": "shopify:\/\/collections\/all",
         "url_label": "Shop Now",
         "featured_img": "shopify:\/\/shop_images\/featured-image-banner.webp"
       }
