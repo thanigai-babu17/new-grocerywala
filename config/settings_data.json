@@ -105,12 +105,57 @@
               "diffclassname": "",
               "links": "main-menu"
             }
+          },
+          "link_simple_AdaMFE": {
+            "type": "link-simple",
+            "settings": {
+              "title": "",
+              "link": "",
+              "diffclassname": ""
+            }
+          },
+          "mob_link_simple_nzha3U": {
+            "type": "mob-link-simple",
+            "settings": {
+              "title": "About Us",
+              "link": "shopify:\/\/pages\/about-us",
+              "diffclassname": ""
+            }
+          },
+          "mob_link_simple_Ufadfr": {
+            "type": "mob-link-simple",
+            "settings": {
+              "title": "Contact Us",
+              "link": "shopify:\/\/pages\/contact",
+              "diffclassname": ""
+            }
+          },
+          "mob_link_simple_tJL9F8": {
+            "type": "mob-link-simple",
+            "settings": {
+              "title": "FAQ",
+              "link": "shopify:\/\/pages\/faq",
+              "diffclassname": ""
+            }
+          },
+          "mob_link_simple_c6VkLJ": {
+            "type": "mob-link-simple",
+            "settings": {
+              "title": "Shop All",
+              "link": "shopify:\/\/collections\/all",
+              "diffclassname": ""
+            }
           }
         },
         "block_order": [
           "d1b60774-590f-40e0-8860-e29584aed4ee",
           "a7298f4f-f505-493e-8dd9-38dab56ca47e",
-          "mob_link_linklist_7PhCye"
+          "mob_link_linklist_7PhCye",
+          "link_simple_AdaMFE",
+          "mob_link_simple_nzha3U",
+          "mob_link_simple_Ufadfr",
+          "mob_link_simple_tJL9F8",
+          "mob_link_simple_c6VkLJ"
         ],
         "settings": {
           "day": "Monday - Friday",
