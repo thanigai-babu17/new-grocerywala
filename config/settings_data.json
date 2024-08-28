@@ -97,11 +97,20 @@
               "diffclassname": "",
               "links": "best-sellers"
             }
+          },
+          "mob_link_linklist_7PhCye": {
+            "type": "mob-link-linklist",
+            "settings": {
+              "title": "",
+              "diffclassname": "",
+              "links": "main-menu"
+            }
           }
         },
         "block_order": [
           "d1b60774-590f-40e0-8860-e29584aed4ee",
-          "a7298f4f-f505-493e-8dd9-38dab56ca47e"
+          "a7298f4f-f505-493e-8dd9-38dab56ca47e",
+          "mob_link_linklist_7PhCye"
         ],
         "settings": {
           "day": "Monday - Friday",
