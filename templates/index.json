@@ -90,7 +90,7 @@
           "settings": {
             "background": "#e4edd8",
             "title": "Juices & Nectars",
-            "cta_url": "",
+            "cta_url": "shopify:\/\/collections\/grocerywala-shop-groceries-juices-and-nectars",
             "featured_img": "shopify:\/\/shop_images\/image_9.png"
           }
         },
@@ -99,7 +99,7 @@
           "settings": {
             "background": "#e4edd8",
             "title": "Spices & Herbs",
-            "cta_url": "",
+            "cta_url": "shopify:\/\/collections\/grocerywala-shop-groceries-spices-and-herbs",
             "featured_img": "shopify:\/\/shop_images\/image_10.png"
           }
         },
@@ -108,7 +108,7 @@
           "settings": {
             "background": "#e4edd8",
             "title": "Snacks & Savouries",
-            "cta_url": "",
+            "cta_url": "shopify:\/\/collections\/grocerywala-shop-snacks-and-savouries",
             "featured_img": "shopify:\/\/shop_images\/Mask_group_3.png"
           }
         },
