@@ -105,6 +105,14 @@
               "diffclassname": ""
             }
           },
+          "link_simple_G6FFji": {
+            "type": "link-simple",
+            "settings": {
+              "title": "Dairy Products",
+              "link": "shopify:\/\/collections\/grocerywala-shop-groceries-dairy-products",
+              "diffclassname": ""
+            }
+          },
           "link_simple_AdaMFE": {
             "type": "link-simple",
             "settings": {
@@ -150,6 +158,7 @@
           "d1b60774-590f-40e0-8860-e29584aed4ee",
           "mob_link_linklist_7PhCye",
           "link_simple_ir7fbM",
+          "link_simple_G6FFji",
           "link_simple_AdaMFE",
           "mob_link_simple_nzha3U",
           "mob_link_simple_Ufadfr",
