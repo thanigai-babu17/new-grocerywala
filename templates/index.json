@@ -17,7 +17,7 @@
           "settings": {
             "desktop_img": "shopify:\/\/shop_images\/sale-banner-desk.webp",
             "mobile_img": "shopify:\/\/shop_images\/thandai-mobile.webp",
-            "slide_url": "shopify:\/\/products\/maaza-coconut-water-6-1l-tetra-prisma"
+            "slide_url": "shopify:\/\/collections\/grocerywala-shop-groceries-juices-and-nectars"
           }
         },
         "slide_NbwafU": {
@@ -25,7 +25,7 @@
           "settings": {
             "desktop_img": "shopify:\/\/shop_images\/bikano-desktop.webp",
             "mobile_img": "shopify:\/\/shop_images\/bikano-mobile.webp",
-            "slide_url": "shopify:\/\/pages\/contact"
+            "slide_url": "shopify:\/\/collections\/grocerywala-shop-snacks-and-savouries-bikano-namkeens"
           }
         },
         "slide_dnKpCc": {
@@ -33,7 +33,7 @@
           "settings": {
             "desktop_img": "shopify:\/\/shop_images\/patanjali-desktop.webp",
             "mobile_img": "shopify:\/\/shop_images\/patanjali-mobile.webp",
-            "slide_url": "shopify:\/\/collections"
+            "slide_url": "shopify:\/\/collections\/grocerywala-shop-natural-cosmetics-hair-care"
           }
         }
       },
