@@ -164,9 +164,9 @@
           "mob_link_linklist_7PhCye": {
             "type": "mob-link-linklist",
             "settings": {
-              "title": "",
+              "title": "Categories",
               "diffclassname": "",
-              "links": "main-menu"
+              "links": "mobile-menu"
             }
           }
         },
