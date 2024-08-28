@@ -89,14 +89,6 @@
               "imageblink": "shopify:\/\/collections"
             }
           },
-          "mob_link_linklist_7PhCye": {
-            "type": "mob-link-linklist",
-            "settings": {
-              "title": "",
-              "diffclassname": "",
-              "links": "main-menu"
-            }
-          },
           "link_simple_ir7fbM": {
             "type": "link-simple",
             "settings": {
@@ -118,6 +110,14 @@
             "settings": {
               "title": "Dairy Products",
               "link": "shopify:\/\/collections\/grocerywala-shop-groceries-dairy-products",
+              "diffclassname": ""
+            }
+          },
+          "link_simple_6iV6Cz": {
+            "type": "link-simple",
+            "settings": {
+              "title": "Dietary supplements",
+              "link": "shopify:\/\/collections\/grocerywala-shop-dietary-supplements",
               "diffclassname": ""
             }
           },
@@ -161,27 +161,27 @@
               "diffclassname": ""
             }
           },
-          "link_simple_6iV6Cz": {
-            "type": "link-simple",
+          "mob_link_linklist_7PhCye": {
+            "type": "mob-link-linklist",
             "settings": {
-              "title": "Dietary supplements",
-              "link": "shopify:\/\/collections\/grocerywala-shop-dietary-supplements",
-              "diffclassname": ""
+              "title": "",
+              "diffclassname": "",
+              "links": "main-menu"
             }
           }
         },
         "block_order": [
           "d1b60774-590f-40e0-8860-e29584aed4ee",
-          "mob_link_linklist_7PhCye",
           "link_simple_ir7fbM",
           "link_simple_JPKbUW",
           "link_simple_G6FFji",
+          "link_simple_6iV6Cz",
           "link_simple_AdaMFE",
           "mob_link_simple_nzha3U",
           "mob_link_simple_Ufadfr",
           "mob_link_simple_tJL9F8",
           "mob_link_simple_c6VkLJ",
-          "link_simple_6iV6Cz"
+          "mob_link_linklist_7PhCye"
         ],
         "settings": {
           "day": "Monday - Friday",
