@@ -97,6 +97,14 @@
               "links": "main-menu"
             }
           },
+          "link_simple_ir7fbM": {
+            "type": "link-simple",
+            "settings": {
+              "title": "Best Sellers",
+              "link": "shopify:\/\/collections\/best-sellers",
+              "diffclassname": ""
+            }
+          },
           "link_simple_AdaMFE": {
             "type": "link-simple",
             "settings": {
@@ -136,25 +144,17 @@
               "link": "shopify:\/\/collections\/all",
               "diffclassname": ""
             }
-          },
-          "link_simple_ir7fbM": {
-            "type": "link-simple",
-            "settings": {
-              "title": "Best Sellers",
-              "link": "shopify:\/\/collections\/best-sellers",
-              "diffclassname": ""
-            }
           }
         },
         "block_order": [
           "d1b60774-590f-40e0-8860-e29584aed4ee",
           "mob_link_linklist_7PhCye",
+          "link_simple_ir7fbM",
           "link_simple_AdaMFE",
           "mob_link_simple_nzha3U",
           "mob_link_simple_Ufadfr",
           "mob_link_simple_tJL9F8",
-          "mob_link_simple_c6VkLJ",
-          "link_simple_ir7fbM"
+          "mob_link_simple_c6VkLJ"
         ],
         "settings": {
           "day": "Monday - Friday",
