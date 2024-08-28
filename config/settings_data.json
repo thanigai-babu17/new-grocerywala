@@ -105,6 +105,14 @@
               "diffclassname": ""
             }
           },
+          "link_simple_JPKbUW": {
+            "type": "link-simple",
+            "settings": {
+              "title": "Snacks and Savouries",
+              "link": "shopify:\/\/collections\/grocerywala-shop-snacks-and-savouries",
+              "diffclassname": ""
+            }
+          },
           "link_simple_G6FFji": {
             "type": "link-simple",
             "settings": {
@@ -166,6 +174,7 @@
           "d1b60774-590f-40e0-8860-e29584aed4ee",
           "mob_link_linklist_7PhCye",
           "link_simple_ir7fbM",
+          "link_simple_JPKbUW",
           "link_simple_G6FFji",
           "link_simple_AdaMFE",
           "mob_link_simple_nzha3U",
