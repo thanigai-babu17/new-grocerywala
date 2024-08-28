@@ -152,6 +152,14 @@
               "link": "shopify:\/\/collections\/all",
               "diffclassname": ""
             }
+          },
+          "link_simple_6iV6Cz": {
+            "type": "link-simple",
+            "settings": {
+              "title": "Dietary supplements",
+              "link": "shopify:\/\/collections\/grocerywala-shop-dietary-supplements",
+              "diffclassname": ""
+            }
           }
         },
         "block_order": [
@@ -163,7 +171,8 @@
           "mob_link_simple_nzha3U",
           "mob_link_simple_Ufadfr",
           "mob_link_simple_tJL9F8",
-          "mob_link_simple_c6VkLJ"
+          "mob_link_simple_c6VkLJ",
+          "link_simple_6iV6Cz"
         ],
         "settings": {
           "day": "Monday - Friday",
