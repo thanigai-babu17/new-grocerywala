@@ -92,10 +92,10 @@
           "a7298f4f-f505-493e-8dd9-38dab56ca47e": {
             "type": "link-linklist",
             "settings": {
-              "title": "Bestseller",
+              "title": "Best Sellers",
               "link": "",
               "diffclassname": "",
-              "links": "main-menu"
+              "links": "best-sellers"
             }
           }
         },
