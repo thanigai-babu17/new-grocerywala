@@ -88,15 +88,6 @@
               "imageblink": "shopify:\/\/collections"
             }
           },
-          "5dc0b32d-8260-4483-92d1-e4af69f6758d": {
-            "type": "link-linklist",
-            "settings": {
-              "title": "Patanjali",
-              "link": "",
-              "diffclassname": "",
-              "links": "patanjali"
-            }
-          },
           "a823e2c9-c825-416b-9e31-8fca2de83f9d": {
             "type": "link-linklist",
             "settings": {
@@ -112,13 +103,12 @@
               "title": "Bestseller",
               "link": "",
               "diffclassname": "",
-              "links": "best-sellers"
+              "links": "main-menu"
             }
           }
         },
         "block_order": [
           "d1b60774-590f-40e0-8860-e29584aed4ee",
-          "5dc0b32d-8260-4483-92d1-e4af69f6758d",
           "a823e2c9-c825-416b-9e31-8fca2de83f9d",
           "a7298f4f-f505-493e-8dd9-38dab56ca47e"
         ],
