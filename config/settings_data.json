@@ -225,7 +225,7 @@
             "type": "text",
             "settings": {
               "heading": "Our Policies",
-              "menu": "main-menu"
+              "menu": "policy-links"
             }
           }
         },
