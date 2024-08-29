@@ -93,7 +93,7 @@
             "type": "link-simple",
             "settings": {
               "title": "Special Offer",
-              "link": "",
+              "link": "shopify:\/\/collections\/promotion",
               "diffclassname": ""
             }
           },
