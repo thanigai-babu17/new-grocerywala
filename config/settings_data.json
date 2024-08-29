@@ -89,6 +89,14 @@
               "imageblink": "shopify:\/\/collections"
             }
           },
+          "link_simple_96BWPy": {
+            "type": "link-simple",
+            "settings": {
+              "title": "Special Offer",
+              "link": "",
+              "diffclassname": ""
+            }
+          },
           "link_simple_ir7fbM": {
             "type": "link-simple",
             "settings": {
@@ -172,6 +180,7 @@
         },
         "block_order": [
           "d1b60774-590f-40e0-8860-e29584aed4ee",
+          "link_simple_96BWPy",
           "link_simple_ir7fbM",
           "link_simple_JPKbUW",
           "link_simple_G6FFji",
