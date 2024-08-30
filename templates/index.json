@@ -291,6 +291,7 @@
     },
     "collection_slider_MWcTR4": {
       "type": "collection-slider",
+      "disabled": true,
       "settings": {
         "title": "Patanjali Products",
         "cta_label": "Show more",
@@ -327,6 +328,7 @@
         "article_block_bXxx6n",
         "article_block_yLzxFE"
       ],
+      "disabled": true,
       "settings": {
         "theme": "dark",
         "pattern_img1": "shopify:\/\/shop_images\/group-3311-665aed1cb1334.webp",
