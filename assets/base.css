@@ -8801,5 +8801,5 @@ variant-radios.size-selectors{
 }
 
 .bacurr-checkoutNotice{
-	position: static;
+	position: static !important;
 }
