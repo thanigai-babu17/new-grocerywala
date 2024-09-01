@@ -8799,3 +8799,7 @@ variant-radios.size-selectors{
 	text-decoration: underline;
 	color: #0000EE;
 }
+
+.bacurr-checkoutNotice{
+	position: static;
+}
