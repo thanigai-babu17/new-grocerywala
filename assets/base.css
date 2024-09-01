@@ -8801,5 +8801,7 @@ variant-radios.size-selectors{
 }
 
 .bacurr-checkoutNotice{
-	position: static;
+	color: #004085;
+    background-color: #cce5ff;
+    border-color: #b8daff;
 }
