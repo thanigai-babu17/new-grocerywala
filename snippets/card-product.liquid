@@ -145,7 +145,7 @@
     </div>
     <div id="ProductInfo-{{ section.id }}-{{ card_product.id }}" class="product-content-bottom">
       <div class="product-selectors">
-        {% if show_variants %}
+        {% if show_variants and card_product.variants.size > 1 %}
           {%- if picker_type == 'button' -%}
             {%- unless card_product.has_only_default_variant -%}
               <variant-radios

@@ -2089,7 +2089,7 @@ header.head-sticky .announcebar {
 	font-size: 14px;
 	display: flex;
 	align-items: center;
-	padding: 0.5rem 1.6rem 0.5rem 0.5rem;
+	padding: 0.5rem 0.5rem 0.5rem 0.5rem;
 	border-radius: 5px;
 	position: relative;
 	letter-spacing: -0.03em;
@@ -8583,6 +8583,7 @@ deferred-media.deferred-media {
     padding: 16px 24px;
     border-radius: 8px;
 	position: relative;
+	gap: 8px;
 }
 
 @media screen and (max-width:768px) {
@@ -8757,4 +8758,44 @@ variant-radios.size-selectors{
 .customer.addresses .add-default{
 	background-color: var(--white);
 	border-radius: 8px;
+}
+
+.card-collection .card-wrapper{
+	background-color: var(--white);
+	padding: 12px;
+	border-radius: 12px;
+}
+
+.card-collection .card-wrapper a{
+	background-color: var(--grey-400);
+	display: flex;
+	justify-content: center;
+	border-radius: 8px;
+}
+
+.card-collection .card-wrapper a img{
+	height: 185px;
+	object-fit: contain;
+}
+
+.product-detail-page .jdgm-review-widget{
+	margin-bottom: 80px;
+	padding-inline: 15px;
+}
+
+.container.policy-content ul,
+.container.policy-content ol {
+	padding-left: 18px;
+	list-style-type: initial !important;
+}
+
+.container.policy-content ul li,
+.container.policy-content ol li {
+	list-style: initial !important;
+	color: var(--grey-600);
+}
+
+.container.policy-content a{
+	text-decoration: underline;
+	color: #0000EE;
 }

@@ -16,7 +16,7 @@
           -%}
       <div class="row" role="list">
           {%- for collection in collections -%}
-              <div class="col-md-4 col-sm-4 col-12">
+              <div class="col-lg-3 col-md-4 col-sm-6 col-12 card-collection">
                   {% render 'card-collection', collection: collection %}
               </div>
           {%- endfor -%}

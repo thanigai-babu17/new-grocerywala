@@ -17,7 +17,7 @@
         {% for block in section.blocks %}
           {% if block.type == 'slide' %}
             <div class="sale-banner-slide swiper-slide">
-              <a href="{{ block.slide_url }}">
+              <a href="{{ block.settings.slide_url }}">
                 <picture>
                   <source media="(max-width: 610px)" srcset="{{ block.settings.mobile_img | img_url: 'master' }}">
                   <img
