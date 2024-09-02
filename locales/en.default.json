@@ -496,7 +496,7 @@
   "shopify": {
     "checkout": {
       "payment": {
-        "card_security_notice": "All transactions are secure and encrypted. I hereby confirm that I have read the regulations and the information obligation of <a href=\"https:\/\/www.przelewy24.pl\" target=\"_blank\">Przelewy24<\/a> and <a href=\"https:\/\/www.paypal.com\" target=\"_blank\">PayPal<\/a>."
+        "card_security_notice": "I hereby confirm that I have read the regulations and the information obligation of <a href=\"https:\/\/www.przelewy24.pl\" target=\"_blank\">Przelewy24<\/a> and <a href=\"https:\/\/www.paypal.com\" target=\"_blank\">PayPal<\/a>."
       }
     }
   }
