@@ -53,9 +53,9 @@
     {%- endif -%}
 
     <!-- Load jQuery first, since other scripts might depend on it -->
-    <script src="{{ 'jquery.min.js' | asset_url }}"></script>
-    <script src="{{ 'jquery-cookie.min.js' | asset_url }}"></script>
-    <script src="{{ 'slick.min.js' | asset_url }}"></script>
+    <script src="{{ 'jquery.min.js' | asset_url }}" defer></script>
+    <script src="{{ 'jquery-cookie.min.js' | asset_url }}" defer></script>
+    <script src="{{ 'slick.min.js' | asset_url }}" defer></script>
 
     <!-- Load deferred scripts -->
     <script src="{{ 'global.js' | asset_url }}" defer></script>
