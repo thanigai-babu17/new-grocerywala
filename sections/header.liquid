@@ -19,12 +19,21 @@
         {% render 'icon'  icon: 'nav-arrow-down' %}
       </div>
     {%- endform -%}
-    {% if section.settings.cnt_title != blank and section.settings.contact != blank %}
+    <div class="announcement-bar-mid-col">
+      {% if section.settings.cnt_title != blank and section.settings.contact != blank %}
         <a class="hot-line-num" href="tel:{{ section.settings.contact }}">
           {% render 'icon' icon:'telephone' %}
           <span>{{ section.settings.cnt_title }} {{ section.settings.contact }}</span>
         </a>
-    {% endif %}
+      {% endif %}
+      {% if section.settings.ann_bar_icon != blank and section.settings.ann_bar_content != blank %}
+        <span>|</span>
+        <a class="hot-line-num" href="tel:{{ section.settings.contact }}">
+          {{ section.settings.ann_bar_icon }}
+          <span>{{ section.settings.ann_bar_content }}</span>
+        </a>
+      {% endif %}
+    </div>
     {% if customer %}
       {% comment %} <div class="header-sign-in-up__group">
         <a href="/account/logout" class="btn btn--secondary btn--sm">

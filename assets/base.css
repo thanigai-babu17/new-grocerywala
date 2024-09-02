@@ -2530,12 +2530,20 @@ body.home .header-style-one .extra-menu-col {
 	align-items: center;
 	font-size: 14px;
 	font-weight: 400;
-	gap: 12px;
+	gap: 8px;
+}
+
+.announcement-bar-mid-col{
+	display: flex;
+	align-items: center;
+	gap: 10px;
+	justify-content: center;
 }
 
 @media screen and (max-width: 767px) {
 	.hot-line-num,
-	.site-header .header__top-navigation {
+	.site-header .header__top-navigation,
+	.announcement-bar-mid-col {
 		display: none;
 	}
 }
