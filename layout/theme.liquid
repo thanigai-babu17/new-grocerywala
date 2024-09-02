@@ -161,19 +161,19 @@
     {%- render 'cart-notification' -%}
     {% section 'quickview' %}
     {%- if settings.predictive_search_enabled -%}
-      <script src="{{ 'predictive-search.js' | asset_url }}" defer="defer"></script>
+      <script src="{{ 'predictive-search.js' | asset_url }}" defer></script>
     {%- endif -%}
     {% if template == 'index' %}
       {% render 'popup-newsletter' %}
     {% endif %}
-    {{ 'jquery.fancybox.min.js' | asset_url | script_tag }}
-    <script src="{{ 'slick-lightbox.js' | asset_url }}" defer="defer"></script>
-    <script src="{{ 'variant.js' | asset_url }}"></script>
+    <script src="{{ 'slick-lightbox.js' | asset_url }}" defer></script>
+    <script src="{{ 'jquery.fancybox.min.js' | asset_url }}" defer></script>
+    <script src="{{ 'variant.js' | asset_url }}" async></script>
     <script src="{{ 'compare.js' | asset_url }}" defer></script>
-    {{ '//ajax.aspnetcdn.com/ajax/jquery.templates/beta1/jquery.tmpl.min.js' | script_tag }}
-    {{ 'jquery.products.min.js' | asset_url | script_tag }}
-    <script src="{{ 'product-form.js' | asset_url }}"></script>
-    {{ 'wishlist.js' | asset_url | script_tag }}
+    <script src="//ajax.aspnetcdn.com/ajax/jquery.templates/beta1/jquery.tmpl.min.js" async></script>
+    <script src="{{ 'jquery.products.min.js' |  asset_url }}" async></script>
+    <script src="{{ 'product-form.js' | asset_url }}" async></script>
+    <script src="{{ 'wishlist.js' | asset_url }}" async></script>
     <script>
       jQuery(window).on('load', function () {
         jQuery('.ttloader').fadeOut(500);
