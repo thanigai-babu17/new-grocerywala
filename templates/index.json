@@ -15,8 +15,8 @@
         "slide_PkeVhX": {
           "type": "slide",
           "settings": {
-            "desktop_img": "shopify:\/\/shop_images\/hero_banner-DESKTOP.webp",
-            "mobile_img": "shopify:\/\/shop_images\/hero_banner-MOBILE.webp",
+            "desktop_img": "shopify:\/\/shop_images\/sale-banner-desk.webp",
+            "mobile_img": "shopify:\/\/shop_images\/thandai-mobile.webp",
             "slide_url": "shopify:\/\/collections\/grocerywala-shop-groceries-juices-and-nectars"
           }
         },
