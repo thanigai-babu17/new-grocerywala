@@ -125,7 +125,8 @@
     {% section 'footer' %}
     {% if template == 'index' %}
       {% section 'recommendations-product' %}
-      {% render 'popup-cookie' %}
+      {% comment %} cookies disabled becacuse using the inbuild cookie feature {% endcomment %}
+      {% comment %} {% render 'popup-cookie' %} {% endcomment %}
     {% endif %}
     <ul hidden>
       <li id="a11y-refresh-page-message">{{ 'accessibility.refresh_page' | t }}</li>
