@@ -1,9 +1,18 @@
+/*
+* ------------------------------------------------------------
+* IMPORTANT: The contents of this file are auto-generated.
+*
+* This file may be updated by the Shopify admin theme editor
+* or related systems. Please exercise caution as any changes
+* made to this file may be overwritten.
+* ------------------------------------------------------------
+*/
 {
   "sections": {
     "main-page": {
       "type": "main-page",
       "settings": {
-        "description": "People will always seek help and advice. They are unwilling to pick up the phone, walk into a store, or wait hours (even minutes) for that information or insight to become accessible."
+        "description": "This page provides concise answers to common inquiries about your products, services, or company policies. It serves as a quick reference to address customer concerns, improve user experience, and reduce support queries. Organized by categories, it ensures easy navigation and efficient information delivery."
       }
     },
     "faqs": {
@@ -12,10 +21,10 @@
         "6f7c65d2-50b2-4303-b33c-f16b3f30d31c": {
           "type": "text",
           "settings": {
-            "name1": "How to setup a page with custom fields?",
-            "info1": "<p>By creating an account you will be able to shop faster, be up to date on an order's status, and keep track of the orders you have previously made.By creating an account you will be able to shop faster, be up to date on an order's status, and keep track of the orders you have previously made.<\/p>",
-            "name2": "How to setup a page with custom fields?",
-            "info2": "<p>By creating an account you will be able to shop faster, be up to date on an order's status, and keep track of the orders you have previously made.By creating an account you will be able to shop faster, be up to date on an order's status, and keep track of the orders you have previously made.<\/p>",
+            "name1": "What products can I find on grocerywala.pl?",
+            "info1": "<p>Grocerywala.pl is your one stop centre for all Indian products, ranging from spices, daily groceries to dietary supplements and sweets and snacks. Do kindly check our online store frequently as we will adding more products to expand our catalog and have a diverse range of products. <\/p>",
+            "name2": "Is there a minimum order amount required to place an order?",
+            "info2": "<p>There is no minimum order amount required, but to avail free delivery, you have to order for a minimum of 100 PLN.<\/p>",
             "name3": "How to setup a page with custom fields?",
             "info3": "<p>By creating an account you will be able to shop faster, be up to date on an order's status, and keep track of the orders you have previously made.By creating an account you will be able to shop faster, be up to date on an order's status, and keep track of the orders you have previously made.<\/p>",
             "name4": "How to setup a page with custom fields?",
