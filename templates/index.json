@@ -273,6 +273,7 @@
     },
     "featured_products_93EmAR": {
       "type": "featured-products",
+      "disabled": true,
       "settings": {
         "theme": "light",
         "title": "Quench Your Thirst with Summer's Sips",
