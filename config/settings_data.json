@@ -94,7 +94,7 @@
             "settings": {
               "title": "Special Offer",
               "link": "shopify:\/\/collections\/promotion",
-              "diffclassname": ""
+              "diffclassname": "special-link"
             }
           },
           "link_simple_ir7fbM": {
