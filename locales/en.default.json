@@ -1,3 +1,12 @@
+/*
+* ------------------------------------------------------------
+* IMPORTANT: The contents of this file are auto-generated.
+*
+* This file may be updated by the Shopify admin language editor
+* or related systems. Please exercise caution as any changes
+* made to this file may be overwritten.
+* ------------------------------------------------------------
+*/
 {
   "general": {
     "showmorepro": "Show more Products",
@@ -482,6 +491,13 @@
       "expired": "Expired",
       "copy_code_success": "Code copied successfully",
       "print_gift_card": "Print"
+    }
+  },
+  "shopify": {
+    "checkout": {
+      "payment": {
+        "card_security_notice": "All transactions are secure and encrypted. I hereby confirm that I have read the regulations and the information obligation of <a href=\"https:\/\/www.przelewy24.pl\" target=\"_blank\">Przelewy24<\/a> and <a href=\"https:\/\/www.paypal.com\" target=\"_blank\">PayPal<\/a>."
+      }
     }
   }
 }
