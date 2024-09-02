@@ -73,6 +73,14 @@
       "header": {
         "type": "header",
         "blocks": {
+          "link_simple_96BWPy": {
+            "type": "link-simple",
+            "settings": {
+              "title": "Special Offer",
+              "link": "shopify:\/\/collections\/promotion",
+              "diffclassname": "special-link"
+            }
+          },
           "d1b60774-590f-40e0-8860-e29584aed4ee": {
             "type": "link-4linklists",
             "settings": {
@@ -87,14 +95,6 @@
               "links_3": "beverages",
               "image": "shopify:\/\/shop_images\/pexels-reneterp-3167310.jpg",
               "imageblink": "shopify:\/\/collections"
-            }
-          },
-          "link_simple_96BWPy": {
-            "type": "link-simple",
-            "settings": {
-              "title": "Special Offer",
-              "link": "shopify:\/\/collections\/promotion",
-              "diffclassname": "special-link"
             }
           },
           "link_simple_ir7fbM": {
@@ -171,8 +171,8 @@
           }
         },
         "block_order": [
-          "d1b60774-590f-40e0-8860-e29584aed4ee",
           "link_simple_96BWPy",
+          "d1b60774-590f-40e0-8860-e29584aed4ee",
           "link_simple_ir7fbM",
           "link_simple_JPKbUW",
           "link_simple_G6FFji",
