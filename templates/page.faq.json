@@ -27,8 +27,8 @@
             "info2": "<p>There is no minimum order amount required, but to avail free delivery, you have to order for a minimum of 100 PLN.<\/p>",
             "name3": "Do you offer fresh produce like fruits and vegetables?",
             "info3": "<p>Currently, we are not selling fresh produce, but we are looking to add them as part of our offers, so do check our website for more! <\/p>",
-            "name4": "What are your payment methods?",
-            "info4": "<p>We are accepting debit\/credit card payments, BLIK, PayPal, direct bank transfers, online banking, and P24Now. <\/p>",
+            "name4": "",
+            "info4": "",
             "name5": "",
             "info5": ""
           }
@@ -36,16 +36,16 @@
         "782a9497-46a9-430e-9c88-eb14bcab2fef": {
           "type": "text",
           "settings": {
-            "name1": "How to setup a page with custom fields?",
-            "info1": "<p>By creating an account you will be able to shop faster, be up to date on an order's status, and keep track of the orders you have previously made.By creating an account you will be able to shop faster, be up to date on an order's status, and keep track of the orders you have previously made.<\/p>",
-            "name2": "How to setup a page with custom fields?",
-            "info2": "<p>By creating an account you will be able to shop faster, be up to date on an order's status, and keep track of the orders you have previously made.By creating an account you will be able to shop faster, be up to date on an order's status, and keep track of the orders you have previously made.<\/p>",
-            "name3": "How to setup a page with custom fields?",
-            "info3": "<p>By creating an account you will be able to shop faster, be up to date on an order's status, and keep track of the orders you have previously made.By creating an account you will be able to shop faster, be up to date on an order's status, and keep track of the orders you have previously made.<\/p>",
-            "name4": "How to setup a page with custom fields?",
-            "info4": "<p>By creating an account you will be able to shop faster, be up to date on an order's status, and keep track of the orders you have previously made.By creating an account you will be able to shop faster, be up to date on an order's status, and keep track of the orders you have previously made.<\/p>",
-            "name5": "How to setup a page with custom fields?",
-            "info5": "<p>By creating an account you will be able to shop faster, be up to date on an order's status, and keep track of the orders you have previously made.By creating an account you will be able to shop faster, be up to date on an order's status, and keep track of the orders you have previously made.<\/p>"
+            "name1": "What are your payment methods?",
+            "info1": "<p>We are accepting debit\/credit card payments, BLIK, PayPal, direct bank transfers, online banking, and P24Now. <\/p>",
+            "name2": "What areas do you deliver to in Poland?",
+            "info2": "<p>We are delivering all over Poland without any restrictions through InPost. <\/p>",
+            "name3": "How much does delivery cost?",
+            "info3": "<p>Orders placed under 100 PLN carry delivery charges, with door delivery through InPost Kurier costing 17 PLN, and Paczkomat deliveries costing 15 PLN.<\/p>",
+            "name4": "",
+            "info4": "",
+            "name5": "",
+            "info5": ""
           }
         }
       },
