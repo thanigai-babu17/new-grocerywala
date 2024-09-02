@@ -109,7 +109,7 @@
             "type": "link-simple",
             "settings": {
               "title": "Snacks and Savouries",
-              "link": "shopify:\/\/collections\/grocerywala-shop-snacks-and-savouries",
+              "link": "shopify:\/\/collections\/default-category-snacks-and-savouries",
               "diffclassname": ""
             }
           },
