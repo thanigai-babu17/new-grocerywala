@@ -23,16 +23,16 @@
         "slide_NbwafU": {
           "type": "slide",
           "settings": {
-            "desktop_img": "shopify:\/\/shop_images\/hero_banner-DESKTOP-1.webp",
-            "mobile_img": "shopify:\/\/shop_images\/hero_banner-MOBILE-1.webp",
+            "desktop_img": "shopify:\/\/shop_images\/bikano-desktop.webp",
+            "mobile_img": "shopify:\/\/shop_images\/bikano-mobile.webp",
             "slide_url": "shopify:\/\/collections\/grocerywala-shop-snacks-and-savouries-bikano-namkeens"
           }
         },
         "slide_dnKpCc": {
           "type": "slide",
           "settings": {
-            "desktop_img": "shopify:\/\/shop_images\/hero_banner-DESKTOP-2.webp",
-            "mobile_img": "shopify:\/\/shop_images\/hero_banner-MOBILE-2.webp",
+            "desktop_img": "shopify:\/\/shop_images\/patanjali-desktop.webp",
+            "mobile_img": "shopify:\/\/shop_images\/patanjali-mobile.webp",
             "slide_url": "shopify:\/\/products\/patanjali-aastha-agarbatti-bhakti"
           }
         }
