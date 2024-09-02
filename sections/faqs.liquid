@@ -5,46 +5,60 @@
   <div class="faqs-container row"> 
     {% for block in section.blocks %}
        <div class="col-md-6 col-sm-6 col-12">
+        {% if block.settings.name1 != blank %}
           <div class="set has-children">
-              <a href="javascript:;" class="acnav-label">
-                  {% if block.settings.name1 != blank %}<span>{{ block.settings.name1 }}</span>{% endif %}
-              </a>
-              <div class="acnav-list">
-                  {{ block.settings.info1 }}
-              </div>
-          </div>   
-          <div class="set has-children">
-              <a href="javascript:;" class="acnav-label">
-                  {% if block.settings.name2 != blank %}<span>{{ block.settings.name2 }}</span>{% endif %}
-              </a>
-              <div class="acnav-list">
-                  {{ block.settings.info2 }}
-              </div>
-          </div>   
-          <div class="set has-children">
-              <a href="javascript:;" class="acnav-label">
-                {% if block.settings.name3 != blank %}<span>{{ block.settings.name3 }}</span>{% endif %}
-              </a>
-              <div class="acnav-list">
-                  {{ block.settings.info3 }}
-              </div>
-          </div>   
-          <div class="set has-children">
-              <a href="javascript:;" class="acnav-label">
-                  {% if block.settings.name4 != blank %}<span>{{ block.settings.name4 }}</span>{% endif %} 
-              </a>
-              <div class="acnav-list">
-                  {{ block.settings.info4 }}
-              </div>
-          </div>   
-          <div class="set has-children">
-              <a href="javascript:;" class="acnav-label">
-                  {% if block.settings.name5 != blank %}<span>{{ block.settings.name5 }}</span>{% endif %} 
-              </a>
-              <div class="acnav-list">
-                  {{ block.settings.info5 }}
-              </div>
+            <a href="javascript:;" class="acnav-label">
+                {% if block.settings.name1 != blank %}<span>{{ block.settings.name1 }}</span>{% endif %}
+            </a>
+            <div class="acnav-list">
+                {{ block.settings.info1 }}
+            </div>
           </div>  
+        {% endif %}
+
+        {% if block.settings.name2 != blank %}
+          <div class="set has-children">
+            <a href="javascript:;" class="acnav-label">
+                {% if block.settings.name2 != blank %}<span>{{ block.settings.name2 }}</span>{% endif %}
+            </a>
+            <div class="acnav-list">
+                {{ block.settings.info2 }}
+            </div>
+          </div>
+        {% endif %}
+
+        {% if block.settings.name3 != blank %}
+          <div class="set has-children">
+            <a href="javascript:;" class="acnav-label">
+              {% if block.settings.name3 != blank %}<span>{{ block.settings.name3 }}</span>{% endif %}
+            </a>
+            <div class="acnav-list">
+                {{ block.settings.info3 }}
+            </div>
+          </div> 
+        {% endif %}
+
+        {% if block.settings.name4 != blank %}
+          <div class="set has-children">
+            <a href="javascript:;" class="acnav-label">
+                {% if block.settings.name4 != blank %}<span>{{ block.settings.name4 }}</span>{% endif %} 
+            </a>
+            <div class="acnav-list">
+                {{ block.settings.info4 }}
+            </div>
+          </div> 
+        {% endif %}
+
+        {% if block.settings.name5 != blank %}
+          <div class="set has-children">
+            <a href="javascript:;" class="acnav-label">
+                {% if block.settings.name5 != blank %}<span>{{ block.settings.name5 }}</span>{% endif %} 
+            </a>
+            <div class="acnav-list">
+                {{ block.settings.info5 }}
+            </div>
+          </div> 
+        {% endif %}
       </div>   
       {% endfor %}
   </div>
