@@ -2103,6 +2103,15 @@ header.head-sticky .announcebar {
 	background: var(--theme-color-light);
 	color: var(--theme-color-dark);
 }
+
+.header-style-one .main-navigationbar .menu-items-col .main-nav > li > a.special-link{
+	color: #FF9C00;
+}
+
+.header-style-one .main-navigationbar .menu-items-col .main-nav > li:hover > a.special-link {
+	background-color: #FFEBCC;
+}
+
 .header-style-one .main-navigationbar .menu-items-col .main-nav > li:hover > a img {
 	filter: invert(1);
 }
@@ -8803,3 +8812,4 @@ variant-radios.size-selectors{
 .bacurr-checkoutNotice{
 	position: static !important;
 }
+
