@@ -496,7 +496,7 @@
   "shopify": {
     "checkout": {
       "payment": {
-        "card_security_notice": "I hereby confirm that I have read the regulations and the information obligation of Przelewy24 and PayPal."
+        "card_security_notice": "I hereby confirm that I have read the regulations and the information obligations of either Przelewy24 or PayPal, depending on my choice."
       }
     }
   }
