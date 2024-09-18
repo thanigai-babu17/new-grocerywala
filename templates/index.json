@@ -144,11 +144,11 @@
           "type": "specials",
           "settings": {
             "background": "linear-gradient(180deg, rgba(236, 191, 32, 0.9), rgba(197, 122, 9, 0.9) 100%)",
-            "brand_logo": "shopify:\/\/shop_images\/image_54.webp",
-            "content": "Explore our range of Heatwarming, Authentic, and Delicious products",
+            "brand_logo": "shopify:\/\/shop_images\/image-30-66549173e903a.webp",
+            "content": "Authentic Appam and Idiyappam mix for soft, delicious breakfasts!",
             "cta_label": "Shop Now",
-            "cta_url": "shopify:\/\/collections\/grocerywala-shop-snacks-and-savouries-bikano-namkeens",
-            "featured_img": "shopify:\/\/shop_images\/image_52.webp"
+            "cta_url": "shopify:\/\/products\/kitchen-treasures-appam-and-idiyappam-mix",
+            "featured_img": "shopify:\/\/shop_images\/kt_appam.png"
           }
         },
         "specials_drmT3G": {
