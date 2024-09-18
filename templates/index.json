@@ -167,10 +167,10 @@
           "settings": {
             "background": "linear-gradient(310deg, rgba(112, 159, 61, 1), rgba(112, 159, 61, 1) 100%)",
             "brand_logo": "shopify:\/\/shop_images\/image_63.webp",
-            "content": "Take up your Hair care routine with Patanjali products",
+            "content": "Boost health naturally with Patanjali Ayurvedic supplements",
             "cta_label": "Shop Now",
-            "cta_url": "shopify:\/\/collections\/grocerywala-shop-natural-cosmetics-hair-care",
-            "featured_img": "shopify:\/\/shop_images\/Group_7562_1.png"
+            "cta_url": "shopify:\/\/collections\/grocerywala-shop-herbal-medicines",
+            "featured_img": "shopify:\/\/shop_images\/pathajali.png"
           }
         }
       },
