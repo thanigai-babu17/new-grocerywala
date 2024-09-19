@@ -6,7 +6,7 @@
   onload="this.onload=null;this.rel='stylesheet'"
 >
 <noscript>{{ 'component-rte.css' | asset_url | stylesheet_tag }}</noscript>
-<div id="ProductGridContainer">
+<div id="ProductGridContainer" data-handle="{{ collection.handle }}">
   {%- paginate collection.products by section.settings.products_per_page -%}
     {%- if collection.products.size == 0 -%}
       <div
