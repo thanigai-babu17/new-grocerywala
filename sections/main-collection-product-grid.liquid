@@ -7,8 +7,9 @@
 >
 <noscript>{{ 'component-rte.css' | asset_url | stylesheet_tag }}</noscript>
 <div id="ProductGridContainer" data-handle="{{ collection.handle }}">
-  {%- paginate collection.products by section.settings.products_per_page -%}
-    {%- if collection.products.size == 0 -%}
+  {% assign available_products = collection.products | where: "available", true %}
+  {%- paginate available_products by section.settings.products_per_page -%}
+    {%- if available_products.size == 0 -%}
       <div
         class="collection collection--empty container padding-top text-center"
         id="product-grid"
@@ -63,7 +64,7 @@
               </div>
             </div>
             <div id="product-grid" data-id="{{ section.id }}" class="row">
-              {%- for product in collection.products -%}
+              {%- for product in available_products -%}
                 {% assign lazy_load = false %}
                 {%- if forloop.index > 2 -%}
                   {%- assign lazy_load = true -%}
