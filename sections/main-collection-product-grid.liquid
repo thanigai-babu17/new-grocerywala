@@ -68,7 +68,6 @@
                 {%- if forloop.index > 2 -%}
                   {%- assign lazy_load = true -%}
                 {%- endif -%}
-                {% if product.available %}
                   <div class="grid__item col-lg-4 col-xl-4 col-md-6 col-sm-6 col-12 product-card card">
                     {% render 'card-product',
                       card_product: product,
@@ -80,7 +79,6 @@
                       show_variants: section.settings.show_variants
                     %}
                   </div>
-                {% endif %}
               {%- endfor -%}
             </div>
             {%- if paginate.pages > 1 -%}
