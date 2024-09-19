@@ -56,10 +56,10 @@
           {%- for product in collection.products -%}
           {% assign lazy_load = false %}
           {%- if forloop.index > 2 -%}
-          {%- assign lazy_load = true -%}
+            {%- assign lazy_load = true -%}
           {%- endif -%}
-          <div class="grid__item col-lg-4 col-xl-4 col-md-6 col-sm-6 col-12 product-card card">
-            {% if product.available %}
+          {% if product.available %}
+            <div class="grid__item col-lg-4 col-xl-4 col-md-6 col-sm-6 col-12 product-card card">
               {% render 'card-product',
               card_product: product,
               pro_img_widthheight: section.settings.pro_img_widthheight,
@@ -69,8 +69,8 @@
               show_qty: section.settings.show_qty,
               show_variants: section.settings.show_variants
               %}
-            {% endif %}
-          </div>
+            </div>
+          {% endif %}
           {%- endfor -%}
         </div>
         {%- if paginate.pages > 1 -%}
