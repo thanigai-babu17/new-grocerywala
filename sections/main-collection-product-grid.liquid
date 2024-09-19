@@ -6,10 +6,9 @@
   onload="this.onload=null;this.rel='stylesheet'"
 >
 <noscript>{{ 'component-rte.css' | asset_url | stylesheet_tag }}</noscript>
-<div id="ProductGridContainer" data-handle="{{ collection.handle }}">
-  {% assign available_products = collection.products | where: "available", true %}
-  {%- paginate available_products by section.settings.products_per_page -%}
-    {%- if available_products.size == 0 -%}
+<div id="ProductGridContainer">
+  {%- paginate collection.products by section.settings.products_per_page -%}
+    {%- if collection.products.size == 0 -%}
       <div
         class="collection collection--empty container padding-top text-center"
         id="product-grid"
@@ -64,24 +63,12 @@
               </div>
             </div>
             <div id="product-grid" data-id="{{ section.id }}" class="row">
-              {%- for product in available_products -%}
+              {%- for product in collection.products -%}
                 {% assign lazy_load = false %}
                 {%- if forloop.index > 2 -%}
                   {%- assign lazy_load = true -%}
                 {%- endif -%}
-                {% if product.available and collection.handle == 'all' %}
-                  <div class="grid__item col-lg-4 col-xl-4 col-md-6 col-sm-6 col-12 product-card card">
-                    {% render 'card-product',
-                      card_product: product,
-                      pro_img_widthheight: section.settings.pro_img_widthheight,
-                      show_secondary_image: section.settings.show_secondary_image,
-                      show_vendor: section.settings.show_vendor,
-                      show_review: section.settings.show_review,
-                      show_qty: section.settings.show_qty,
-                      show_variants: section.settings.show_variants
-                    %}
-                  </div>
-                {% else %}
+                {% if product.available %}
                   <div class="grid__item col-lg-4 col-xl-4 col-md-6 col-sm-6 col-12 product-card card">
                     {% render 'card-product',
                       card_product: product,
