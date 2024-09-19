@@ -8821,3 +8821,8 @@ variant-radios.size-selectors{
 	position: static !important;
 }
 
+.collection.collection--empty.container h2{
+	display: flex;
+    flex-direction: column;
+    align-items: center;
+}
