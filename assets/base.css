@@ -2012,11 +2012,15 @@ header.head-sticky .announcebar {
 .header-style-one .menu-right li a .icon-lable {
 	display: none;
 }
+
 .header-style-one .menu-right li {
 	display: flex;
-	align-items: center;
-	justify-content: center;
+    align-items: center;
+    gap: 4px;
+    padding-bottom: 2px;
+    color: var(--theme-color-dark);
 }
+
 /* .header-style-one .menu-right li:not(:last-of-type) {
   margin-right: 24px;
 } */
@@ -2745,7 +2749,7 @@ body.home .header-style-one .extra-menu-col {
 	width: 15px;
 }
 .header-style-one .menu-right li a.remove_item svg path {
-	fill: var(--theme-color);
+	fill: red;
 }
 .side-menu-navigationbar {
 	background: var(--theme-color);
@@ -5484,14 +5488,14 @@ table tr:last-of-type {
 	width: 15px;
 }
 .remove_item svg path {
-	fill: var(--theme-color);
+	fill: red;
 }
 .mini-cart-footer-total-row div {
 	padding: 0 10px;
 }
 .mini-cart-footer-total-row .mini-total-price {
 	font-size: 18px;
-	color: var(--grey-700);
+	color: var(--black);
 }
 .webi-mini-cart-footer .checkout-btn {
 	width: 100%;
@@ -8825,4 +8829,57 @@ variant-radios.size-selectors{
 	display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+.cart-item__discounted-prices{
+	display: flex;
+    gap: 8px;
+	color: var(--black);
+	font-weight: 600;
+	font-size: 14px;
+}
+
+.cart-item__old-price {
+	text-decoration: line-through;
+	color: var(--grey-700);
+}
+
+.mini-total-price .money{
+	color: var(--black);
+}
+
+.discounts__discount {
+	display: flex;
+    align-items: center;
+    gap: 4px;
+    padding-bottom: 2px;
+    color: var(--theme-color-dark);
+}
+
+.cart-item__media img{
+	border-radius: 6px;
+}
+
+.cart-page-section .row {
+	background-color: var(--white);
+	padding: 16px;
+	margin-inline: 0;
+	border-radius: 12px;
+}
+
+.cart-page-section .cart__blocks {
+	border-radius: 12px;
+}
+
+@media screen and (max-width:768px) {
+	.cart-page-section .discounts__discount {
+		justify-content: center;
+	}
+	.cart-item__discounted-prices {
+		justify-content: center;
+	}
+}
+
+.totals__subtotal-value span{
+	font-weight: 600;
 }
