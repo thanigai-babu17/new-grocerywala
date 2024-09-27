@@ -22,7 +22,7 @@
     "main": {
       "type": "main-search",
       "custom_css": [
-        ".template-search {padding-top: 36px;}"
+        ".template-search {padding-top: 36px; min-height:50vh;}"
       ],
       "settings": {
         "show_secondary_image": false,
