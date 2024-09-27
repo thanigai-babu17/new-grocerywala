@@ -8853,7 +8853,8 @@ variant-radios.size-selectors{
     align-items: center;
     gap: 4px;
     padding-bottom: 2px;
-    color: var(--theme-color-dark);
+    color: var(--accent-1) !important;
+	font-weight: 600;
 }
 
 .cart-item__media img{
