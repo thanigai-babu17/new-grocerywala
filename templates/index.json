@@ -341,14 +341,14 @@
           "type": "brand_slide",
           "settings": {
             "featured_img": "shopify://shop_images/image-28-66549174bb6f9.webp",
-            "brand_url": ""
+            "brand_url": "https://grocerywala.pl/collections/shop-all?filter.v.price.gte=&filter.v.price.lte=&filter.p.vendor=Melam&sort_by=best-selling"
           }
         },
         "brand_slide_rjpkL4": {
           "type": "brand_slide",
           "settings": {
             "featured_img": "shopify://shop_images/image-29-66549174ac9f8.webp",
-            "brand_url": ""
+            "brand_url": "https://grocerywala.pl/collections/shop-all?filter.v.price.gte=&filter.v.price.lte=&filter.p.vendor=JFK&sort_by=best-selling"
           }
         },
         "brand_slide_Czd7UX": {
@@ -363,14 +363,14 @@
           "type": "brand_slide",
           "settings": {
             "featured_img": "shopify://shop_images/image-30-66549173e903a.webp",
-            "brand_url": ""
+            "brand_url": "https://grocerywala.pl/collections/shop-all?filter.v.price.gte=&filter.v.price.lte=&filter.p.vendor=Kitchen+Treasures&sort_by=best-selling"
           }
         },
         "brand_slide_jBzEBH": {
           "type": "brand_slide",
           "settings": {
             "featured_img": "shopify://shop_images/sw.png",
-            "brand_url": ""
+            "brand_url": "https://grocerywala.pl/collections/shop-all?filter.v.price.gte=&filter.v.price.lte=&filter.p.vendor=Sweekar&sort_by=best-selling"
           }
         },
         "brand_slide_Jkt3NE": {
@@ -384,7 +384,7 @@
           "type": "brand_slide",
           "settings": {
             "featured_img": "shopify://shop_images/image-33-665491734088e.webp",
-            "brand_url": ""
+            "brand_url": "https://grocerywala.pl/collections/shop-all?filter.v.price.gte=&filter.v.price.lte=&filter.p.vendor=Bikano&sort_by=best-selling"
           }
         },
         "brand_slide_Dk3fdf": {
