@@ -168,6 +168,14 @@
               "diffclassname": "",
               "links": "mobile-menu"
             }
+          },
+          "mob_link_simple_CrHNGC": {
+            "type": "mob-link-simple",
+            "settings": {
+              "title": "Best Sellers",
+              "link": "shopify://collections/best-sellers",
+              "diffclassname": ""
+            }
           }
         },
         "block_order": [
@@ -181,7 +189,8 @@
           "mob_link_simple_Ufadfr",
           "mob_link_simple_tJL9F8",
           "mob_link_simple_c6VkLJ",
-          "mob_link_linklist_7PhCye"
+          "mob_link_linklist_7PhCye",
+          "mob_link_simple_CrHNGC"
         ],
         "settings": {
           "day": "Monday - Sunday",
