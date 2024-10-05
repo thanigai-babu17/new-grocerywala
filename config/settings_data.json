@@ -159,6 +159,15 @@
               "diffclassname": "",
               "links": "mobile-menu"
             }
+          },
+          "link_linklist_WwNDaC": {
+            "type": "link-linklist",
+            "settings": {
+              "title": "Top Brands",
+              "link": "",
+              "diffclassname": "",
+              "links": "top-brands"
+            }
           }
         },
         "block_order": [
@@ -171,7 +180,8 @@
           "mob_link_simple_Ufadfr",
           "mob_link_simple_tJL9F8",
           "mob_link_simple_c6VkLJ",
-          "mob_link_linklist_7PhCye"
+          "mob_link_linklist_7PhCye",
+          "link_linklist_WwNDaC"
         ],
         "settings": {
           "day": "Monday - Sunday",
