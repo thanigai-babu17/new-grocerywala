@@ -333,64 +333,74 @@
         "brand_slide_thWhQU": {
           "type": "brand_slide",
           "settings": {
-            "featured_img": "shopify://shop_images/image-35-665491757af66.webp"
+            "featured_img": "shopify://shop_images/image-35-665491757af66.webp",
+            "brand_url": "https://grocerywala.pl/collections/shop-all?filter.v.price.gte=&filter.v.price.lte=&filter.p.vendor=Maaza&sort_by=best-selling"
           }
         },
         "brand_slide_DTT8xH": {
           "type": "brand_slide",
           "settings": {
-            "featured_img": "shopify://shop_images/image-28-66549174bb6f9.webp"
+            "featured_img": "shopify://shop_images/image-28-66549174bb6f9.webp",
+            "brand_url": ""
           }
         },
         "brand_slide_rjpkL4": {
           "type": "brand_slide",
           "settings": {
-            "featured_img": "shopify://shop_images/image-29-66549174ac9f8.webp"
+            "featured_img": "shopify://shop_images/image-29-66549174ac9f8.webp",
+            "brand_url": ""
           }
         },
         "brand_slide_Czd7UX": {
           "type": "brand_slide",
           "disabled": true,
           "settings": {
-            "featured_img": "shopify://shop_images/image-31-66549173d9363.webp"
+            "featured_img": "shopify://shop_images/image-31-66549173d9363.webp",
+            "brand_url": ""
           }
         },
         "brand_slide_wEBewR": {
           "type": "brand_slide",
           "settings": {
-            "featured_img": "shopify://shop_images/image-30-66549173e903a.webp"
+            "featured_img": "shopify://shop_images/image-30-66549173e903a.webp",
+            "brand_url": ""
           }
         },
         "brand_slide_jBzEBH": {
           "type": "brand_slide",
           "settings": {
-            "featured_img": "shopify://shop_images/sw.png"
+            "featured_img": "shopify://shop_images/sw.png",
+            "brand_url": ""
           }
         },
         "brand_slide_Jkt3NE": {
           "type": "brand_slide",
           "settings": {
-            "featured_img": "shopify://shop_images/dh.png"
+            "featured_img": "shopify://shop_images/dh.png",
+            "brand_url": ""
           }
         },
         "brand_slide_BL8cf4": {
           "type": "brand_slide",
           "settings": {
-            "featured_img": "shopify://shop_images/image-33-665491734088e.webp"
+            "featured_img": "shopify://shop_images/image-33-665491734088e.webp",
+            "brand_url": ""
           }
         },
         "brand_slide_Dk3fdf": {
           "type": "brand_slide",
           "disabled": true,
           "settings": {
-            "featured_img": "shopify://shop_images/image-34-665491733371e.webp"
+            "featured_img": "shopify://shop_images/image-34-665491733371e.webp",
+            "brand_url": ""
           }
         },
         "brand_slide_HEeLeP": {
           "type": "brand_slide",
           "disabled": true,
           "settings": {
-            "featured_img": "shopify://shop_images/image-32-6654917273ca9.webp"
+            "featured_img": "shopify://shop_images/image-32-6654917273ca9.webp",
+            "brand_url": ""
           }
         }
       },
