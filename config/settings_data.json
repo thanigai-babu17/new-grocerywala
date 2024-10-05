@@ -166,7 +166,7 @@
             "settings": {
               "title": "Special Offer",
               "link": "shopify://collections/promotion",
-              "diffclassname": ""
+              "diffclassname": "special-link"
             }
           },
           "mob_link_linklist_Xw7RY7": {
