@@ -184,6 +184,14 @@
               "diffclassname": "",
               "links": "top-brands"
             }
+          },
+          "mob_link_simple_LAMcYH": {
+            "type": "mob-link-simple",
+            "settings": {
+              "title": "Special Offer",
+              "link": "shopify://collections/promotion",
+              "diffclassname": ""
+            }
           }
         },
         "block_order": [
@@ -199,7 +207,8 @@
           "mob_link_simple_c6VkLJ",
           "mob_link_linklist_7PhCye",
           "mob_link_simple_CrHNGC",
-          "mob_link_linklist_Xw7RY7"
+          "mob_link_linklist_Xw7RY7",
+          "mob_link_simple_LAMcYH"
         ],
         "settings": {
           "day": "Monday - Sunday",
