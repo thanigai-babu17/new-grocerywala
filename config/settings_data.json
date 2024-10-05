@@ -81,6 +81,15 @@
               "diffclassname": "special-link"
             }
           },
+          "link_linklist_WwNDaC": {
+            "type": "link-linklist",
+            "settings": {
+              "title": "Top Brands",
+              "link": "",
+              "diffclassname": "",
+              "links": "top-brands"
+            }
+          },
           "d1b60774-590f-40e0-8860-e29584aed4ee": {
             "type": "link-4linklists",
             "settings": {
@@ -159,19 +168,11 @@
               "diffclassname": "",
               "links": "mobile-menu"
             }
-          },
-          "link_linklist_WwNDaC": {
-            "type": "link-linklist",
-            "settings": {
-              "title": "Top Brands",
-              "link": "",
-              "diffclassname": "",
-              "links": "top-brands"
-            }
           }
         },
         "block_order": [
           "link_simple_96BWPy",
+          "link_linklist_WwNDaC",
           "d1b60774-590f-40e0-8860-e29584aed4ee",
           "link_simple_ir7fbM",
           "link_simple_JPKbUW",
@@ -180,8 +181,7 @@
           "mob_link_simple_Ufadfr",
           "mob_link_simple_tJL9F8",
           "mob_link_simple_c6VkLJ",
-          "mob_link_linklist_7PhCye",
-          "link_linklist_WwNDaC"
+          "mob_link_linklist_7PhCye"
         ],
         "settings": {
           "day": "Monday - Sunday",
