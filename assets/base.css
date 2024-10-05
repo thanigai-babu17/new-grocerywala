@@ -8420,6 +8420,7 @@ deferred-media.deferred-media {
 	background-color: var(--white);
 	padding: 15px;
 	border-radius: 8px;
+	display: flex;
 }
 
 .brand-slide .brand-slide__img {

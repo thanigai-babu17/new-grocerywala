@@ -6,9 +6,9 @@
         <div class="brand-slider">
             {% for block in section.blocks %}
                 {% if block.type == 'brand_slide' %}
-                    <div class="brand-slide" >
+                    <a class="brand-slide" href="{{ block.settings.brand_url }}">
                         <div class="brand-slide__img" style="background-image:url({{ block.settings.featured_img | img_url: 'master' }});"></div>
-                    </div>
+                    </a>
                 {% endif %}
             {% endfor %}
         </div>
@@ -36,6 +36,11 @@
           "type": "image_picker",
           "id": "featured_img",
           "label": "Banner Featured Image"
+        },
+        {
+          "type": "url",
+          "id": "brand_url",
+          "label": "Brand URL"
         }
       ]
     }
