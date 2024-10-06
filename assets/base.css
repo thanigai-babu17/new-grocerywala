@@ -6,6 +6,11 @@
 	text-decoration: inherit;
 	vertical-align: inherit;
 }
+
+* {
+	font-family: var(--first-font);
+}
+
 html {
 	outline: none;
 	scroll-behavior: smooth;
