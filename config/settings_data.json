@@ -26,6 +26,8 @@
     "provider_1": "shopify://shop_images/Frame_7628.svg",
     "provider_2": "shopify://shop_images/Frame_7627.svg",
     "provider_3": "shopify://shop_images/Frame_7626.svg",
+    "provider_4": "shopify://shop_images/przelewy.svg",
+    "provider_5": "shopify://shop_images/blik.svg",
     "popup_newsletter_show": false,
     "newsletter_title": "Sign up our newsletter",
     "popup_newsletter_description": "Subscribe our newsletters now and stay up-to-date with new collections",
