@@ -22,3 +22,13 @@
     </button>
   </quantity-input>
 </div>
+
+
+<script>
+  document.querySelector('quantity-input').addEventListener('change',function(e){   
+    const quantityInput = document.querySelector('#product-form-{{ section.id }} input[name="quantity"]');
+    if(quantityInput){
+      quantityInput.value = e.target.value;
+    }
+  });
+</script>
