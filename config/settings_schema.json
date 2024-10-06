@@ -261,6 +261,16 @@
         "type": "image_picker",
         "id": "provider_3",
         "label": "Provider 3"
+      },
+      {
+        "type": "image_picker",
+        "id": "provider_4",
+        "label": "Provider 4"
+      },
+      {
+        "type": "image_picker",
+        "id": "provider_5",
+        "label": "Provider 5"
       }
     ]
   },
