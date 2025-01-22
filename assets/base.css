@@ -8790,6 +8790,9 @@ variant-radios.size-selectors{
 
 .reset-password form {
   padding:20px;
+  display:flex;
+  flex-direction:column;
+  gap:18px;
 }
 
 .card-collection .card-wrapper{
