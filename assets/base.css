@@ -8788,6 +8788,10 @@ variant-radios.size-selectors{
 	border-radius: 8px;
 }
 
+.reset-password form {
+  padding:20px;
+}
+
 .card-collection .card-wrapper{
 	background-color: var(--white);
 	padding: 12px;
