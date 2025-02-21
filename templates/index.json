@@ -427,6 +427,7 @@
           "type": "testimonial",
           "settings": {
             "customer_name": "Arun Prabhakar",
+            "customer_avatar": "shopify://shop_images/user-profile.png",
             "customer_text": "bardzo dobra jakość produktów, ceny konkurencyjne, szybka dostawa, gorąco polecam"
           }
         },
