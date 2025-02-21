@@ -1,12 +1,12 @@
 /*
-* ------------------------------------------------------------
-* IMPORTANT: The contents of this file are auto-generated.
-*
-* This file may be updated by the Shopify admin theme editor
-* or related systems. Please exercise caution as any changes
-* made to this file may be overwritten.
-* ------------------------------------------------------------
-*/
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "sections": {
     "sale_banner_slider_gYAWg8": {
@@ -423,6 +423,13 @@
     "slider_testimonials_qB68pE": {
       "type": "slider-testimonials",
       "blocks": {
+        "testimonial_V3jdfk": {
+          "type": "testimonial",
+          "settings": {
+            "customer_name": "Arun Prabhakar",
+            "customer_text": "bardzo dobra jakość produktów, ceny konkurencyjne, szybka dostawa, gorąco polecam"
+          }
+        },
         "testimonial_HMUktT": {
           "type": "testimonial",
           "settings": {
@@ -457,6 +464,7 @@
         }
       },
       "block_order": [
+        "testimonial_V3jdfk",
         "testimonial_HMUktT",
         "testimonial_bJVbKn",
         "testimonial_8kzGCP",
