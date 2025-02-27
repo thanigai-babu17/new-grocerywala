@@ -268,7 +268,7 @@
         "settings": {
           "flogo": "shopify://shop_images/grocerywala-white.png",
           "ctitle": "Contact",
-          "caddress": "VISTULA FOODS SP. Z O.O, Al. Krakowska 4/6, 02-284 Warszawa, Poland",
+          "caddress": "VISTULA FOODS SP. Z O.O, \nAl. Krakowska 4/6, \n02-284 Warszawa, Poland",
           "cmail": "shop@grocerywala.pl",
           "cphone": "+48 536 503 097",
           "c_ctalabel": "Contact us",
