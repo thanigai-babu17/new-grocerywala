@@ -22,7 +22,7 @@
     "mailchimp_form_action": "https://us18.list-manage.com/contact-form?u=28c97e9fc6b2e6214af7bd19c&form_id=1f1f3185abc040a9c4e1626b43a72353",
     "enable_wishlist": true,
     "enable_compare": true,
-    "enable_quickview": true,
+    "enable_quickview": false,
     "provider_1": "shopify://shop_images/Frame_7628.svg",
     "provider_2": "shopify://shop_images/Frame_7627.svg",
     "provider_3": "shopify://shop_images/Frame_7626.svg",
